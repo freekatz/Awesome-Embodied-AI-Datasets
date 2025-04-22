@@ -1,0 +1,23 @@
+action_space: Joint position
+control_frequency: 10
+data_collect_method: Scripted
+depth_cams: 2
+episodes: 'null'
+file_size: 'null'
+gripper: Default
+has_camera_calibration: true
+has_proprioception: true
+has_suboptimal: false
+language_annotations: Scripted language but augmented with LLMs
+license: 'null'
+name: SPOC
+rgb_cams: 2
+robot: 'null'
+robot_morphology: Single Arm
+scene_type: Kitchen (also toy kitchen), Other Household environments, Hallways, multi
+  room environments
+short_description: 'null'
+task_description: The robot navigates in the environment and performs pick and place
+  with open vocabulary descriptions.
+url: https://spoc-robot.github.io/
+wrist_cams: 2

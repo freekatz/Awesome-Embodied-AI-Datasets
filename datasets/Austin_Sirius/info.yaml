@@ -1,0 +1,24 @@
+action_space: EEF velocity
+control_frequency: 20
+data_collect_method: Human Spacemouse
+depth_cams: 0
+episodes: 2460
+file_size: 124.62
+gripper: Default
+has_camera_calibration: false
+has_proprioception: true
+has_suboptimal: false
+language_annotations: 'null'
+license: 'null'
+name: Austin Sirius
+rgb_cams: 2
+robot: Franka
+robot_morphology: Single Arm
+scene_type: Table Top
+short_description: 'null'
+task_description: The dataset comprises two tasks, kcup and gear. The kcup task requires
+  opening the kcup holder, inserting the kcup into the holder, and closing the holder.
+  The gear task requires inserting the blue gear onto the right peg, followed by inserting
+  the smaller red gear.
+url: https://ut-austin-rpl.github.io/sirius/
+wrist_cams: 1

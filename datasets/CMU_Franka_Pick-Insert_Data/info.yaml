@@ -1,0 +1,22 @@
+action_space: EEF Position
+control_frequency: 20
+data_collect_method: Human VR
+depth_cams: 0
+episodes: 378
+file_size: 7.13
+gripper: Default
+has_camera_calibration: For a subset of the cameras
+has_proprioception: true
+has_suboptimal: false
+language_annotations: Templated
+license: 'null'
+name: CMU Franka Pick-Insert Data
+rgb_cams: 2
+robot: Franka
+robot_morphology: Single Arm
+scene_type: Table Top
+short_description: 'null'
+task_description: The robot tries to pick up different shaped objects placed in front
+  of it. It also tries to insert particular objects into a cylindrical peg.
+url: https://openreview.net/forum?id=WuBv9-IGDUA
+wrist_cams: 1

@@ -1,0 +1,24 @@
+action_space: Joint position
+control_frequency: 5
+data_collect_method: Human VR
+depth_cams: 4
+episodes: 'null'
+file_size: 'null'
+gripper: Robotiq 2F-85
+has_camera_calibration: true
+has_proprioception: true
+has_suboptimal: true
+language_annotations: Natural
+license: 'null'
+name: RoboSet
+rgb_cams: 4
+robot: 'null'
+robot_morphology: Single Arm
+scene_type: Table Top, Kitchen (also toy kitchen), Other Household environments
+short_description: 'null'
+task_description: '"The robot interacts with different objects in kitchen scenes.
+  It performs articulated object manipulation of objects with prismatic joints and
+  hinges. It wipes tables with cloth. It performs pick and place skills, and skills
+  requiring precision like capping and uncapping."'
+url: https://robopen.github.io/roboset/
+wrist_cams: 1

@@ -1,0 +1,22 @@
+action_space: EEF Position
+control_frequency: 50
+data_collect_method: Human Puppeteering
+depth_cams: 0
+episodes: 'null'
+file_size: 'null'
+gripper: Custom 3D printed
+has_camera_calibration: false
+has_proprioception: true
+has_suboptimal: false
+language_annotations: Templated
+license: 'null'
+name: ALOHA
+rgb_cams: 4
+robot: 'null'
+robot_morphology: Bi-Manual
+scene_type: Table Top
+short_description: 'null'
+task_description: Bi-manual robot performing complex, dexterous tasks like unwrapping
+  candy and putting on shoes.
+url: https://tonyzhaozh.github.io/aloha/
+wrist_cams: 2

@@ -1,0 +1,23 @@
+action_space: EEF Position
+control_frequency: 3.75
+data_collect_method: Human collection using tools
+depth_cams: 1
+episodes: 'null'
+file_size: 'null'
+gripper: Hello Robot Dex Wrist
+has_camera_calibration: true
+has_proprioception: false
+has_suboptimal: false
+language_annotations: Natural
+license: 'null'
+name: DobbE
+rgb_cams: 1
+robot: 'null'
+robot_morphology: Mobile Manipulator
+scene_type: Kitchen (also toy kitchen), Other Household environments, Hallways
+short_description: 'null'
+task_description: The demo collector uses the Stick to collect data from 7 tasks,
+  including door/drawer opening/closing, handle grasping, pick and place, and random
+  play data.
+url: https://github.com/notmahi/dobb-e
+wrist_cams: 1

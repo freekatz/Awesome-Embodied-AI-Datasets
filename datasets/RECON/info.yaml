@@ -1,0 +1,21 @@
+action_space: EEF velocity
+control_frequency: 3
+data_collect_method: Scripted
+depth_cams: 1
+episodes: 'null'
+file_size: 'null'
+gripper: 'null'
+has_camera_calibration: false
+has_proprioception: false
+has_suboptimal: true
+language_annotations: 'null'
+license: 'null'
+name: RECON
+rgb_cams: 2
+robot: 'null'
+robot_morphology: Wheeled Robot
+scene_type: Outdoors
+short_description: 'null'
+task_description: Mobile robot explores outdoor environments using a scripted policy
+url: https://sites.google.com/view/recon-robot
+wrist_cams: 1

@@ -1,0 +1,22 @@
+action_space: EEF Position
+control_frequency: 10
+data_collect_method: Human VR
+depth_cams: 1
+episodes: 39350
+file_size: 80.54
+gripper: Default
+has_camera_calibration: false
+has_proprioception: true
+has_suboptimal: false
+language_annotations: Templated
+license: 'null'
+name: Roboturk
+rgb_cams: 2
+robot: Google Robot
+robot_morphology: Single Arm
+scene_type: Table Top
+short_description: 'null'
+task_description: Sawyer robots flattens laundry, builds towers from bowls and searches
+  objects.
+url: https://roboturk.stanford.edu/dataset_real.html
+wrist_cams: 0

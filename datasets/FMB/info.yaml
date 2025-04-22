@@ -1,0 +1,22 @@
+action_space: EEF velocity
+control_frequency: 10
+data_collect_method: Human VR
+depth_cams: 4
+episodes: 'null'
+file_size: 'null'
+gripper: Default
+has_camera_calibration: true
+has_proprioception: true
+has_suboptimal: false
+language_annotations: Templated
+license: 'null'
+name: FMB
+rgb_cams: 4
+robot: 'null'
+robot_morphology: Single Arm
+scene_type: Table Top
+short_description: 'null'
+task_description: The robot interacts with diverse 3D printed objects, pick them up,
+  reposition, and assemble them
+url: https://functional-manipulation-benchmark.github.io/
+wrist_cams: 2

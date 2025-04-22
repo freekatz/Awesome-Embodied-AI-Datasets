@@ -1,0 +1,21 @@
+action_space: EEF Position
+control_frequency: 15
+data_collect_method: Human VR
+depth_cams: 3
+episodes: 'null'
+file_size: 'null'
+gripper: Robotiq 2F-85
+has_camera_calibration: true
+has_proprioception: true
+has_suboptimal: true
+language_annotations: Natural
+license: 'null'
+name: DROID
+rgb_cams: 3
+robot: 'null'
+robot_morphology: Single Arm
+scene_type: Table Top, Kitchen (also toy kitchen), Other Household environments, Hallways
+short_description: 'null'
+task_description: Various household manipulation tasks
+url: https://droid-dataset.github.io/
+wrist_cams: 1

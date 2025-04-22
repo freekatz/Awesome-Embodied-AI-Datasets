@@ -1,0 +1,22 @@
+action_space: EEF Position
+control_frequency: 20
+data_collect_method: Human Keyboard
+depth_cams: 5
+episodes: 'null'
+file_size: 'null'
+gripper: Default
+has_camera_calibration: true
+has_proprioception: true
+has_suboptimal: false
+language_annotations: 'null'
+license: 'null'
+name: Plex RoboSuite
+rgb_cams: 5
+robot: 'null'
+robot_morphology: Single Arm
+scene_type: Table Top, Tabletop with sections
+short_description: 'null'
+task_description: Opening a door, stacking 2 cubes, picking and placing various objects
+  to specially designated areas, putting a loop onto a peg.
+url: https://microsoft.github.io/PLEX/
+wrist_cams: 1

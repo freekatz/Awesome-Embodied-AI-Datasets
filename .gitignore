@@ -1,0 +1,7 @@
+.idea
+.vscode
+.DS_Store
+tmp/
+bak/
+test/
+*.bak

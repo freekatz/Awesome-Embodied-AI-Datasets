@@ -1,0 +1,23 @@
+action_space: Our dataset specifies a target receptacle for each object
+control_frequency: 'null'
+data_collect_method: Human writes preferred object placements in text form
+depth_cams: 0
+episodes: 'null'
+file_size: 'null'
+gripper: Robotiq 2F-85
+has_camera_calibration: false
+has_proprioception: false
+has_suboptimal: false
+language_annotations: Our dataset specifies object placements in text form
+license: 'null'
+name: TidyBot
+rgb_cams: 0
+robot: 'null'
+robot_morphology: Mobile Manipulator
+scene_type: Kitchen (also toy kitchen), Other Household environments, living room,
+  bedroom, kitchen, pantry room
+short_description: 'null'
+task_description: The robot puts each object into the appropriate receptacle based
+  on user preferences
+url: https://tidybot.cs.princeton.edu/
+wrist_cams: 0

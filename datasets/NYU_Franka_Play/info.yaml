@@ -1,0 +1,23 @@
+action_space: EEF velocity
+control_frequency: 3
+data_collect_method: Human VR
+depth_cams: 2
+episodes: 812
+file_size: 'null'
+gripper: Default
+has_camera_calibration: false
+has_proprioception: true
+has_suboptimal: false
+language_annotations: 'null'
+license: 'null'
+name: NYU Franka Play
+rgb_cams: 2
+robot: Franka
+robot_morphology: Single Arm
+scene_type: Kitchen (also toy kitchen)
+short_description: 'null'
+task_description: The robot interacts with a toy kitchen doing arbitrary tasks. It
+  opens/closes the microwave door, opens/closes the oven door, turns the stove knobs,
+  and moves the pot between the stove and the sink.
+url: https://play-to-policy.github.io/
+wrist_cams: 0

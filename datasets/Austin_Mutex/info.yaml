@@ -1,0 +1,25 @@
+action_space: EEF Position
+control_frequency: 20
+data_collect_method: Human Spacemouse
+depth_cams: 0
+episodes: 660103
+file_size: 1390
+gripper: Default
+has_camera_calibration: false
+has_proprioception: true
+has_suboptimal: false
+language_annotations: Natural Language annotations generate with GPT4 and followed
+  by human correction.
+license: 'null'
+name: Austin Mutex
+rgb_cams: 2
+robot: UR5
+robot_morphology: Single Arm
+scene_type: Table Top
+short_description: 'null'
+task_description: The Mutex dataset involves a diverse range of tasks in a home environment,
+  encompassing pick and place tasks like "putting bread on a plate," as well as contact-rich
+  tasks such as "opening an air fryer and putting a bowl with dogs in it" or "taking
+  out a tray from the oven and placing bread on it."
+url: https://ut-austin-rpl.github.io/MUTEX/
+wrist_cams: 1

@@ -1,0 +1,22 @@
+action_space: EEF Position
+control_frequency: 10
+data_collect_method: Expert Policy
+depth_cams: 0
+episodes: 100
+file_size: 2.92
+gripper: Default
+has_camera_calibration: false
+has_proprioception: false
+has_suboptimal: true
+language_annotations: Templated
+license: 'null'
+name: CMU Franka Exploration
+rgb_cams: 1
+robot: DLR SARA
+robot_morphology: Single Arm
+scene_type: Kitchen (also toy kitchen)
+short_description: 'null'
+task_description: Franka exploring kitchen environment, lifting knife and vegetable
+  and opening cabinet.
+url: https://human-world-model.github.io/
+wrist_cams: 0

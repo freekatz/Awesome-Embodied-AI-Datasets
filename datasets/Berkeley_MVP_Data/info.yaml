@@ -1,0 +1,22 @@
+action_space: Joint position
+control_frequency: 5
+data_collect_method: Human VR
+depth_cams: 0
+episodes: 4200
+file_size: 720
+gripper: Default
+has_camera_calibration: false
+has_proprioception: true
+has_suboptimal: false
+language_annotations: Templated
+license: 'null'
+name: Berkeley MVP Data
+rgb_cams: 1
+robot: Franka
+robot_morphology: Single Arm
+scene_type: Table Top, Kitchen (also toy kitchen)
+short_description: 'null'
+task_description: Basic motor control tasks (reach, push, pick) on table top and toy
+  environments (toy kitchen, toy fridge).
+url: https://arxiv.org/abs/2203.06173
+wrist_cams: 1
