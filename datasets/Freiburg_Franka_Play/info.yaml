@@ -1,0 +1,23 @@
+action_space: EEF Position
+control_frequency: 15
+data_collect_method: Human VR
+depth_cams: 2
+episodes: 1355
+file_size: 3.53
+gripper: Custom 3D printed
+has_camera_calibration: true
+has_proprioception: true
+has_suboptimal: false
+language_annotations: Templated
+license: 'null'
+name: Freiburg Franka Play
+rgb_cams: 2
+robot: xArm
+robot_morphology: Single Arm
+scene_type: Table Top
+short_description: 'null'
+task_description: '"The robot interacts with toy blocks, it pick and places them,
+  stacks them, unstacks them, opens drawers, sliding doors and turrns on LED lights
+  by pushing buttons."'
+url: https://www.kaggle.com/datasets/oiermees/taco-robot
+wrist_cams: 2

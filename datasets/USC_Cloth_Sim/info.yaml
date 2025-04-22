@@ -1,0 +1,22 @@
+action_space: EEF Position
+control_frequency: 10
+data_collect_method: Scripted
+depth_cams: 0
+episodes: 170
+file_size: 0.08
+gripper: 'null: Robot agnostic sim data'
+has_camera_calibration: false
+has_proprioception: false
+has_suboptimal: false
+language_annotations: 'null'
+license: 'null'
+name: USC Cloth Sim
+rgb_cams: 1
+robot: Sawyer
+robot_morphology: Single Arm
+scene_type: Table Top, Kitchen (also toy kitchen)
+short_description: 'null'
+task_description: The robot manipulates a deformable object (cloth on a tabletop)
+  along a diagonal.
+url: https://uscresl.github.io/dmfd/
+wrist_cams: 0

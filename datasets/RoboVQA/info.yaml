@@ -1,0 +1,24 @@
+action_space: EEF Position
+control_frequency: 10
+data_collect_method: Human VR
+depth_cams: 1
+episodes: 'null'
+file_size: 'null'
+gripper: Default
+has_camera_calibration: true
+has_proprioception: true
+has_suboptimal: false
+language_annotations: Natural
+license: 'null'
+name: RoboVQA
+rgb_cams: 1
+robot: 'null'
+robot_morphology: '3 embodiments: single-armed robot, single-armed human, single-armed
+  human using grasping tools'
+scene_type: Table Top, Kitchen (also toy kitchen), Other Household environments, Hallways,
+  anything within 3 entire office buildings
+short_description: 'null'
+task_description: A robot or a human performs any long-horizon requests from a user
+  within the entirety of 3 office buildings.
+url: https://anonymous-robovqa.github.io/
+wrist_cams: 0

@@ -1,0 +1,22 @@
+action_space: EEF velocity
+control_frequency: 30
+data_collect_method: Scripted
+depth_cams: 0
+episodes: 'null'
+file_size: 'null'
+gripper: Default
+has_camera_calibration: true
+has_proprioception: true
+has_suboptimal: true
+language_annotations: Natural
+license: 'null'
+name: ConqHose
+rgb_cams: 6
+robot: 'null'
+robot_morphology: Mobile Manipulator
+scene_type: Other Household environments, Hallways
+short_description: 'null'
+task_description: The robot grabs, lifts, and drags the end of a vacuum hose around
+  in an office environment.
+url: https://sites.google.com/view/conq-hose-manipulation-dataset/home
+wrist_cams: 0

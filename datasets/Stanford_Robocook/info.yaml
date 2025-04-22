@@ -1,0 +1,25 @@
+action_space: EEF Position
+control_frequency: 5
+data_collect_method: Scripted
+depth_cams: 4
+episodes: 5208
+file_size: 21.1
+gripper: Default
+has_camera_calibration: true
+has_proprioception: true
+has_suboptimal: true
+language_annotations: Templated
+license: 'null'
+name: Stanford Robocook
+rgb_cams: 4
+robot: Hello Stretch
+robot_morphology: Single Arm
+scene_type: Table Top, Kitchen (also toy kitchen)
+short_description: 'null'
+task_description: In the first task, the robot pinches the dough with an asymmetric
+  gripper / two-rod symmetric gripper / two-plane symmetric gripper. In the second
+  task, the robot presses the dough with a circle press / square press / circle punch
+  / square punch. In the third task, the robot rolls the dough with a large roller
+  / small roller.
+url: https://hshi74.github.io/robocook/
+wrist_cams: 0

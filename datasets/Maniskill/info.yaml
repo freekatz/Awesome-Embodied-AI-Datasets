@@ -1,0 +1,25 @@
+action_space: EEF Position
+control_frequency: 20
+data_collect_method: Scripted
+depth_cams: 2
+episodes: 9200
+file_size: 76.17
+gripper: Default
+has_camera_calibration: true
+has_proprioception: true
+has_suboptimal: true
+language_annotations: Templated
+license: 'null'
+name: Maniskill
+rgb_cams: 2
+robot: Sawyer
+robot_morphology: Single Arm
+scene_type: Table Top
+short_description: 'null'
+task_description: The robot interacts with different objects placed on the plane (ground).
+  The tasks include picking an isolated object or an object from the clutter up and
+  moving it to a goal position, stacking a red cube onto a green cube, inserting a
+  peg into the box, assembling kits, plugging a charger into the outlet on the wall,
+  turning on a faucet.
+url: https://github.com/haosulab/ManiSkill2
+wrist_cams: 2

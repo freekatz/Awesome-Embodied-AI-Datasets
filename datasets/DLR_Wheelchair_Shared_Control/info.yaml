@@ -1,0 +1,22 @@
+action_space: EEF Position
+control_frequency: 5
+data_collect_method: Human teleoperation using Shared Control Templates
+depth_cams: 0
+episodes: 92233
+file_size: 1670
+gripper: CLASH hand (https://www.dlr.de/rm/en/desktopdefault.aspx/tabid-8178/#gallery/35438)
+has_camera_calibration: false
+has_proprioception: true
+has_suboptimal: true
+language_annotations: Templated
+license: 'null'
+name: DLR Wheelchair Shared Control
+rgb_cams: 1
+robot: Franka
+robot_morphology: Single Arm
+scene_type: Table Top, shelf
+short_description: 'null'
+task_description: The robot grasps a set of different objects in a table top and a
+  shelf.
+url: https://ieeexplore.ieee.org/document/9341156
+wrist_cams: 0

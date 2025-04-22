@@ -1,0 +1,23 @@
+action_space: Desired pressures for the artificial muscles
+control_frequency: 500
+data_collect_method: Scripted
+depth_cams: 0
+episodes: 18250
+file_size: 178.65
+gripper: 'null'
+has_camera_calibration: false
+has_proprioception: true
+has_suboptimal: true
+language_annotations: 'null'
+license: 'null'
+name: MPI Muscular Proprioception
+rgb_cams: 0
+robot: Franka
+robot_morphology: Single Arm
+scene_type: The robot is alone in the environment, there are no other objects in the
+  workspace.
+short_description: 'null'
+task_description: There is no task that the robot solves. It executes a combination
+  of random multisine signals of target pressures, as well as fixed target pressures.
+url: https://arxiv.org/abs/2307.02654
+wrist_cams: 0

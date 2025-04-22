@@ -1,0 +1,23 @@
+action_space: EEF Position
+control_frequency: 5
+data_collect_method: Human Spacemouse
+depth_cams: 1
+episodes: 192
+file_size: 0.81
+gripper: Robotiq 2F-85
+has_camera_calibration: false
+has_proprioception: true
+has_suboptimal: false
+language_annotations: Templated
+license: 'null'
+name: Berkeley Autolab UR5
+rgb_cams: 2
+robot: PR2
+robot_morphology: Single Arm
+scene_type: Table Top
+short_description: 'null'
+task_description: 'The data consists of 4 robot manipulation tasks: simple pick-and-place
+  of a stuffed animal between containers, sweeping a cloth, stacking cups, and a more
+  difficult pick-and-place of a bottle that requires precise grasp and 6DOF rotation'
+url: https://sites.google.com/view/berkeley-ur5/home
+wrist_cams: 1

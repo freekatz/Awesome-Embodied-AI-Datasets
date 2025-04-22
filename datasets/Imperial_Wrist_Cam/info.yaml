@@ -1,0 +1,22 @@
+action_space: EEF Position
+control_frequency: 10
+data_collect_method: Human Kinesthetic
+depth_cams: 0
+episodes: 3847
+file_size: 89.33
+gripper: Robotiq 2F-85
+has_camera_calibration: false
+has_proprioception: false
+has_suboptimal: false
+language_annotations: Natural
+license: 'null'
+name: Imperial Wrist Cam
+rgb_cams: 1
+robot: Human
+robot_morphology: Single Arm
+scene_type: Table Top
+short_description: 'null'
+task_description: The robot interacts with different everyday objects performing tasks
+  such as grasping, inserting, opening, stacking, etc.
+url: https://github.com/normandipalo/rlds_dataset_builder
+wrist_cams: 1

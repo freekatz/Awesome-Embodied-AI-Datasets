@@ -1,0 +1,23 @@
+action_space: Primitive skills (pick-place and push)
+control_frequency: null due to use of primitive skills
+data_collect_method: Scripted
+depth_cams: 0
+episodes: 'null'
+file_size: 'null'
+gripper: Suction cup and spatula
+has_camera_calibration: true
+has_proprioception: false
+has_suboptimal: false
+language_annotations: Multimodal (image + language) templated instructions
+license: 'null'
+name: VIMA
+rgb_cams: 2
+robot: 'null'
+robot_morphology: Single Arm
+scene_type: Table Top
+short_description: 'null'
+task_description: The robot is conditioned on multimodal prompts (mixture of texts,
+  images, and video frames) to conduct tabletop manipulation tasks, ranging from rearrangement
+  to one-shot imitation.
+url: https://vimalabs.github.io/
+wrist_cams: 0

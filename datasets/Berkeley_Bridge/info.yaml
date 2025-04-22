@@ -1,0 +1,23 @@
+action_space: EEF Position
+control_frequency: 5
+data_collect_method: Human VR
+depth_cams: 1
+episodes: 150
+file_size: 1.33
+gripper: Default
+has_camera_calibration: false
+has_proprioception: true
+has_suboptimal: true
+language_annotations: Natural
+license: 'null'
+name: Berkeley Bridge
+rgb_cams: 4
+robot: xArm
+robot_morphology: Single Arm
+scene_type: Table Top, Kitchen (also toy kitchen), Other Household environments
+short_description: 'null'
+task_description: The robot interacts with household environments including kitchens,
+  sinks, and tabletops. Skills include object rearrangement, sweeping, stacking, folding,
+  and opening/closing doors and drawers.
+url: https://rail-berkeley.github.io/bridgedata/
+wrist_cams: 1

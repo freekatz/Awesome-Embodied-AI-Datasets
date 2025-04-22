@@ -1,0 +1,21 @@
+action_space: EEF Position
+control_frequency: 10
+data_collect_method: Human VR
+depth_cams: 0
+episodes: 95
+file_size: 1.29
+gripper: Stick for pushing
+has_camera_calibration: false
+has_proprioception: true
+has_suboptimal: false
+language_annotations: Natural
+license: 'null'
+name: Language Table
+rgb_cams: 1
+robot: xArm
+robot_morphology: Single Arm
+scene_type: Table Top
+short_description: 'null'
+task_description: Robot pushed blocks of different geometric shapes on table top.
+url: https://interactive-language.github.io/
+wrist_cams: 0

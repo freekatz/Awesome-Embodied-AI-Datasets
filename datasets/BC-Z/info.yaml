@@ -1,0 +1,23 @@
+action_space: EEF Position
+control_frequency: 10
+data_collect_method: Human VR
+depth_cams: 0
+episodes: 120
+file_size: 17.27
+gripper: Default
+has_camera_calibration: false
+has_proprioception: true
+has_suboptimal: true
+language_annotations: Templated
+license: 'null'
+name: BC-Z
+rgb_cams: 1
+robot: Franka
+robot_morphology: Mobile Manipulator
+scene_type: Table Top
+short_description: 'null'
+task_description: The robot attempts picking, wiping, and placing tasks on a diverse
+  set of objects on a tabletop, along with a few challenging tasks like stacking cups
+  on top of each other.
+url: https://www.kaggle.com/datasets/google/bc-z-robot/discussion/309201
+wrist_cams: 0

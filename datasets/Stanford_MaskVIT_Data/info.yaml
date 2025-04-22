@@ -1,0 +1,23 @@
+action_space: EEF Position
+control_frequency: null, actions are run until robot comes to rest near the target
+  position (quasistatic assumption)
+data_collect_method: Scripted
+depth_cams: 0
+episodes: 7328
+file_size: 1.39
+gripper: 3D printed grippper from https://github.com/robertocalandra/sawyer-printable
+has_camera_calibration: false
+has_proprioception: true
+has_suboptimal: true
+language_annotations: 'null'
+license: 'null'
+name: Stanford MaskVIT Data
+rgb_cams: 1
+robot: RC Car
+robot_morphology: Single Arm
+scene_type: Table Top
+short_description: 'null'
+task_description: The robot randomly pushes and picks objects in a bin, which include
+  stuffed toys, plastic cups and toys, etc, and are periodically shuffled.
+url: https://arxiv.org/abs/2206.11894
+wrist_cams: 0
