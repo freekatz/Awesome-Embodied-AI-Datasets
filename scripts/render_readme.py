@@ -58,7 +58,7 @@ class DatasetInfo:
         self.meta_info = load_yaml_file(meta_file)
         self.license = self.meta_info['license']
         readme_file = root / 'README.md'
-        self.release_date = git_first_released_date(readme_file)
+        self.release_date = git_first_released_date(readme_file) if self.name != example_dataset_name else None
 
     def __lt__(self, other):
         return self.release_date < other.release_date
@@ -66,8 +66,6 @@ class DatasetInfo:
     def is_valid(self) -> bool:
         valid = True
         if self.release_date is None:
-            valid = False
-        if self.name == example_dataset_name:
             valid = False
         return valid
 
