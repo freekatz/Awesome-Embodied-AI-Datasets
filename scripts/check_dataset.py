@@ -28,7 +28,7 @@ def check_info(dataset_info):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--dataset', type=str, default='./dataset/example', required=False)
+    parser.add_argument('--dataset', type=str, default='./dataset/An_Example_Dataset', required=False)
     args = parser.parse_args()
 
     dataset_root = Path(args.dataset)

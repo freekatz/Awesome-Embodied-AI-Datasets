@@ -67,6 +67,8 @@ class DatasetInfo:
         valid = True
         if self.release_date is None:
             valid = False
+        if self.name == example_dataset_name:
+            valid = False
         return valid
 
     def markdown(self) -> str:
@@ -79,8 +81,10 @@ class DatasetInfo:
             license = ''
 
         meta_info_table_markdown = info_table_markdown(self.meta_info)
-        # desc = self.meta_info['short_description']
-        desc = f'Homepage: <a href="{self.meta_info["url"]}" target="_blank">{self.meta_info["url"]}</a>\n\n{self.meta_info["task_description"]}\n\n'
+        desc = self.meta_info['short_description']
+        if desc == NULL or desc == '':
+            desc = self.meta_info["task_description"]
+        desc = f'Homepage: <a href="{self.meta_info["url"]}" target="_blank">{self.meta_info["url"]}</a>\n\n{desc}\n\n'
 
         markdown = title + license + meta_info_table_markdown + desc
         return markdown

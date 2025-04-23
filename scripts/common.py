@@ -1,4 +1,5 @@
 import datetime
+import shutil
 import subprocess
 from os import PathLike
 from pathlib import Path
@@ -62,3 +63,12 @@ def list_dir(dir: PathLike) -> List[Path]:
             if item.is_dir():
                 dirs.append(item)
     return dirs
+
+
+def move_file(src: PathLike, dst: PathLike):
+    shutil.move(src, dst)
+
+
+def remove_file(file_path: PathLike):
+    file_path = Path(file_path)
+    file_path.unlink()

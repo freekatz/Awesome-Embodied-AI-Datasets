@@ -1,12 +1,34 @@
 
 
 # dynamic configs
-visible_meta_info_key = []
+custom_meta_info_key = 'custom_fields'
 must_meta_info_key = ['license', 'url', 'short_description', 'task_description']
+visible_meta_info_key = []
+visible_meta_info_key_details = [
+    'license',
+    'action_space',
+    'control_frequency',
+    'depth_cams',
+    'episodes',
+    'file_size',
+    'gripper',
+    'has_camera_calibration',
+    'has_proprioception',
+    'has_suboptimal',
+    'language_annotations',
+    'rgb_cams',
+    'robot',
+    'robot_morphology',
+    'scene_type',
+    'wrist_cams',
+    custom_meta_info_key,
+]
 
 
 # static configs
 NULL = 'null'
+
+example_dataset_name = 'An Example Dataset'
 
 project_config = {
     'repo': 'freekatz/Awesome-Embodied-AI-Datasets',
