@@ -34,6 +34,7 @@ datasets/
 3. **Add the Dataset**: Copy the dataset template directory into `datasets` folder
    - Rename your dataset directory based on the dataset name, please replace blank ` ` with `_`
    - Fill in the required, optional and custom fields in the `info.yaml`
+   - Run script to check info: `python scripts/check_dataset.py --dataset <your_dataset_directory>`
    - Run script to render `README.md` automatically: `python ./scripts/render_dataset_readme.py --dataset <your_dataset_directory>`
    - Fill in the **Introduction** section of the `README.md`
    - Delete the template file `README.md.tmpl`

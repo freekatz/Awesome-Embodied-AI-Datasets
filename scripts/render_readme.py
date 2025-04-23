@@ -214,3 +214,5 @@ if __name__ == '__main__':
 
     with open(readme, 'w', encoding="utf-8") as f:
         f.write(new_readme)
+
+    print(f'finished writing {readme}')

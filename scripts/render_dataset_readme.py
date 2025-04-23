@@ -25,6 +25,10 @@ def info_table_markdown(meta_info: Dict) -> str:
         if k not in visible_meta_info_key_details:
             continue
         v = meta_info[k]
+        if v == '' or v == NULL or v is None:
+            continue
+        if k == 'file_size':
+            v = f'{v: .2f} GB'
         item = f'\n| {new_key(k)}                     | {v}           |'
         visible_meta_info += item
         visible_meta_length.append(len(item))
@@ -34,6 +38,8 @@ def info_table_markdown(meta_info: Dict) -> str:
         if custom_meta_info_key in visible_meta_info_key_details:
             for k in custom_meta_infos.keys():
                 v = custom_meta_infos[k]
+                if v == '' or v == NULL or v is None:
+                    continue
                 item = f'\n| {new_key(k)}                     | {v}           |'
                 visible_meta_info += item
                 visible_meta_length.append(len(item))
@@ -77,8 +83,7 @@ if __name__ == '__main__':
         remove_file(dataset_readme)
         with open(dataset_readme, 'w', encoding="utf-8") as f:
             f.write(new_readme)
-        sys.exit(1)
     except Exception as e:
         print(f'failed to write to {dataset_readme}, error: {e}')
-        sys.exit(0)
+    print(f'finished writing to {dataset_readme}')
 
