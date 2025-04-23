@@ -35,6 +35,8 @@ def info_table_markdown(meta_info: Dict) -> str:
 
     if custom_meta_info_key in meta_info.keys():
         custom_meta_infos = meta_info[custom_meta_info_key]
+        if custom_meta_infos is None:
+            custom_meta_infos = {}
         if custom_meta_info_key in visible_meta_info_key_details:
             for k in custom_meta_infos.keys():
                 v = custom_meta_infos[k]
@@ -53,10 +55,19 @@ def info_table_markdown(meta_info: Dict) -> str:
 
 def render_readme(readme_path: PathLike, meta_info: dict) -> str:
     field_value_items = info_table_markdown(meta_info)
+    name = meta_info['name']
+    if name is None:
+        name = 'Unknown name'
+    url = meta_info['url']
+    if url is None:
+        url = ''
+    task_desc = meta_info['task_description']
+    if task_desc is None:
+        task_desc = ''
     render_config = {
-        'name': meta_info['name'],
-        'url': meta_info['url'],
-        'task_description': meta_info['task_description'],
+        'name': name,
+        'url': url,
+        'task_description': task_desc,
         'field_value_items': field_value_items,
     }
 
@@ -80,7 +91,8 @@ if __name__ == '__main__':
     new_readme = render_readme(dataset_readme_tmpl, meta_info)
 
     try:
-        remove_file(dataset_readme)
+        if dataset_readme.is_file():
+            remove_file(dataset_readme)
         with open(dataset_readme, 'w', encoding="utf-8") as f:
             f.write(new_readme)
     except Exception as e:
