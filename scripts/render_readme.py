@@ -94,6 +94,8 @@ class DatasetList:
         datasets = [DatasetInfo(dir) for dir in list_dir(self.root)]
         datasets_with_cls_name = {}
         dataset_cls_id = {}
+
+        valid_dataset_count = 0
         for dataset in datasets:
             if not dataset.is_valid():
                 continue
@@ -102,8 +104,9 @@ class DatasetList:
             else:
                 datasets_with_cls_name[dataset.cls_name] = [dataset]
             dataset_cls_id[dataset.cls_name] = dataset.cls_id
+            valid_dataset_count += 1
 
-        self.dataset_count = len(datasets)
+        self.dataset_count = valid_dataset_count
 
         dataset_cls_name = []
         for cls_name, datasets in datasets_with_cls_name.items():
