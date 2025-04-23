@@ -1,0 +1,29 @@
+## Required fields
+name:  # <string>, dataset name, e.g., "Example Dataset"
+license: #  <string>, dataset license, e.g., "MIT" or "null"
+url:  # <string>, dataset homepage URL, e.g., "https://example.com"
+short_description:  # <string>, a short description of the dataset
+task_description:  # <string>, task description, e.g., "The robot performs various household tasks."
+
+## Optional fields
+action_space:  # <string>, robot action space, e.g., "EEF Position"
+control_frequency:  # <integer>, control frequency (Hz), e.g., 20
+data_collect_method:  # <string>, data collection method, e.g., "Human Spacemouse"
+depth_cams:  # <integer>, number of depth cameras, e.g., 0
+episodes:  # <integer>, number of task episodes in the dataset, e.g., 64
+file_size:  # <float>, dataset file size (GB), e.g., 0.35
+gripper:  # <string>, gripper type, e.g., "Default"
+has_camera_calibration:  # <boolean>, whether camera calibration data is included, e.g., true or false
+has_proprioception:  # <boolean>, whether robot proprioception data is included, e.g., true or false
+has_suboptimal:  # <boolean>, whether suboptimal data is included, e.g., true or false
+language_annotations:  # <string>, type of language annotations, e.g., "Templated" or "null"
+rgb_cams:  # <integer>, number of RGB cameras, e.g., 2
+robot:  # <string>, robot model, e.g., "PR2"
+robot_morphology:  # <string>, robot morphology, e.g., "Single Arm"
+scene_type:  # <string>, scene type, e.g., "Table Top"
+wrist_cams:  # <integer>, number of wrist cameras, e.g., 1
+
+## Custom fields
+custom_fields: # you can fill the custom fields here
+#  custom_field1:
+#  custom_field2:
