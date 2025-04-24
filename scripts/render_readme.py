@@ -145,6 +145,34 @@ class DatasetList:
             markdown += f'- [{cls_name}](#{cls})\n'
         return markdown
 
+    def statistics_markdown(self) -> str:
+        from wordcloud import WordCloud
+        import matplotlib.pyplot as plt
+
+        # Collect scene types and their counts
+        scene_counts = {}
+        for dataset in self.newly_datasets:
+            scene_type = dataset.meta_info['scene_type']
+            if scene_type in scene_counts:
+                scene_counts[scene_type] += 1
+            else:
+                scene_counts[scene_type] = 1
+
+        # Generate word cloud
+        wordcloud = WordCloud(width=800, height=400, background_color='white').generate_from_frequencies(scene_counts)
+        wordcloud_path = self.root.parent / 'assests' / 'scene_wordcloud.png'
+
+        # Save word cloud image
+        plt.figure(figsize=(10, 5))
+        plt.imshow(wordcloud, interpolation='bilinear')
+        plt.axis('off')
+        plt.savefig(wordcloud_path, format='png')
+        plt.close()
+
+        # Add word cloud to markdown
+        markdown = f"### Scene Type Distribution Word Cloud![Scene Word Cloud](./assests/scene_wordcloud.png)"
+        return markdown
+
     def trending_markdown(self) -> str:
         # todo
         return ''
@@ -182,6 +210,7 @@ def render_readme(readme_path: PathLike, dataset_list: DatasetList) -> str:
     repo = project_config['repo']
     content = dataset_list.content_markdown()
     trending = dataset_list.trending_markdown()
+    statistics = dataset_list.statistics_markdown()
     released = dataset_list.released_markdown()
     dataset = dataset_list.markdown()
 
@@ -193,6 +222,7 @@ def render_readme(readme_path: PathLike, dataset_list: DatasetList) -> str:
         'latest_update_date': update_date,
         'content': content,
         'trending': trending,
+        'statistics': statistics,
         'released': released,
         'dataset_list': dataset,
     }
