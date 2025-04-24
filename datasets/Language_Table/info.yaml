@@ -1,5 +1,17 @@
 action_space: EEF Position
 control_frequency: 10
+custom_fields:
+  introduction: Language Table is a large-scale dataset developed by Google Research
+    for open-vocabulary visuolinguomotor learning. It consists of 442,226 real robot
+    episodes and 181,020 simulation episodes, covering tasks like block stacking and
+    object rearrangement with natural language instructions. The dataset includes
+    RGB images, depth data, and robot joint states, enabling the training of models
+    that can interpret and execute complex language commands in dynamic environments.
+    It is released under the Apache 2.0 license, allowing free use and modification
+    for research and development. Language Table is designed to push the boundaries
+    of robot learning by integrating language understanding with continuous control,
+    supporting the development of interactive, real-time natural language-instructable
+    robots.
 data_collect_method: Human VR
 depth_cams: 0
 episodes: 95
@@ -15,7 +27,11 @@ rgb_cams: 1
 robot: xArm
 robot_morphology: Single Arm
 scene_type: Table Top
-short_description: 'null'
+short_introduction: Language Table is a Google Research dataset with 442k real robot
+  and 181k simulation episodes for open-vocabulary manipulation tasks. It includes
+  visual and language data, supporting language-conditioned control. Released under
+  Apache 2.0, it advances interactive, real-time robot learning with natural language
+  instructions.
 task_description: Robot pushed blocks of different geometric shapes on table top.
 url: https://interactive-language.github.io/
 wrist_cams: 0

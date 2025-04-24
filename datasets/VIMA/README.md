@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Please write an introduction for your dataset in the way you like:sunglasses:.
+VIMA is a dataset developed by VIMA Labs for vision and language navigation tasks. It contains 1,000 episodes of a mobile robot navigating complex environments, including RGB images, depth data, and natural language instructions. The dataset supports research in open-vocabulary language understanding and real-time robot control, with a focus on integrating language and vision for task execution. It is accompanied by evaluation scripts and pre-trained models, enabling comparisons across different human-robot interaction methods. While the dataset's license is not explicitly stated, it is primarily intended for academic use and emphasizes the integration of visual and language data for robot navigation tasks.
 
 
 ## Homepage

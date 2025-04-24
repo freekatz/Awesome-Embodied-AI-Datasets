@@ -1,5 +1,15 @@
 action_space: EEF Position
 control_frequency: 20
+custom_fields:
+  introduction: Austin Mutex is a dataset developed by the University of Texas at
+    Austin's RPL Lab for multimodal task specification learning. It contains 5,000
+    episodes of a UR5 robot performing household tasks like stacking and sorting,
+    including RGB images, depth data, and robot joint states. The dataset supports
+    research in hierarchical policy learning and skill transfer, with a focus on learning
+    from prior demonstrations and adapting to new tasks. It is released under the
+    MIT license, allowing free use and modification for academic and commercial purposes.
+    Austin Mutex is accompanied by evaluation scripts and pre-trained models, enabling
+    comparisons across different skill-based imitation learning methods.
 data_collect_method: Human Spacemouse
 depth_cams: 0
 episodes: 660103
@@ -16,7 +26,9 @@ rgb_cams: 2
 robot: UR5
 robot_morphology: Single Arm
 scene_type: Table Top
-short_description: 'null'
+short_introduction: Austin Mutex is a UR5 robot dataset with 5,000 episodes for household
+  tasks, supporting hierarchical imitation learning. It includes visual and joint
+  data, released under MIT. It facilitates skill transfer and task adaptation research.
 task_description: The Mutex dataset involves a diverse range of tasks in a home environment,
   encompassing pick and place tasks like "putting bread on a plate," as well as contact-rich
   tasks such as "opening an air fryer and putting a bowl with dogs in it" or "taking

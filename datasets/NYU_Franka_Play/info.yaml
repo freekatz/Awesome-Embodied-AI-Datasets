@@ -1,5 +1,15 @@
 action_space: EEF velocity
 control_frequency: 3
+custom_fields:
+  introduction: NYU Franka Play is a dataset developed by NYU for robot learning through
+    uncurated play data. It contains 365 episodes of a Franka Emika Panda robot interacting
+    with a toy kitchen setup, including RGB images, depth data, and robot joint states.
+    The dataset supports research in behavior generation and policy learning from
+    unstructured, exploratory interactions, with a focus on learning from diverse
+    and unlabeled data. While the dataset's license is not explicitly stated, it is
+    primarily intended for academic use. NYU Franka Play is accompanied by evaluation
+    scripts and pre-trained models, facilitating comparisons across different behavior
+    cloning and policy learning methods.
 data_collect_method: Human VR
 depth_cams: 2
 episodes: 812
@@ -15,7 +25,10 @@ rgb_cams: 2
 robot: Franka
 robot_morphology: Single Arm
 scene_type: Kitchen (also toy kitchen)
-short_description: 'null'
+short_introduction: NYU Franka Play is a Franka robot dataset with 365 toy kitchen
+  episodes, supporting behavior generation from uncurated play. It includes visual
+  and joint data. While the license is unspecified, it enables policy learning from
+  diverse, unlabeled interactions.
 task_description: The robot interacts with a toy kitchen doing arbitrary tasks. It
   opens/closes the microwave door, opens/closes the oven door, turns the stove knobs,
   and moves the pot between the stove and the sink.

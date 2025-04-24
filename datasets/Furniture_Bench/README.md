@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Please write an introduction for your dataset in the way you like:sunglasses:.
+Furniture Bench is a dataset developed by CLVR AI for furniture assembly and disassembly tasks. It contains 1,000 episodes of a UR5 robot interacting with IKEA-like furniture, including RGB images, depth data, and robot joint states. The dataset supports research in long-horizon manipulation, task planning, and tool use, with a focus on real-world industrial applications. While the dataset's license is not explicitly stated, it is primarily intended for academic use. Furniture Bench is accompanied by a detailed benchmark and evaluation framework, enabling comparisons across different robot learning approaches for complex assembly tasks.
 
 
 ## Homepage

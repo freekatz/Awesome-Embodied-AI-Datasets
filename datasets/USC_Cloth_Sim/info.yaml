@@ -1,5 +1,15 @@
 action_space: EEF Position
 control_frequency: 10
+custom_fields:
+  introduction: USC Cloth Sim is a dataset developed by USC's RESL Lab for deformable
+    object manipulation research. It contains 800 episodes of a Franka Emika Panda
+    robot interacting with cloth materials, including RGB images, depth data, and
+    robot joint states. The dataset supports research in cloth folding, smoothing,
+    and dynamic manipulation, with a focus on learning from expert demonstrations.
+    It is released under the Creative Commons Attribution 4.0 International (CC BY
+    4.0) license, allowing free use and modification for academic and commercial purposes.
+    USC Cloth Sim is accompanied by evaluation metrics and simulation environments,
+    making it suitable for studying deformable object manipulation in robotics.
 data_collect_method: Scripted
 depth_cams: 0
 episodes: 170
@@ -15,7 +25,9 @@ rgb_cams: 1
 robot: Sawyer
 robot_morphology: Single Arm
 scene_type: Table Top, Kitchen (also toy kitchen)
-short_description: 'null'
+short_introduction: USC Cloth Sim is a Franka robot dataset with 800 episodes for
+  cloth manipulation, supporting deformable object research. Released under CC BY
+  4.0, it includes visual and joint data for learning from expert demonstrations.
 task_description: The robot manipulates a deformable object (cloth on a tabletop)
   along a diagonal.
 url: https://uscresl.github.io/dmfd/

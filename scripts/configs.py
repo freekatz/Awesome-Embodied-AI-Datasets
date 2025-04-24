@@ -168,3 +168,10 @@ license_infos = {
     },
     NULL: {},
 }
+
+# ['Apache 2.0', 'Boost 1.0', 'BSD 3', 'BSD 2', 'CC0', 'CC BY 4.0',
+# 'CC BY-SA 4.0', 'CC BY-NC 4.0', 'CC BY-ND 4.0', 'CC BY-NC-SA 4.0',
+# 'CC BY-NC-ND 4.0', 'EPL 1.0', 'GPL v3', 'GPL v2', 'AGPL v3', 'LGPL v3',
+# 'FDL v1.3', 'Hippocratic 2.1', 'Hippocratic 3.0', 'IPL 1.0', 'ISC',
+# 'MIT', 'MPL 2.0', 'BY', 'ODBL', 'PDDL', 'Perl', 'Artistic 2.0',
+# 'OFL 1.1', 'Unlicense', 'WTFPL', 'Zlib']

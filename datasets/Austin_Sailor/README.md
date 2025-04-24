@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Please write an introduction for your dataset in the way you like:sunglasses:.
+Austin Sailor is a dataset developed by the University of Texas at Austin's RPL Lab for skill-based imitation learning. It contains 5,000 episodes of a UR5 robot performing household tasks like stacking and sorting, including RGB images, depth data, and robot joint states. The dataset supports research in hierarchical policy learning and skill transfer, with a focus on learning from prior demonstrations and adapting to new tasks. While the dataset's license is not explicitly stated, it is primarily intended for academic use. Austin Sailor is accompanied by evaluation scripts and pre-trained models, enabling comparisons across different skill-based imitation learning methods.
 
 
 ## Homepage

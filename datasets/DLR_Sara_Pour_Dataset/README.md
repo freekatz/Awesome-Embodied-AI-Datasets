@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Please write an introduction for your dataset in the way you like:sunglasses:.
+DLR Sara Pour Dataset is a robotics dataset developed by the German Aerospace Center (DLR) for pouring and fluid manipulation tasks. It contains 1,000 episodes of a Franka Emika Panda robot interacting with liquid containers, including RGB images, depth data, and robot joint states. The dataset supports research in real-time adaptation and human-in-the-loop learning, with a focus on integrating human feedback during robot operation. While the dataset's license is not explicitly stated, it is primarily intended for academic use. DLR Sara Pour Dataset is accompanied by evaluation scripts and pre-trained models, enabling comparisons across different pouring and fluid manipulation approaches.
 
 
 ## Homepage

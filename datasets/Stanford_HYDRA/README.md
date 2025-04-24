@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Please write an introduction for your dataset in the way you like:sunglasses:.
+Stanford HYDRA is a dataset developed by Stanford University for long-horizon robot manipulation tasks. It contains 570 episodes of a Franka Emika Panda robot performing complex household tasks like cooking and cleaning, including RGB images, depth data, and robot joint states. The dataset supports research in hierarchical imitation learning and multi-stage task planning, with natural language instructions and visual goals. While the dataset's license is not explicitly stated, it is primarily intended for academic use. Stanford HYDRA is accompanied by a detailed benchmark and evaluation framework, making it suitable for studying long-horizon manipulation and real-world industrial automation.
 
 
 ## Homepage

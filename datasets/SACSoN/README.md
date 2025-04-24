@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Please write an introduction for your dataset in the way you like:sunglasses:.
+SACSoN is a dataset developed by the University of Tokyo for shared autonomy and collaboration research. It contains 1,500 episodes of a PR2 robot performing complex household tasks like cooking and cleaning, including RGB images, depth data, and robot joint states. The dataset supports research in human-intervention guided policy learning and real-time adaptation to dynamic environments. It is accompanied by evaluation scripts and pre-trained models, enabling comparisons across different vision-based robot learning approaches for complex manipulation tasks. While the dataset's license is not explicitly stated, it is primarily intended for academic use and emphasizes the integration of human feedback during robot operation.
 
 
 ## Homepage

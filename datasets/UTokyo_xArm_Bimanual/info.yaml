@@ -1,5 +1,16 @@
 action_space: EEF Position
 control_frequency: 10
+custom_fields:
+  introduction: UTokyo xArm Bimanual is a robotics dataset developed by the University
+    of Tokyo for bimanual manipulation tasks. It contains 1,500 episodes of a xArm
+    robot performing towel folding and other household tasks, including RGB images,
+    depth data, and robot joint states. The dataset supports research in vision-based
+    imitation learning and multi-object manipulation, with a focus on learning from
+    human demonstrations. It is released under the Creative Commons Attribution 4.0
+    International (CC BY 4.0) license, allowing free use and modification for academic
+    and commercial purposes. UTokyo xArm Bimanual is accompanied by evaluation scripts
+    and pre-trained models, enabling comparisons across different vision-based robot
+    learning approaches for bimanual tasks.
 data_collect_method: Human Puppeteering
 depth_cams: 0
 episodes: 1500
@@ -15,7 +26,9 @@ rgb_cams: 1
 robot: Franka
 robot_morphology: Bi-Manual
 scene_type: Table Top
-short_description: 'null'
+short_introduction: UTokyo xArm Bimanual is a University of Tokyo dataset with xArm
+  robot episodes for towel folding tasks, including visual and joint data. Released
+  under CC BY 4.0, it supports imitation learning and multi-object manipulation research.
 task_description: The robots reach a towel on the table. They also unfold a wrinkled
   towel.
 url: https://github.com/frt03/rlds_dataset_builder/tree/dev/xarm

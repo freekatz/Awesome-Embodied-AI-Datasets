@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Please write an introduction for your dataset in the way you like:sunglasses:.
+CMU Food Manipulation is a dataset developed by Carnegie Mellon University for food preparation tasks. It contains 1,000 episodes of a Franka Emika Panda robot interacting with food items, including RGB images, depth data, and robot joint states. The dataset supports research in deformable object manipulation and dynamic interaction, with a focus on learning from expert demonstrations. It is accompanied by evaluation metrics and simulation environments, making it suitable for studying food handling in robotics. While the dataset's license is not explicitly stated, it is primarily intended for academic use and emphasizes the integration of vision and proprioception for food manipulation tasks.
 
 
 ## Homepage

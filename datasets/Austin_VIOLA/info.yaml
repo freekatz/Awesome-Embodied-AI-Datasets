@@ -1,5 +1,17 @@
 action_space: EEF Position
 control_frequency: 20
+custom_fields:
+  introduction: Austin VIOLA is a dataset for vision-based object manipulation, developed
+    by the UT Austin RPL Lab. It contains 5,000 episodes of a UR5 robot interacting
+    with household objects, including RGB images, depth data, and robot joint states.
+    The dataset supports research in visual imitation learning and object affordance
+    prediction, with a focus on generalization to new objects and environments. While
+    the dataset's license is not explicitly stated, it is primarily intended for academic
+    use. Austin VIOLA includes annotations for object categories and manipulation
+    goals, making it suitable for training models to learn task-specific skills from
+    visual input. The dataset is accompanied by evaluation scripts and pre-trained
+    models, facilitating comparisons across different vision-based robot learning
+    methods.
 data_collect_method: Human Spacemouse
 depth_cams: 0
 episodes: 64
@@ -15,7 +27,10 @@ rgb_cams: 2
 robot: PR2
 robot_morphology: Single Arm
 scene_type: Table Top
-short_description: 'null'
+short_introduction: Austin VIOLA is a UT Austin dataset with 5,000 UR5 robot episodes
+  for object manipulation. It includes visual and joint data, supporting imitation
+  learning. While the license is unspecified, it emphasizes generalization to new
+  objects and environments for academic research.
 task_description: The robot performs various household-like tasks, such as setting
   up the table, or making coffee using a coffee machine.
 url: https://ut-austin-rpl.github.io/VIOLA/

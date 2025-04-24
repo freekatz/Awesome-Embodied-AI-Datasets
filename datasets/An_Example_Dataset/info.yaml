@@ -2,7 +2,7 @@
 name:  # <string>, dataset name, e.g., "Example Dataset"
 license: #  <string>, dataset license, e.g., "MIT" or "null"
 url:  # <string>, dataset homepage URL, e.g., "https://example.com"
-short_description:  # <string>, a short description of the dataset
+short_introduction:  # <string>, a short introduction of the dataset
 task_description:  # <string>, task description, e.g., "The robot performs various household tasks."
 
 ## Optional fields
@@ -25,5 +25,4 @@ wrist_cams:  # <integer>, number of wrist cameras, e.g., 1
 
 ## Custom fields
 custom_fields: # you can fill the custom fields here
-#  custom_field1:
-#  custom_field2:
+#  introduction:

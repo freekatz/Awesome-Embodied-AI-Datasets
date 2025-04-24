@@ -79,11 +79,14 @@ class DatasetInfo:
             license = ''
 
         meta_info_table_markdown = info_table_markdown(self.meta_info)
-        desc = self.meta_info['short_description']
-        if desc == NULL or desc == '':
-            desc = self.meta_info["task_description"]
-        desc = f'Homepage: <a href="{self.meta_info["url"]}" target="_blank">{self.meta_info["url"]}</a>\n\n{desc}\n\n'
-
+        intro = self.meta_info['short_introduction']
+        task_desc = self.meta_info["task_description"]
+        extra_intro = f'Task: {task_desc}\n\n'
+        if intro == NULL or intro == '':
+            intro = task_desc
+            extra_intro = ''
+        desc = f'Homepage: <a href="{self.meta_info["url"]}" target="_blank">{self.meta_info["url"]}</a>\n\n{intro}\n\n'
+        desc += extra_intro
         markdown = title + license + meta_info_table_markdown + desc
         return markdown
 

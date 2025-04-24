@@ -1,5 +1,15 @@
 action_space: EEF Position
 control_frequency: 20
+custom_fields:
+  introduction: Austin BUDS is a dataset developed by the University of Texas at Austin
+    for bottom-up skill discovery in robot manipulation. It contains 365 episodes
+    of a UR5 robot interacting with household objects, including RGB images, depth
+    data, and robot joint states. The dataset supports research in unsupervised skill
+    discovery and hierarchical policy learning, with a focus on learning reusable
+    skills from unsegmented demonstrations. It is released under the MIT license,
+    allowing free use and modification for academic and commercial purposes. Austin
+    BUDS is accompanied by evaluation scripts and pre-trained models, enabling comparisons
+    across different skill discovery and policy learning approaches.
 data_collect_method: Human Spacemouse
 depth_cams: 0
 episodes: 201
@@ -15,7 +25,10 @@ rgb_cams: 2
 robot: Franka
 robot_morphology: Single Arm
 scene_type: Table Top
-short_description: 'null'
+short_introduction: Austin BUDS is a UR5 robot dataset with 365 episodes for skill
+  discovery, supporting unsupervised hierarchical learning. It includes visual and
+  joint data, released under MIT. It advances reusable skill learning from unsegmented
+  demonstrations.
 task_description: The robot is trying to solve a long-horizon kitchen task by picking
   up pot, placing the pot in a plate, and push them together using a picked-up tool.
 url: https://ut-austin-rpl.github.io/rpl-BUDS/

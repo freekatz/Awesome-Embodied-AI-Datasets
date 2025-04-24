@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Please write an introduction for your dataset in the way you like:sunglasses:.
+Plex RoboSuite is a dataset developed by Microsoft for robot learning in simulated environments. It contains over 10 million episodes of simulated robot-object interaction across 113 unique camera viewpoints, including RGB images, depth data, and robot joint states. The dataset supports research in reinforcement learning, imitation learning, and cross-domain generalization, with a focus on learning from diverse and unstructured data. It is accompanied by a detailed simulation environment and evaluation framework, making it a valuable resource for advancing robot learning in complex, dynamic environments. While the dataset's license is not explicitly stated, it is primarily intended for academic use and emphasizes the integration of simulation and real-world data for robot learning.
 
 
 ## Homepage

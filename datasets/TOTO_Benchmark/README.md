@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Please write an introduction for your dataset in the way you like:sunglasses:.
+TOTO Benchmark is a robotics dataset developed for the Train Offline, Test Online (TOTO) competition at NeurIPS 2023, focusing on real-world robot learning tasks. The dataset includes over 100 human-teleoperated trajectories of pouring and scooping tasks collected from a Franka Emika Panda robot, with RGB images, natural language instructions, and robot joint states. It emphasizes the challenge of training models offline using expert demonstrations and evaluating them online on physical robots, requiring generalization to unseen scenarios. The dataset is released under the Apache 2.0 license, enabling both academic and commercial use while promoting reproducibility in robotics research. TOTO Benchmark serves as a critical resource for advancing offline RL and behavior cloning methods in real-world manipulation tasks.
 
 
 ## Homepage

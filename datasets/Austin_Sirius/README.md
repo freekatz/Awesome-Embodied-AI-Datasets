@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Please write an introduction for your dataset in the way you like:sunglasses:.
+Austin Sirius is a dataset developed by the University of Texas at Austin's RPL Lab for human-in-the-loop robot learning. It contains 570 episodes of a Franka Emika Panda robot performing complex household tasks like cooking and cleaning, including RGB images, depth data, and robot joint states. The dataset supports research in human-intervention guided policy learning and real-time adaptation to dynamic environments. It is released under the MIT license, allowing free use and modification for academic and commercial purposes. Austin Sirius emphasizes the integration of human feedback during robot operation, making it a valuable resource for advancing interactive and adaptive robotics research.
 
 
 ## Homepage

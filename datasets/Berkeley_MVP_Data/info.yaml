@@ -1,5 +1,16 @@
 action_space: Joint position
 control_frequency: 5
+custom_fields:
+  introduction: Berkeley MVP Data is a robotics dataset developed by the University
+    of California, Berkeley, for vision-based manipulation tasks. It contains 480
+    episodes of a xArm robot performing six manipulation tasks, including RGB images,
+    depth data, and robot joint states. The dataset supports research in real-world
+    robot learning with masked visual pre-training, emphasizing the integration of
+    vision and proprioception. It is released under the Creative Commons Attribution
+    4.0 International (CC BY 4.0) license, allowing free use and modification for
+    academic and commercial purposes. Berkeley MVP Data is accompanied by evaluation
+    scripts and pre-trained models, enabling comparisons across different vision-based
+    robot learning approaches for complex manipulation tasks.
 data_collect_method: Human VR
 depth_cams: 0
 episodes: 4200
@@ -15,7 +26,9 @@ rgb_cams: 1
 robot: Franka
 robot_morphology: Single Arm
 scene_type: Table Top, Kitchen (also toy kitchen)
-short_description: 'null'
+short_introduction: Berkeley MVP Data is a UC Berkeley dataset with xArm robot episodes
+  for manipulation tasks, including visual and joint data. Released under CC BY 4.0,
+  it supports masked visual pre-training for real-world robot learning.
 task_description: Basic motor control tasks (reach, push, pick) on table top and toy
   environments (toy kitchen, toy fridge).
 url: https://arxiv.org/abs/2203.06173

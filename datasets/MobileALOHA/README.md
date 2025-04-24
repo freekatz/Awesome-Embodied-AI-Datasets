@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Please write an introduction for your dataset in the way you like:sunglasses:.
+MobileALOHA is a dataset developed by the MobileALOHA project for mobile robot manipulation tasks. It contains 100,000 episodes of a mobile manipulator performing household tasks, including RGB images, depth data, and robot joint states. The dataset supports research in language-conditioned policy learning and cross-task generalization, with a focus on training models to adapt to new tasks without additional demonstrations. It is accompanied by evaluation scripts and pre-trained models, enabling comparisons across different zero-shot imitation learning methods. While the dataset's license is not explicitly stated, it is primarily intended for academic use and emphasizes the integration of language and vision for task execution.
 
 
 ## Homepage

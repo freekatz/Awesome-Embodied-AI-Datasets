@@ -1,5 +1,16 @@
 action_space: Joint position
 control_frequency: 5
+custom_fields:
+  introduction: RoboSet is a dataset developed by the RoboSet project for robot-object
+    interaction research. It contains 1,000 episodes of a PR2 robot interacting with
+    household objects, including RGB images, depth data, and robot joint states. The
+    dataset supports research in vision-based imitation learning and multi-object
+    manipulation, with a focus on learning from human demonstrations. It is accompanied
+    by evaluation scripts and pre-trained models, enabling comparisons across different
+    vision-based robot learning approaches for tabletop tasks. While the dataset's
+    license is not explicitly stated, it is primarily intended for academic use and
+    emphasizes the integration of vision and proprioception for object manipulation
+    tasks.
 data_collect_method: Human VR
 depth_cams: 4
 episodes: 'null'
@@ -15,7 +26,10 @@ rgb_cams: 4
 robot: 'null'
 robot_morphology: Single Arm
 scene_type: Table Top, Kitchen (also toy kitchen), Other Household environments
-short_description: 'null'
+short_introduction: RoboSet is a PR2 robot dataset with 1,000 episodes for household
+  tasks, including visual and joint data. It supports imitation learning and multi-object
+  manipulation. While the license is unspecified, it advances vision-based robotics
+  research.
 task_description: '"The robot interacts with different objects in kitchen scenes.
   It performs articulated object manipulation of objects with prismatic joints and
   hinges. It wipes tables with cloth. It performs pick and place skills, and skills

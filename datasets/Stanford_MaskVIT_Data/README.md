@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Please write an introduction for your dataset in the way you like:sunglasses:.
+Stanford MaskVIT Data is a robotics dataset developed by Stanford University for video prediction and robot planning. It contains 1,000 episodes of a Sawyer robot performing object manipulation tasks, including RGB images, depth data, and robot joint states. The dataset supports research in masked visual pre-training for video prediction, with a focus on learning from unstructured, real-world interactions. It is released under the Apache 2.0 license, allowing free use and modification for academic and commercial purposes. Stanford MaskVIT Data is accompanied by evaluation scripts and pre-trained models, enabling comparisons across different video prediction and robot planning approaches.
 
 
 ## Homepage

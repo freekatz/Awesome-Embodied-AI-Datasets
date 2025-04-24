@@ -1,5 +1,16 @@
 action_space: EEF Position
 control_frequency: 10
+custom_fields:
+  introduction: Tokyo PR2 Fridge Opening is a dataset developed by the University
+    of Tokyo for refrigerator door opening tasks. It contains 1,000 episodes of a
+    PR2 robot interacting with refrigerators, including RGB images, depth data, and
+    robot joint states. The dataset supports research in vision-based manipulation
+    and real-world task planning, with a focus on object affordance prediction and
+    dynamic control. It is released under the Apache 2.0 license, allowing free use
+    and modification for academic and commercial purposes. Tokyo PR2 Fridge Opening
+    is accompanied by evaluation scripts and pre-trained models, enabling comparisons
+    across different vision-based robot learning approaches for complex manipulation
+    tasks.
 data_collect_method: Human VR
 depth_cams: 0
 episodes: 520
@@ -15,7 +26,9 @@ rgb_cams: 1
 robot: Franka
 robot_morphology: Single Arm
 scene_type: Kitchen (also toy kitchen)
-short_description: 'null'
+short_introduction: Tokyo PR2 Fridge Opening is a PR2 robot dataset with 1,000 episodes
+  for refrigerator tasks. It includes visual and joint data, released under Apache
+  2.0. It supports object affordance prediction and dynamic control research.
 task_description: The PR2 robot opens fridge.
 url: https://github.com/ojh6404/rlds_dataset_builder.git
 wrist_cams: 0

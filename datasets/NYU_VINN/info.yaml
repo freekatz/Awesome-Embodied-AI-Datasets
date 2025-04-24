@@ -1,5 +1,16 @@
 action_space: EEF Position
 control_frequency: 3
+custom_fields:
+  introduction: NYU VINN is a dataset for vision-based robot learning, developed by
+    researchers at NYU. It focuses on visual goal-conditioned manipulation tasks,
+    containing 1,000 episodes of a Sawyer robot performing pick-and-place and stacking
+    tasks. The dataset includes RGB images, depth data, and robot joint states, supporting
+    research in visual imitation learning and goal-driven control. While the dataset's
+    license is not explicitly stated, it is primarily intended for academic research.
+    NYU VINN emphasizes generalization to new objects and environments, making it
+    suitable for training models to adapt to novel scenarios. The dataset is accompanied
+    by a detailed benchmark and evaluation protocol, enabling comparisons across different
+    vision-based robot learning approaches.
 data_collect_method: Human Kinesthetic
 depth_cams: 0
 episodes: 1000
@@ -15,7 +26,10 @@ rgb_cams: 1
 robot: Franka
 robot_morphology: Mobile Manipulator
 scene_type: Kitchen (also toy kitchen), Other Household environments
-short_description: 'null'
+short_introduction: NYU VINN is a vision-based dataset with 1,000 Sawyer robot episodes
+  for pick-and-place tasks. It includes visual and joint data, supporting goal-driven
+  control. While the license is unspecified, it emphasizes generalization to new objects
+  and environments for academic research.
 task_description: The robot opens cabinet doors for a variety of cabinets.
 url: https://jyopari.github.io/VINN/
 wrist_cams: 1
