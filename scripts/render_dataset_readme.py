@@ -66,7 +66,11 @@ def render_readme(readme_path: PathLike, meta_info: dict) -> str:
     task_desc = meta_info['task_description']
     if task_desc is None:
         task_desc = ''
-    introduction = meta_info.get('custom_fields', {})['introduction']
+    custom_fields = meta_info.get('custom_fields', None)
+    if custom_fields is not None:
+        introduction = custom_fields.get('introduction', None)
+    else:
+        introduction = None
     if introduction is None:
         introduction = 'Please write an introduction for your dataset in the way you like :sunglasses:'
     print(introduction)
@@ -105,9 +109,10 @@ if __name__ == '__main__':
                 print(f'dataset {dataset_readme.name} will be removed before rendering.')
             else:
                 print(f'dataset {dataset_readme.name} already exists, stop rendering.')
+                sys.exit(0)
         with open(dataset_readme, 'w', encoding="utf-8") as f:
             f.write(new_readme)
+        print(f'finished writing to {dataset_readme}')
     except Exception as e:
         print(f'failed to write to {dataset_readme}, error: {e}')
-    print(f'finished writing to {dataset_readme}')
 
