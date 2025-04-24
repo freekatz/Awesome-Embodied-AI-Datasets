@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Please write an introduction for your dataset in the way you like:sunglasses:.
+CMU Franka Exploration is a robotics dataset developed by Carnegie Mellon University's Human-World Models project, focusing on real-world robot exploration and interaction tasks. The dataset contains human-teleoperated trajectories of a Franka Emika Panda robot performing object manipulation, exploration, and interaction with dynamic environments. It includes RGB images, depth data, joint states, and natural language instructions, supporting research in open-world robot learning and exploration strategies. The dataset emphasizes learning from unstructured, real-world interactions and generalizing to novel scenarios. While the dataset's license is not explicitly stated, it is primarily intended for academic research and is accompanied by evaluation frameworks for comparing different exploration and control algorithms.
 
 
 ## Homepage

@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Please write an introduction for your dataset in the way you like:sunglasses:.
+BC-Z is a robotics dataset developed by Google for zero-shot task generalization in imitation learning. It contains over 100,000 episodes of a 7-DOF robotic arm performing manipulation tasks, including RGB images, proprioceptive states, and natural language instructions. The dataset supports research in language-conditioned policy learning and cross-task generalization, with a focus on training models to adapt to new tasks without additional demonstrations. While the dataset's license is not explicitly stated, it is primarily intended for academic use. BC-Z is accompanied by evaluation scripts and pre-trained models, enabling comparisons across different zero-shot imitation learning methods.
 
 
 ## Homepage

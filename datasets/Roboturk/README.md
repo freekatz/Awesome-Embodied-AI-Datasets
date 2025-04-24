@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Please write an introduction for your dataset in the way you like:sunglasses:.
+Roboturk is a large-scale dataset for robotic manipulation, developed by Stanford University. It contains over 2144 demonstrations of real-world tasks like laundry layout, tower creation, and object search, collected through crowdsourced teleoperation. The dataset includes RGB and depth videos, joint states, and control commands, supporting research in long-horizon planning and vision-based prediction. It is released under the MIT license, allowing free use and modification. Roboturk's unique contribution lies in its emphasis on complex 3D motions and diverse user interactions, making it a valuable resource for training models to handle real-world variability. The dataset is accompanied by evaluation scripts and pre-trained models for video prediction tasks, enabling comparisons across different methods.
 
 
 ## Homepage

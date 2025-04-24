@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Please write an introduction for your dataset in the way you like:sunglasses:.
+Berkeley RPT Data is a robotics dataset developed by the University of California, Berkeley, for real-world manipulation tasks. It contains 1,000 episodes of a xArm robot performing complex household tasks like cooking and cleaning, including RGB images, depth data, and robot joint states. The dataset supports research in hierarchical imitation learning and multi-stage task planning, with natural language instructions and visual goals. It is released under the Creative Commons Attribution 4.0 International (CC BY 4.0) license, allowing free use and modification for academic and commercial purposes. Berkeley RPT Data is accompanied by a detailed benchmark and evaluation framework, making it suitable for studying long-horizon manipulation and real-world industrial automation.
 
 
 ## Homepage

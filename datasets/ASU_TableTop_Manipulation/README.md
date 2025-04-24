@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Please write an introduction for your dataset in the way you like:sunglasses:.
+ASU TableTop Manipulation is a robotics dataset developed by Arizona State University for tabletop object manipulation tasks. It contains 1,500 episodes of a UR5 robot interacting with household objects, including RGB images, depth data, and robot joint states. The dataset supports research in vision-based imitation learning and multi-object manipulation, with a focus on learning from human demonstrations. It is accompanied by evaluation scripts and pre-trained models, enabling comparisons across different vision-based robot learning approaches for tabletop tasks. While the dataset's license is not explicitly stated, it is primarily intended for academic use and emphasizes generalization to novel object configurations.
 
 
 ## Homepage

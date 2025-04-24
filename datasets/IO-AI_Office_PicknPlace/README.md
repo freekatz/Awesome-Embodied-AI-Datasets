@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Please write an introduction for your dataset in the way you like:sunglasses:.
+IO-AI Office PicknPlace is a dataset developed by IO-AI for office object pick-and-place tasks. It contains 1,000 episodes of a UR5 robot manipulating office objects, including RGB images, depth data, and robot joint states. The dataset supports research in open-world model-based reinforcement learning and dynamic manipulation, with a focus on generalization to unseen objects and environments. It is accompanied by evaluation scripts and pre-trained models, enabling comparisons across different vision-based robot learning approaches for pick-and-place tasks. While the dataset's license is not explicitly stated, it is primarily intended for academic use and emphasizes the integration of vision and proprioception for office automation tasks.
 
 
 ## Homepage

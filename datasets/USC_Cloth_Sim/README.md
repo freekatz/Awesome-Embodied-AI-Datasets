@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Please write an introduction for your dataset in the way you like:sunglasses:.
+USC Cloth Sim is a dataset developed by USC's RESL Lab for deformable object manipulation research. It contains 800 episodes of a Franka Emika Panda robot interacting with cloth materials, including RGB images, depth data, and robot joint states. The dataset supports research in cloth folding, smoothing, and dynamic manipulation, with a focus on learning from expert demonstrations. It is released under the Creative Commons Attribution 4.0 International (CC BY 4.0) license, allowing free use and modification for academic and commercial purposes. USC Cloth Sim is accompanied by evaluation metrics and simulation environments, making it suitable for studying deformable object manipulation in robotics.
 
 
 ## Homepage

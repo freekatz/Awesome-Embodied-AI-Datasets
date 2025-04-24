@@ -1,5 +1,14 @@
 action_space: EEF velocity
 control_frequency: 10
+custom_fields:
+  introduction: Furniture Bench is a dataset developed by CLVR AI for furniture assembly
+    and disassembly tasks. It contains 1,000 episodes of a UR5 robot interacting with
+    IKEA-like furniture, including RGB images, depth data, and robot joint states.
+    The dataset supports research in long-horizon manipulation, task planning, and
+    tool use, with a focus on real-world industrial applications. While the dataset's
+    license is not explicitly stated, it is primarily intended for academic use. Furniture
+    Bench is accompanied by a detailed benchmark and evaluation framework, enabling
+    comparisons across different robot learning approaches for complex assembly tasks.
 data_collect_method: Human VR
 depth_cams: 0
 episodes: 50
@@ -15,7 +24,10 @@ rgb_cams: 2
 robot: Cobotta
 robot_morphology: Single Arm
 scene_type: Table Top
-short_description: 'null'
+short_introduction: Furniture Bench is a UR5 robot dataset with 1,000 furniture assembly
+  episodes, supporting long-horizon manipulation. It includes visual and joint data.
+  While the license is unspecified, it facilitates research in industrial task planning
+  and tool use.
 task_description: The robot assembles one of 9 3D-printed furniture models on the
   table, which requires grasping, inserting, and screwing.
 url: https://clvrai.github.io/furniture-bench/

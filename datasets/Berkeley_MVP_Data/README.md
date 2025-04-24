@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Please write an introduction for your dataset in the way you like:sunglasses:.
+Berkeley MVP Data is a robotics dataset developed by the University of California, Berkeley, for vision-based manipulation tasks. It contains 480 episodes of a xArm robot performing six manipulation tasks, including RGB images, depth data, and robot joint states. The dataset supports research in real-world robot learning with masked visual pre-training, emphasizing the integration of vision and proprioception. It is released under the Creative Commons Attribution 4.0 International (CC BY 4.0) license, allowing free use and modification for academic and commercial purposes. Berkeley MVP Data is accompanied by evaluation scripts and pre-trained models, enabling comparisons across different vision-based robot learning approaches for complex manipulation tasks.
 
 
 ## Homepage

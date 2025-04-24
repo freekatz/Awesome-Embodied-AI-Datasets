@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Please write an introduction for your dataset in the way you like:sunglasses:.
+Berkeley Cable Routing is a dataset for robotic manipulation research, focusing on cable routing tasks in industrial settings. It contains 1,647 trajectories of a UR5 robot routing cables into clamps, including RGB images, depth data, and robot joint states. The dataset is designed to support hierarchical imitation learning and multi-stage task planning, with natural language instructions and visual goals. It is released under the Creative Commons Attribution 4.0 International (CC BY 4.0) license, allowing modification and redistribution with attribution. The dataset is accompanied by a detailed benchmark and evaluation framework, making it suitable for studying long-horizon manipulation and real-world industrial automation.
 
 
 ## Homepage

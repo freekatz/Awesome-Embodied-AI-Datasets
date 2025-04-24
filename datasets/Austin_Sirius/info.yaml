@@ -1,5 +1,15 @@
 action_space: EEF velocity
 control_frequency: 20
+custom_fields:
+  introduction: Austin Sirius is a dataset developed by the University of Texas at
+    Austin's RPL Lab for human-in-the-loop robot learning. It contains 570 episodes
+    of a Franka Emika Panda robot performing complex household tasks like cooking
+    and cleaning, including RGB images, depth data, and robot joint states. The dataset
+    supports research in human-intervention guided policy learning and real-time adaptation
+    to dynamic environments. It is released under the MIT license, allowing free use
+    and modification for academic and commercial purposes. Austin Sirius emphasizes
+    the integration of human feedback during robot operation, making it a valuable
+    resource for advancing interactive and adaptive robotics research.
 data_collect_method: Human Spacemouse
 depth_cams: 0
 episodes: 2460
@@ -15,7 +25,10 @@ rgb_cams: 2
 robot: Franka
 robot_morphology: Single Arm
 scene_type: Table Top
-short_description: 'null'
+short_introduction: Austin Sirius is a Franka robot dataset with 570 human-intervention
+  episodes for household tasks. It includes visual and joint data, released under
+  MIT. It supports real-time adaptation and human-in-the-loop learning for interactive
+  robotics research.
 task_description: The dataset comprises two tasks, kcup and gear. The kcup task requires
   opening the kcup holder, inserting the kcup into the holder, and closing the holder.
   The gear task requires inserting the blue gear onto the right peg, followed by inserting

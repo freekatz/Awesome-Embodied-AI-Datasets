@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Please write an introduction for your dataset in the way you like:sunglasses:.
+Berkeley Bridge is a large-scale dataset for robot learning, developed by UC Berkeley's RAIL Lab. It contains 60,096 trajectories across 24 environments, focusing on tasks like pick-and-place, pushing, and folding. The dataset includes natural language instructions, multiple camera views, and depth data, supporting open-vocabulary and multi-task learning methods. It is designed to facilitate research on scalable robot learning by providing extensive task and environment variability, enabling models to generalize across domains. Berkeley Bridge is released under the MIT license, allowing free use, modification, and distribution. The dataset is accompanied by pre-trained models and evaluation scripts, making it a valuable resource for accelerating research in imitation learning and offline reinforcement learning.
 
 
 ## Homepage

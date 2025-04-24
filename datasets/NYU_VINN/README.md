@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Please write an introduction for your dataset in the way you like:sunglasses:.
+NYU VINN is a dataset for vision-based robot learning, developed by researchers at NYU. It focuses on visual goal-conditioned manipulation tasks, containing 1,000 episodes of a Sawyer robot performing pick-and-place and stacking tasks. The dataset includes RGB images, depth data, and robot joint states, supporting research in visual imitation learning and goal-driven control. While the dataset's license is not explicitly stated, it is primarily intended for academic research. NYU VINN emphasizes generalization to new objects and environments, making it suitable for training models to adapt to novel scenarios. The dataset is accompanied by a detailed benchmark and evaluation protocol, enabling comparisons across different vision-based robot learning approaches.
 
 
 ## Homepage

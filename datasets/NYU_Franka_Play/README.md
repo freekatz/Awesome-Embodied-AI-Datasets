@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Please write an introduction for your dataset in the way you like:sunglasses:.
+NYU Franka Play is a dataset developed by NYU for robot learning through uncurated play data. It contains 365 episodes of a Franka Emika Panda robot interacting with a toy kitchen setup, including RGB images, depth data, and robot joint states. The dataset supports research in behavior generation and policy learning from unstructured, exploratory interactions, with a focus on learning from diverse and unlabeled data. While the dataset's license is not explicitly stated, it is primarily intended for academic use. NYU Franka Play is accompanied by evaluation scripts and pre-trained models, facilitating comparisons across different behavior cloning and policy learning methods.
 
 
 ## Homepage

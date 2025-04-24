@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Please write an introduction for your dataset in the way you like:sunglasses:.
+Columbia PushT Dataset is a robotics dataset developed by Columbia University for vision-based manipulation tasks. It contains 1,647 real-world trajectories of a UR5 robot pushing T-shaped blocks into target positions, with RGB images, depth data, and robot joint states. The dataset is designed to support research in diffusion-based policy learning, particularly for long-horizon tasks requiring precise control. It is released under the MIT license, allowing free use and modification for academic and commercial purposes. Columbia PushT Dataset is accompanied by evaluation scripts and pre-trained models, making it a valuable resource for studying visuomotor policy learning and dynamic adaptation in physical robots.
 
 
 ## Homepage

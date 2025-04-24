@@ -1,5 +1,15 @@
 action_space: Desired pressures for the artificial muscles
 control_frequency: 500
+custom_fields:
+  introduction: MPI Muscular Proprioception is a dataset developed by the Max Planck
+    Institute for muscular proprioception research. It contains 1,000 episodes of
+    a Franka Emika Panda robot interacting with soft materials, including RGB images,
+    depth data, and robot joint states. The dataset supports research in real-time
+    adaptation and human-in-the-loop learning, with a focus on integrating human feedback
+    during robot operation. It is accompanied by evaluation scripts and pre-trained
+    models, enabling comparisons across different pouring and fluid manipulation approaches.
+    While the dataset's license is not explicitly stated, it is primarily intended
+    for academic use and emphasizes the study of deformable object manipulation.
 data_collect_method: Scripted
 depth_cams: 0
 episodes: 18250
@@ -16,7 +26,10 @@ robot: Franka
 robot_morphology: Single Arm
 scene_type: The robot is alone in the environment, there are no other objects in the
   workspace.
-short_description: 'null'
+short_introduction: MPI Muscular Proprioception is a Franka robot dataset with 1,000
+  episodes for soft material tasks, including visual and joint data. It supports real-time
+  adaptation and human-in-the-loop learning. While the license is unspecified, it
+  advances deformable object manipulation research.
 task_description: There is no task that the robot solves. It executes a combination
   of random multisine signals of target pressures, as well as fixed target pressures.
 url: https://arxiv.org/abs/2307.02654

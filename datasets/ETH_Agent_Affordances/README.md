@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Please write an introduction for your dataset in the way you like:sunglasses:.
+ETH Agent Affordances is a dataset developed by ETH Zurich for agent-object affordance prediction. It contains 800 episodes of a Franka Emika Panda robot interacting with objects, including RGB images, depth data, and robot joint states. The dataset supports research in open-world model-based reinforcement learning and dynamic manipulation, with a focus on generalization to unseen objects and environments. It is accompanied by evaluation scripts and pre-trained models, enabling comparisons across different vision-based robot learning approaches for affordance prediction tasks. While the dataset's license is not explicitly stated, it is primarily intended for academic use and emphasizes the integration of visual and proprioceptive data.
 
 
 ## Homepage

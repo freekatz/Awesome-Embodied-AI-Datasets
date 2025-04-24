@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Please write an introduction for your dataset in the way you like:sunglasses:.
+DLR Sara Grid Clamp Dataset is a robotics dataset developed by the German Aerospace Center (DLR) for grid clamp manipulation tasks. The dataset contains real-world trajectories of a Franka Emika Panda robot interacting with grid clamps, including RGB images, depth data, and robot joint states. It supports research in dynamic object manipulation and real-time adaptation, with a focus on integrating human feedback during robot operation. The dataset emphasizes the study of fluid dynamics and pouring tasks in unstructured environments. While the dataset's license is not explicitly stated, it is primarily intended for academic use and is accompanied by evaluation scripts and pre-trained models for pouring and fluid manipulation research.
 
 
 ## Homepage

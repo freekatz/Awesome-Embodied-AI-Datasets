@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Please write an introduction for your dataset in the way you like:sunglasses:.
+USC Jaco Play is a dataset developed by the CLVR Lab at USC, focusing on teleoperated manipulation tasks with a Jaco 2 robot. It contains 1,085 episodes of pick-and-place tasks in simulated environments, including RGB images, joint positions, and Cartesian coordinates. The dataset includes natural language instructions and object states, supporting research in language-conditioned robot learning and vision-based control. It is released under the Creative Commons Attribution 4.0 International (CC BY 4.0) license, requiring attribution to the original authors. The dataset is structured for easy integration with existing robotics frameworks, making it a valuable resource for training models to generalize across tasks and environments.
 
 
 ## Homepage

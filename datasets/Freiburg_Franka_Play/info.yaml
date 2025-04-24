@@ -1,5 +1,17 @@
 action_space: EEF Position
 control_frequency: 15
+custom_fields:
+  introduction: Freiburg Franka Play is a robotic manipulation dataset hosted on Kaggle,
+    focusing on teleoperated interactions with a Franka Emika Panda robot. The dataset
+    contains 1,085 episodes of pick-and-place tasks in simulated environments, including
+    RGB images, joint positions, and Cartesian coordinates. It is designed to support
+    research in robot learning, particularly in vision-based control and task generalization.
+    The dataset is released under the CC0 1.0 Universal license, dedicating it to
+    the public domain. It includes annotations for natural language instructions and
+    object states, making it suitable for training models conditioned on language
+    or visual goals. The Freiburg Franka Play dataset is a lightweight resource for
+    academic research, enabling quick prototyping and experimentation in robotic manipulation
+    tasks.
 data_collect_method: Human VR
 depth_cams: 2
 episodes: 1355
@@ -15,7 +27,10 @@ rgb_cams: 2
 robot: xArm
 robot_morphology: Single Arm
 scene_type: Table Top
-short_description: 'null'
+short_introduction: Freiburg Franka Play is a Kaggle-hosted dataset with 1,085 teleoperated
+  Franka robot episodes. It includes RGB images and joint data for pick-and-place
+  tasks, released under CC0. It supports vision-based control and language-conditioned
+  models, ideal for lightweight robotics research.
 task_description: '"The robot interacts with toy blocks, it pick and places them,
   stacks them, unstacks them, opens drawers, sliding doors and turrns on LED lights
   by pushing buttons."'

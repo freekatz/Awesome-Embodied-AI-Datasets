@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Please write an introduction for your dataset in the way you like:sunglasses:.
+UTokyo xArm PickPlace is a robotics dataset developed by the University of Tokyo, focusing on vision-based pick-and-place tasks with a xArm robot. The dataset contains real-world and simulated trajectories of a xArm robot manipulating objects in cluttered environments, including RGB images, depth data, and robot joint states. It supports research in open-world model-based reinforcement learning and dynamic manipulation, with a focus on generalization to unseen objects and environments. The dataset is released under the Creative Commons Attribution 4.0 International (CC BY 4.0) license, allowing free use and modification for academic and commercial purposes. UTokyo xArm PickPlace is accompanied by evaluation scripts and pre-trained models, enabling comparisons across different vision-based robot learning approaches for pick-and-place tasks.
 
 
 ## Homepage

@@ -39,6 +39,8 @@ def info_table_markdown(meta_info: Dict) -> str:
             custom_meta_infos = {}
         if custom_meta_info_key in visible_meta_info_key_details:
             for k in custom_meta_infos.keys():
+                if k == 'introduction':
+                    continue
                 v = custom_meta_infos[k]
                 if v == '' or v == NULL or v is None:
                     continue
@@ -64,11 +66,16 @@ def render_readme(readme_path: PathLike, meta_info: dict) -> str:
     task_desc = meta_info['task_description']
     if task_desc is None:
         task_desc = ''
+    introduction = meta_info.get('custom_fields', {})['introduction']
+    if introduction is None:
+        introduction = 'Please write an introduction for your dataset in the way you like :sunglasses:'
+    print(introduction)
     render_config = {
         'name': name,
         'url': url,
         'task_description': task_desc,
         'field_value_items': field_value_items,
+        'introduction': introduction,
     }
 
     with open(readme_path, 'r', encoding='utf-8') as file:
@@ -80,6 +87,7 @@ def render_readme(readme_path: PathLike, meta_info: dict) -> str:
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--dataset', type=str, default='./dataset/An_Example_Dataset', required=False)
+    parser.add_argument('--force', action='store_true')
     args = parser.parse_args()
 
     dataset_root = Path(args.dataset)
@@ -92,7 +100,11 @@ if __name__ == '__main__':
 
     try:
         if dataset_readme.is_file():
-            remove_file(dataset_readme)
+            if args.force:
+                remove_file(dataset_readme)
+                print(f'dataset {dataset_readme.name} will be removed before rendering.')
+            else:
+                print(f'dataset {dataset_readme.name} already exists, stop rendering.')
         with open(dataset_readme, 'w', encoding="utf-8") as f:
             f.write(new_readme)
     except Exception as e:

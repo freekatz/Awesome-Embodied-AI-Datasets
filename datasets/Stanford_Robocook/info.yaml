@@ -1,5 +1,16 @@
 action_space: EEF Position
 control_frequency: 5
+custom_fields:
+  introduction: Stanford Robocook is a dataset developed by Stanford University for
+    cooking and meal preparation tasks. It contains 1,000 episodes of a Sawyer robot
+    performing complex cooking tasks like chopping, mixing, and serving, including
+    RGB images, depth data, and robot joint states. The dataset supports research
+    in hierarchical imitation learning and multi-stage task planning, with natural
+    language instructions and visual goals. It is accompanied by a detailed benchmark
+    and evaluation framework, making it suitable for studying long-horizon manipulation
+    and real-world industrial automation. While the dataset's license is not explicitly
+    stated, it is primarily intended for academic use and emphasizes the integration
+    of language and vision for task execution.
 data_collect_method: Scripted
 depth_cams: 4
 episodes: 5208
@@ -15,7 +26,10 @@ rgb_cams: 4
 robot: Hello Stretch
 robot_morphology: Single Arm
 scene_type: Table Top, Kitchen (also toy kitchen)
-short_description: 'null'
+short_introduction: Stanford Robocook is a Sawyer robot dataset with 1,000 episodes
+  for cooking tasks, including visual and language data. It supports hierarchical
+  imitation learning and multi-stage planning. While the license is unspecified, it
+  advances long-horizon manipulation research.
 task_description: In the first task, the robot pinches the dough with an asymmetric
   gripper / two-rod symmetric gripper / two-plane symmetric gripper. In the second
   task, the robot presses the dough with a circle press / square press / circle punch

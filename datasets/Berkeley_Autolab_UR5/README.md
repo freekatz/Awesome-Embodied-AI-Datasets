@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Please write an introduction for your dataset in the way you like:sunglasses:.
+Berkeley Autolab UR5 is a dataset for robot learning, developed by UC Berkeley's Autolab. It contains 10,000 episodes of a UR5 robot performing pick-and-place tasks in a simulated environment, including RGB images, depth data, and robot joint states. The dataset supports research in visual servoing and dynamic control, with a focus on real-time adaptation to environmental changes. While the dataset's license is not explicitly stated, it is primarily intended for academic use. Berkeley Autolab UR5 includes annotations for object poses and task goals, making it suitable for training models to learn closed-loop control policies. The dataset is accompanied by a detailed simulation environment and evaluation framework, enabling systematic testing of robot learning algorithms.
 
 
 ## Homepage

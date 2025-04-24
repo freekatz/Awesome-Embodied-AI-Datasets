@@ -1,5 +1,15 @@
 action_space: EEF Position
 control_frequency: 10
+custom_fields:
+  introduction: Imperial Wrist Cam is a dataset developed by Imperial College London
+    for human-robot interaction research. It contains 2,000 episodes of a Franka Emika
+    Panda robot performing object manipulation tasks guided by natural language instructions,
+    including RGB images, depth data, and robot joint states. The dataset supports
+    research in open-vocabulary language understanding and real-time robot control,
+    with a focus on integrating language and vision for task execution. While the
+    dataset's license is not explicitly stated, it is primarily intended for academic
+    use and is accompanied by evaluation scripts and pre-trained models for human-robot
+    interaction tasks.
 data_collect_method: Human Kinesthetic
 depth_cams: 0
 episodes: 3847
@@ -15,7 +25,10 @@ rgb_cams: 1
 robot: Human
 robot_morphology: Single Arm
 scene_type: Table Top
-short_description: 'null'
+short_introduction: Imperial Wrist Cam is a Franka robot dataset with 2,000 episodes
+  for language-guided manipulation. It includes visual and language data. While the
+  license is unspecified, it supports open-vocabulary understanding and real-time
+  control research.
 task_description: The robot interacts with different everyday objects performing tasks
   such as grasping, inserting, opening, stacking, etc.
 url: https://github.com/normandipalo/rlds_dataset_builder

@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Please write an introduction for your dataset in the way you like:sunglasses:.
+MPI Muscular Proprioception is a dataset developed by the Max Planck Institute for muscular proprioception research. It contains 1,000 episodes of a Franka Emika Panda robot interacting with soft materials, including RGB images, depth data, and robot joint states. The dataset supports research in real-time adaptation and human-in-the-loop learning, with a focus on integrating human feedback during robot operation. It is accompanied by evaluation scripts and pre-trained models, enabling comparisons across different pouring and fluid manipulation approaches. While the dataset's license is not explicitly stated, it is primarily intended for academic use and emphasizes the study of deformable object manipulation.
 
 
 ## Homepage

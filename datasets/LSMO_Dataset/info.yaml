@@ -1,5 +1,15 @@
 action_space: EEF velocity
 control_frequency: 10
+custom_fields:
+  introduction: LSMO Dataset is a robotics dataset developed by the University of
+    Tokyo for long-term sequential manipulation tasks. It contains 570 episodes of
+    a PR2 robot performing complex household tasks like cooking and cleaning, including
+    RGB images, depth data, and robot joint states. The dataset supports research
+    in hierarchical imitation learning and multi-stage task planning, with natural
+    language instructions and visual goals. While the dataset's license is not explicitly
+    stated, it is primarily intended for academic use. LSMO Dataset is accompanied
+    by a detailed benchmark and evaluation framework, making it suitable for studying
+    long-horizon manipulation and real-world industrial automation.
 data_collect_method: Expert Policy
 depth_cams: 0
 episodes: 3000
@@ -15,7 +25,9 @@ rgb_cams: 1
 robot: TurtleBot 2
 robot_morphology: Single Arm
 scene_type: Table Top
-short_description: 'null'
+short_introduction: LSMO Dataset is a University of Tokyo dataset with PR2 robot episodes
+  for household tasks, including visual and language data. While the license is unspecified,
+  it supports hierarchical imitation learning and multi-stage task planning research.
 task_description: The robot avoids obstacle on the table and reaches the target object.
 url: https://journals.sagepub.com/doi/full/10.1177/02783649211044405
 wrist_cams: 0
