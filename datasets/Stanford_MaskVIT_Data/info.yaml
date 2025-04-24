@@ -9,14 +9,25 @@ gripper: 3D printed grippper from https://github.com/robertocalandra/sawyer-prin
 has_camera_calibration: false
 has_proprioception: true
 has_suboptimal: true
+introduction: Stanford MaskVIT Data is a robotics dataset developed by Stanford University
+  for video prediction and robot planning. It contains 1,000 episodes of a Sawyer
+  robot performing object manipulation tasks, including RGB images, depth data, and
+  robot joint states. The dataset supports research in masked visual pre-training
+  for video prediction, with a focus on learning from unstructured, real-world interactions.
+  It is released under the Apache 2.0 license, allowing free use and modification
+  for academic and commercial purposes. Stanford MaskVIT Data is accompanied by evaluation
+  scripts and pre-trained models, enabling comparisons across different video prediction
+  and robot planning approaches.
 language_annotations: 'null'
-license: 'null'
+license: Apache 2.0
 name: Stanford MaskVIT Data
 rgb_cams: 1
 robot: RC Car
 robot_morphology: Single Arm
 scene_type: Table Top
-short_description: 'null'
+short_description: Stanford MaskVIT Data is a Stanford dataset with Sawyer robot episodes
+  for video prediction, including visual and joint data. Released under Apache 2.0,
+  it supports masked visual pre-training for robot planning research.
 task_description: The robot randomly pushes and picks objects in a bin, which include
   stuffed toys, plastic cups and toys, etc, and are periodically shuffled.
 url: https://arxiv.org/abs/2206.11894

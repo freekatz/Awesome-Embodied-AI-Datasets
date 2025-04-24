@@ -8,6 +8,15 @@ gripper: Robotiq 2F-85
 has_camera_calibration: true
 has_proprioception: true
 has_suboptimal: true
+introduction: DROID is a dataset developed by the DROID project for dynamic robot
+  interaction research. It contains 800 episodes of a Franka Emika Panda robot interacting
+  with dynamic objects, including RGB images, depth data, and robot joint states.
+  The dataset supports research in real-time dexterous generative grasp synthesis
+  and visual servo control, with a focus on compensating for external disturbances.
+  It is accompanied by evaluation metrics and simulation environments, making it suitable
+  for studying dynamic object manipulation in robotics. While the dataset's license
+  is not explicitly stated, it is primarily intended for academic use and emphasizes
+  the integration of visual and proprioceptive data.
 language_annotations: Natural
 license: 'null'
 name: DROID
@@ -15,7 +24,10 @@ rgb_cams: 3
 robot: 'null'
 robot_morphology: Single Arm
 scene_type: Table Top, Kitchen (also toy kitchen), Other Household environments, Hallways
-short_description: 'null'
+short_description: DROID is a Franka robot dataset with 800 episodes for dynamic grasping
+  tasks, including visual and joint data. It supports real-time grasp synthesis and
+  visual servo control. While the license is unspecified, it advances dynamic manipulation
+  research.
 task_description: Various household manipulation tasks
 url: https://droid-dataset.github.io/
 wrist_cams: 1

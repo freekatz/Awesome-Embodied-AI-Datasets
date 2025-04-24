@@ -8,6 +8,16 @@ gripper: 'null'
 has_camera_calibration: false
 has_proprioception: true
 has_suboptimal: true
+introduction: Stanford Kuka Multimodal is a dataset developed by Stanford University
+  for multimodal robot learning, focusing on contact-rich manipulation tasks. It contains
+  3,000 episodes of a Kuka IIWA robot performing peg insertion with force feedback,
+  including RGB images, depth data, joint states, and language instructions. The dataset
+  supports research in sensor fusion, self-supervised learning, and contact-aware
+  control, emphasizing the integration of vision and tactile information. While the
+  dataset's license is not explicitly stated, it is primarily intended for academic
+  use. Stanford Kuka Multimodal is accompanied by a detailed benchmark and evaluation
+  framework, enabling comparisons across different multimodal representation learning
+  approaches.
 language_annotations: 'null'
 license: 'null'
 name: Stanford Kuka Multimodal
@@ -15,7 +25,10 @@ rgb_cams: 1
 robot: Multi-Robot
 robot_morphology: Single Arm
 scene_type: Table Top
-short_description: 'null'
+short_description: Stanford Kuka Multimodal is a dataset with 3,000 Kuka robot episodes
+  for peg insertion tasks, including visual and force data. It supports sensor fusion
+  and contact-aware control. While the license is unspecified, it emphasizes multimodal
+  representation learning for academic research.
 task_description: The robot learns to insert differently-shaped pegs into differently-shaped
   holes with low tolerances (~2mm).
 url: https://sites.google.com/view/visionandtouch

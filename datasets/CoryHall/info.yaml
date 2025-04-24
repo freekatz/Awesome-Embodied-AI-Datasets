@@ -8,6 +8,15 @@ gripper: 'null'
 has_camera_calibration: false
 has_proprioception: false
 has_suboptimal: false
+introduction: CoryHall is a dataset developed by the University of California, Berkeley,
+  for real-world robot navigation tasks. It contains 570 episodes of a PR2 robot navigating
+  complex indoor environments, including RGB images, depth data, and robot joint states.
+  The dataset supports research in hierarchical imitation learning and multi-stage
+  task planning, with natural language instructions and visual goals. It is accompanied
+  by a detailed benchmark and evaluation framework, making it suitable for studying
+  long-horizon manipulation and real-world industrial automation. While the dataset's
+  license is not explicitly stated, it is primarily intended for academic use and
+  emphasizes the integration of language and vision for task execution.
 language_annotations: 'null'
 license: 'null'
 name: CoryHall
@@ -15,7 +24,9 @@ rgb_cams: 1
 robot: 'null'
 robot_morphology: Wheeled Robot
 scene_type: Hallways
-short_description: 'null'
+short_description: CoryHall is a PR2 robot dataset with 570 episodes for navigation
+  tasks, including visual and language data. It supports hierarchical imitation learning.
+  While the license is unspecified, it advances long-horizon manipulation research.
 task_description: Small mobile robot navigates hallways in an office building using
   a learned policy.
 url: https://arxiv.org/abs/1709.10489

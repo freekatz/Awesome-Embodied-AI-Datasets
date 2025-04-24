@@ -8,14 +8,26 @@ gripper: Default
 has_camera_calibration: false
 has_proprioception: true
 has_suboptimal: true
+introduction: Berkeley Fanuc Manipulation is a dataset developed by the University
+  of California, Berkeley, for vision-based manipulation tasks with a Fanuc Mate 200iD
+  robot. It contains over 400 episodes of the robot performing complex household tasks
+  like cooking and cleaning, including RGB images, depth data, and robot joint states.
+  The dataset supports research in vision-based imitation learning and language-conditioned
+  control, with a focus on learning from human demonstrations. It is released under
+  the MIT license, allowing free use and modification for academic and commercial
+  purposes. Berkeley Fanuc Manipulation is accompanied by evaluation scripts and pre-trained
+  models, enabling comparisons across different vision-based robot learning approaches
+  for complex manipulation tasks.
 language_annotations: Natural
-license: 'null'
+license: MIT
 name: Berkeley Fanuc Manipulation
 rgb_cams: 2
 robot: Hello Stretch
 robot_morphology: Single Arm
 scene_type: Table Top
-short_description: 'null'
+short_description: Berkeley Fanuc Manipulation is a Fanuc robot dataset with 400+
+  episodes for household tasks, including visual and language data. Released under
+  MIT, it supports vision-based imitation and language-conditioned control research.
 task_description: A Fanuc robot performs various manipulation tasks. For example,
   it opens drawers, picks up objects, closes doors, closes computers, and pushes objects
   to desired locations.

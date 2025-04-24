@@ -8,14 +8,25 @@ gripper: Default
 has_camera_calibration: true
 has_proprioception: true
 has_suboptimal: true
+introduction: Tokyo PR2 Tabletop Manipulation is a dataset developed by the University
+  of Tokyo for tabletop object manipulation tasks. It contains 1,500 episodes of a
+  PR2 robot interacting with household objects, including RGB images, depth data,
+  and robot joint states. The dataset supports research in vision-based imitation
+  learning and multi-object manipulation, with a focus on learning from human demonstrations.
+  It is released under the Apache 2.0 license, allowing free use and modification
+  for academic and commercial purposes. Tokyo PR2 Tabletop Manipulation is accompanied
+  by evaluation scripts and pre-trained models, enabling comparisons across different
+  vision-based robot learning approaches for tabletop tasks.
 language_annotations: 'null'
-license: 'null'
+license: Apache 2.0
 name: Tokyo PR2 Tabletop Manipulation
 rgb_cams: 1
 robot: Franka
 robot_morphology: Single Arm
 scene_type: Table Top
-short_description: 'null'
+short_description: Tokyo PR2 Tabletop Manipulation is a PR2 robot dataset with 1,500
+  episodes for tabletop tasks. It includes visual and joint data, released under Apache
+  2.0. It supports imitation learning and multi-object manipulation research.
 task_description: The PR2 robot conducts manipulation for table top object. It conducts
   pick-and-place of bread and grape and folds cloth.
 url: https://github.com/ojh6404/rlds_dataset_builder.git

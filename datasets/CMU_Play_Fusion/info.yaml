@@ -8,6 +8,16 @@ gripper: Robotiq hand-e
 has_camera_calibration: false
 has_proprioception: true
 has_suboptimal: false
+introduction: CMU Play Fusion is a dataset developed by Carnegie Mellon University
+  for skill acquisition via diffusion from language-annotated play. It contains 135
+  episodes of a Stretch robot performing kitchen interactions, including RGB images,
+  depth data, and robot joint states. The dataset supports research in hierarchical
+  imitation learning and multi-stage task planning, with natural language instructions
+  and visual goals. It is accompanied by a detailed benchmark and evaluation framework,
+  making it suitable for studying long-horizon manipulation and real-world industrial
+  automation. While the dataset's license is not explicitly stated, it is primarily
+  intended for academic use and emphasizes the integration of language and vision
+  for task execution.
 language_annotations: Natural
 license: 'null'
 name: CMU Play Fusion
@@ -15,7 +25,10 @@ rgb_cams: 1
 robot: 'null'
 robot_morphology: Single Arm
 scene_type: Table Top, Kitchen (also toy kitchen)
-short_description: 'null'
+short_description: CMU Play Fusion is a Stretch robot dataset with 135 episodes for
+  kitchen tasks, including visual and language data. It supports hierarchical imitation
+  learning. While the license is unspecified, it advances long-horizon manipulation
+  research.
 task_description: 'The robot plays with 3 complex scenes: a grill with many cooking
   objects like toaster, pan, etc. It has to pick, open, place, close. It has to set
   a table, move plates, cups, utensils. And it has to place dishes in the sink, dishwasher,

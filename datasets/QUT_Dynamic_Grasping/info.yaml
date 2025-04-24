@@ -8,14 +8,26 @@ gripper: Default
 has_camera_calibration: false
 has_proprioception: true
 has_suboptimal: false
+introduction: QUT Dynamic Grasping is a robotics dataset developed by Queensland University
+  of Technology for dynamic object grasping research. It contains 800 episodes of
+  a Franka Emika Panda robot interacting with dynamic objects, including RGB images,
+  depth data, and robot joint states. The dataset supports research in real-time dexterous
+  generative grasp synthesis and visual servo control, with a focus on compensating
+  for external disturbances. It is released under the Creative Commons Attribution
+  4.0 International (CC BY 4.0) license, allowing free use and modification for academic
+  and commercial purposes. QUT Dynamic Grasping is accompanied by evaluation metrics
+  and simulation environments, making it suitable for studying dynamic object manipulation
+  in robotics.
 language_annotations: 'null'
-license: 'null'
+license: Creative Commons Attribution 4.0 International
 name: QUT Dynamic Grasping
 rgb_cams: 3
 robot: Jackal
 robot_morphology: Single Arm
 scene_type: Table Top
-short_description: 'null'
+short_description: QUT Dynamic Grasping is a QUT dataset with Franka robot episodes
+  for dynamic grasping tasks, including visual and joint data. Released under CC BY
+  4.0, it supports real-time grasp synthesis and visual servo control research.
 task_description: The robot grasps an object that moves around continuously and randomly
   along the XY plane.
 url: https://github.com/krishanrana/rlds_dataset_builder

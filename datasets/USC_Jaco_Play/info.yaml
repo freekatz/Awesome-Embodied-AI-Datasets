@@ -8,6 +8,15 @@ gripper: Default
 has_camera_calibration: false
 has_proprioception: true
 has_suboptimal: false
+introduction: USC Jaco Play is a dataset developed by the CLVR Lab at USC, focusing
+  on teleoperated manipulation tasks with a Jaco 2 robot. It contains 1,085 episodes
+  of pick-and-place tasks in simulated environments, including RGB images, joint positions,
+  and Cartesian coordinates. The dataset includes natural language instructions and
+  object states, supporting research in language-conditioned robot learning and vision-based
+  control. It is released under the Creative Commons Attribution 4.0 International
+  (CC BY 4.0) license, requiring attribution to the original authors. The dataset
+  is structured for easy integration with existing robotics frameworks, making it
+  a valuable resource for training models to generalize across tasks and environments.
 language_annotations: Templated
 license: 'null'
 name: USC Jaco Play
@@ -15,7 +24,10 @@ rgb_cams: 2
 robot: Franka
 robot_morphology: Single Arm
 scene_type: Table Top, Kitchen (also toy kitchen)
-short_description: 'null'
+short_description: USC Jaco Play is a CLVR Lab dataset with 1,085 teleoperated Jaco
+  2 episodes. It includes language instructions and visual data for pick-and-place
+  tasks, released under CC BY 4.0. It supports language-conditioned models and vision-based
+  control, facilitating task generalization research.
 task_description: The robot performs pick-place tasks in a tabletop toy kitchen environment.
   Some examples of the task include, "Pick up the orange fruit.", "Put the black bowl
   in the sink."

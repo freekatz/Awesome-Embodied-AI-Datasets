@@ -8,6 +8,15 @@ gripper: Default
 has_camera_calibration: false
 has_proprioception: true
 has_suboptimal: true
+introduction: BC-Z is a robotics dataset developed by Google for zero-shot task generalization
+  in imitation learning. It contains over 100,000 episodes of a 7-DOF robotic arm
+  performing manipulation tasks, including RGB images, proprioceptive states, and
+  natural language instructions. The dataset supports research in language-conditioned
+  policy learning and cross-task generalization, with a focus on training models to
+  adapt to new tasks without additional demonstrations. While the dataset's license
+  is not explicitly stated, it is primarily intended for academic use. BC-Z is accompanied
+  by evaluation scripts and pre-trained models, enabling comparisons across different
+  zero-shot imitation learning methods.
 language_annotations: Templated
 license: 'null'
 name: BC-Z
@@ -15,7 +24,10 @@ rgb_cams: 1
 robot: Franka
 robot_morphology: Mobile Manipulator
 scene_type: Table Top
-short_description: 'null'
+short_description: BC-Z is a Google dataset with 100k+ episodes for zero-shot manipulation
+  tasks, including visual and language data. It supports language-conditioned policy
+  learning. While the license is unspecified, it advances cross-task generalization
+  research.
 task_description: The robot attempts picking, wiping, and placing tasks on a diverse
   set of objects on a tabletop, along with a few challenging tasks like stacking cups
   on top of each other.

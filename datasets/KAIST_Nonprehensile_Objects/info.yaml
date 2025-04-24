@@ -8,14 +8,26 @@ gripper: Default
 has_camera_calibration: false
 has_proprioception: true
 has_suboptimal: true
+introduction: KAIST Nonprehensile Objects is a robotics dataset developed by KAIST
+  for nonprehensile object manipulation research. It contains 1,000 episodes of a
+  UR5 robot interacting with nonprehensile objects, including RGB images, depth data,
+  and robot joint states. The dataset supports research in open-world model-based
+  reinforcement learning and dynamic manipulation, with a focus on generalization
+  to unseen objects and environments. It is released under the Creative Commons Attribution
+  4.0 International (CC BY 4.0) license, allowing free use and modification for academic
+  and commercial purposes. KAIST Nonprehensile Objects is accompanied by evaluation
+  scripts and pre-trained models, enabling comparisons across different vision-based
+  robot learning approaches for nonprehensile tasks.
 language_annotations: Natural
-license: 'null'
+license: Creative Commons Attribution 4.0 International
 name: KAIST Nonprehensile Objects
 rgb_cams: 1
 robot: Hello Stretch
 robot_morphology: Single Arm
 scene_type: Table Top
-short_description: 'null'
+short_description: KAIST Nonprehensile Objects is a KAIST dataset with UR5 robot episodes
+  for nonprehensile tasks, including visual and joint data. Released under CC BY 4.0,
+  it supports open-world RL and dynamic manipulation research.
 task_description: The robot performs various non-prehensile manipulation tasks in
   a tabletop environment. It translates and reorients diverse real-world and 3d-printed
   objects to a target 6dof pose.

@@ -8,6 +8,16 @@ gripper: Custom 3D printed
 has_camera_calibration: false
 has_proprioception: true
 has_suboptimal: false
+introduction: ALOHA is a dataset developed by Stanford University for zero-shot task
+  generalization in imitation learning. It contains over 100,000 episodes of a 7-DOF
+  robotic arm performing manipulation tasks, including RGB images, proprioceptive
+  states, and natural language instructions. The dataset supports research in language-conditioned
+  policy learning and cross-task generalization, with a focus on training models to
+  adapt to new tasks without additional demonstrations. It is accompanied by evaluation
+  scripts and pre-trained models, enabling comparisons across different zero-shot
+  imitation learning methods. While the dataset's license is not explicitly stated,
+  it is primarily intended for academic use and emphasizes the integration of language
+  and vision for task execution.
 language_annotations: Templated
 license: 'null'
 name: ALOHA
@@ -15,7 +25,10 @@ rgb_cams: 4
 robot: 'null'
 robot_morphology: Bi-Manual
 scene_type: Table Top
-short_description: 'null'
+short_description: ALOHA is a Stanford dataset with 100k+ episodes for zero-shot manipulation
+  tasks, including visual and language data. It supports language-conditioned policy
+  learning. While the license is unspecified, it advances cross-task generalization
+  research.
 task_description: Bi-manual robot performing complex, dexterous tasks like unwrapping
   candy and putting on shoes.
 url: https://tonyzhaozh.github.io/aloha/

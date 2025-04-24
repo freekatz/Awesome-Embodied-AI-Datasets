@@ -8,14 +8,27 @@ gripper: Default
 has_camera_calibration: false
 has_proprioception: true
 has_suboptimal: false
+introduction: Roboturk is a large-scale dataset for robotic manipulation, developed
+  by Stanford University. It contains over 2144 demonstrations of real-world tasks
+  like laundry layout, tower creation, and object search, collected through crowdsourced
+  teleoperation. The dataset includes RGB and depth videos, joint states, and control
+  commands, supporting research in long-horizon planning and vision-based prediction.
+  It is released under the MIT license, allowing free use and modification. Roboturk's
+  unique contribution lies in its emphasis on complex 3D motions and diverse user
+  interactions, making it a valuable resource for training models to handle real-world
+  variability. The dataset is accompanied by evaluation scripts and pre-trained models
+  for video prediction tasks, enabling comparisons across different methods.
 language_annotations: Templated
-license: 'null'
+license: MIT
 name: Roboturk
 rgb_cams: 2
 robot: Google Robot
 robot_morphology: Single Arm
 scene_type: Table Top
-short_description: 'null'
+short_description: Roboturk is a Stanford dataset with 2144 real-world teleoperated
+  demonstrations. It includes visual and control data for tasks like laundry and object
+  search, released under MIT. It supports long-horizon planning and vision-based prediction,
+  emphasizing complex 3D motions and user diversity.
 task_description: Sawyer robots flattens laundry, builds towers from bowls and searches
   objects.
 url: https://roboturk.stanford.edu/dataset_real.html

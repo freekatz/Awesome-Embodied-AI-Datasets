@@ -8,14 +8,28 @@ gripper: Default
 has_camera_calibration: false
 has_proprioception: true
 has_suboptimal: false
+introduction: UCSD Kitchen is a robotics dataset developed by UC San Diego, focusing
+  on household manipulation tasks in a simulated kitchen environment. The dataset
+  contains 150 episodes of a Franka Emika Panda robot interacting with kitchen objects,
+  including RGB images, joint states, and natural language instructions. It supports
+  research in vision-based imitation learning and language-conditioned control, with
+  a focus on long-horizon tasks like meal preparation and cleanup. The dataset is
+  released under the Creative Commons Attribution 4.0 International (CC BY 4.0) license,
+  allowing free use and modification for academic and commercial purposes. UCSD Kitchen
+  is structured to facilitate the training of models that can generalize across different
+  kitchen tasks and object configurations, making it a valuable resource for advancing
+  household robotics research.
 language_annotations: Natural
-license: 'null'
+license: Creative Commons Attribution 4.0 International
 name: UCSD Kitchen
 rgb_cams: 1
 robot: DLR SARA
 robot_morphology: Single Arm
 scene_type: Kitchen (also toy kitchen)
-short_description: 'null'
+short_description: UCSD Kitchen is a UC San Diego dataset with 150 Franka robot episodes
+  for kitchen tasks, including visual and language data. Released under CC BY 4.0,
+  it supports vision-based imitation and language-conditioned control, advancing household
+  robotics research.
 task_description: The dataset offers a comprehensive set of real-world robotic interactions,
   involving natural language instructions and complex manipulations with kitchen objects.
 url: https://www.tensorflow.org/datasets/catalog/ucsd_kitchen_dataset_converted_externally_to_rlds

@@ -8,6 +8,15 @@ gripper: Default
 has_camera_calibration: false
 has_proprioception: true
 has_suboptimal: true
+introduction: UCSD Pick Place is a robotics dataset developed by UC San Diego for
+  vision-based pick-and-place tasks. The dataset contains real-world and simulated
+  trajectories of a UR5 robot manipulating objects in cluttered environments, including
+  RGB images, depth data, and robot joint states. It supports research in open-world
+  model-based reinforcement learning and dynamic manipulation, with a focus on generalization
+  to unseen objects and environments. While the dataset's license is not explicitly
+  stated, it is primarily intended for academic use. UCSD Pick Place is accompanied
+  by evaluation scripts and pre-trained models, enabling comparisons across different
+  vision-based robot learning approaches for pick-and-place tasks.
 language_annotations: Templated
 license: 'null'
 name: UCSD Pick Place
@@ -15,7 +24,10 @@ rgb_cams: 1
 robot: DLR EDAN
 robot_morphology: Single Arm
 scene_type: Table Top, Kitchen (also toy kitchen)
-short_description: 'null'
+short_description: UCSD Pick Place is a UR5 robot dataset for pick-and-place tasks,
+  including visual and joint data. It supports open-world RL and dynamic manipulation.
+  While the license is unspecified, it emphasizes generalization to unseen objects
+  for academic research.
 task_description: The robot performs pick and place tasks in table top and kitchen
   scenes. The dataset contains a variety of visual variations.
 url: https://owmcorl.github.io/

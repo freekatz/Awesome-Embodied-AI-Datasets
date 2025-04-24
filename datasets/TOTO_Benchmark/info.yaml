@@ -9,14 +9,29 @@ gripper: Default
 has_camera_calibration: false
 has_proprioception: true
 has_suboptimal: true
+introduction: TOTO Benchmark is a robotics dataset developed for the Train Offline,
+  Test Online (TOTO) competition at NeurIPS 2023, focusing on real-world robot learning
+  tasks. The dataset includes over 100 human-teleoperated trajectories of pouring
+  and scooping tasks collected from a Franka Emika Panda robot, with RGB images, natural
+  language instructions, and robot joint states. It emphasizes the challenge of training
+  models offline using expert demonstrations and evaluating them online on physical
+  robots, requiring generalization to unseen scenarios. The dataset is released under
+  the Apache 2.0 license, enabling both academic and commercial use while promoting
+  reproducibility in robotics research. TOTO Benchmark serves as a critical resource
+  for advancing offline RL and behavior cloning methods in real-world manipulation
+  tasks.
 language_annotations: 'null'
-license: 'null'
+license: BSD 2
 name: TOTO Benchmark
 rgb_cams: 1
 robot: Unitree A1
 robot_morphology: Single Arm
 scene_type: Table Top
-short_description: 'null'
+short_description: TOTO Benchmark is a NeurIPS 2023 competition dataset for real-world
+  robot learning, containing over 100 human-teleoperated pouring and scooping trajectories.
+  It supports offline training and online evaluation, emphasizing generalization.
+  Released under Apache 2.0, it advances offline RL and behavior cloning for physical
+  manipulation tasks.
 task_description: 'The TOTO Benchmark Dataset contains trajectories of two tasks:
   scooping and pouring. For scooping, the objective is to scoop material from a bowl
   into the spoon. For pouring, the goal is to pour some material into a target cup

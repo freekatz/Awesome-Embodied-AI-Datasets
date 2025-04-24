@@ -8,6 +8,18 @@ gripper: Default
 has_camera_calibration: false
 has_proprioception: true
 has_suboptimal: false
+introduction: QT-Opt is a vision-based robotic manipulation dataset developed by researchers
+  at Google and UC Berkeley. It focuses on closed-loop reinforcement learning for
+  grasping tasks, containing over 580,000 real-world grasp attempts collected from
+  a Sawyer robot. The dataset includes RGB camera observations, motor commands, and
+  success/failure labels, enabling the training of deep neural networks for dynamic
+  manipulation. QT-Opt's unique contribution lies in its ability to learn regrasping
+  strategies, object probing, and dynamic responses to disturbances, achieving a 96%
+  success rate on unseen objects. The dataset is released under the Open Data Commons
+  Attribution License (ODC-BY), requiring attribution to the original authors while
+  allowing modification and redistribution. It serves as a benchmark for vision-based
+  RL research, demonstrating the potential of large-scale data collection for improving
+  robotic dexterity and generalization.
 language_annotations: 'null'
 license: 'null'
 name: QT-Opt
@@ -15,7 +27,10 @@ rgb_cams: 1
 robot: Franka
 robot_morphology: Single Arm
 scene_type: Table Top
-short_description: 'null'
+short_description: QT-Opt is a vision-based dataset for robotic manipulation, featuring
+  580,000 real-world grasp attempts. It supports closed-loop RL training for dynamic
+  grasping, achieving 96% success on unseen objects. Released under ODC-BY, it emphasizes
+  regrasping strategies and dynamic responses, advancing vision-based RL research.
 task_description: Kuka robot picking objects in a bin.
 url: https://arxiv.org/abs/1806.10293
 wrist_cams: 0

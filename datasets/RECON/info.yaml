@@ -8,6 +8,15 @@ gripper: 'null'
 has_camera_calibration: false
 has_proprioception: false
 has_suboptimal: true
+introduction: RECON is a dataset developed by the University of Tokyo for robot-object
+  interaction research. It contains 1,000 episodes of a PR2 robot interacting with
+  household objects, including RGB images, depth data, and robot joint states. The
+  dataset supports research in vision-based imitation learning and multi-object manipulation,
+  with a focus on learning from human demonstrations. It is accompanied by evaluation
+  scripts and pre-trained models, enabling comparisons across different vision-based
+  robot learning approaches for tabletop tasks. While the dataset's license is not
+  explicitly stated, it is primarily intended for academic use and emphasizes the
+  integration of vision and proprioception for object manipulation tasks.
 language_annotations: 'null'
 license: 'null'
 name: RECON
@@ -15,7 +24,10 @@ rgb_cams: 2
 robot: 'null'
 robot_morphology: Wheeled Robot
 scene_type: Outdoors
-short_description: 'null'
+short_description: RECON is a PR2 robot dataset with 1,000 episodes for household
+  tasks, including visual and joint data. It supports imitation learning and multi-object
+  manipulation. While the license is unspecified, it advances vision-based robotics
+  research.
 task_description: Mobile robot explores outdoor environments using a scripted policy
 url: https://sites.google.com/view/recon-robot
 wrist_cams: 1

@@ -10,6 +10,16 @@ gripper: Default
 has_camera_calibration: false
 has_proprioception: true
 has_suboptimal: true
+introduction: MimicPlay is a dataset developed by the MimicPlay project for human-robot
+  imitation learning. It contains 2,000 episodes of a Franka Emika Panda robot performing
+  object manipulation tasks guided by natural language instructions, including RGB
+  images, depth data, and robot joint states. The dataset supports research in open-vocabulary
+  language understanding and real-time robot control, with a focus on integrating
+  language and vision for task execution. It is accompanied by evaluation scripts
+  and pre-trained models, enabling comparisons across different human-robot interaction
+  methods. While the dataset's license is not explicitly stated, it is primarily intended
+  for academic use and emphasizes the integration of visual and language data for
+  robot task understanding.
 language_annotations: Dataset does not contain language instruction annotation
 license: 'null'
 name: MimicPlay
@@ -17,7 +27,10 @@ rgb_cams: 3
 robot: 'null'
 robot_morphology: Single Arm
 scene_type: Table Top
-short_description: 'null'
+short_description: MimicPlay is a Franka robot dataset with 2,000 episodes for language-guided
+  tasks, including visual and language data. It supports open-vocabulary understanding
+  and real-time control. While the license is unspecified, it advances human-robot
+  interaction research.
 task_description: The robot interacts with various appliances in five different scenes,
   including a kitchen with an oven; a study desk with a bookshelf and lamp; flowers
   and a vase; toy sandwich making; and cloth folding. It opens the microwave and drawers;

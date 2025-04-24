@@ -8,6 +8,15 @@ gripper: 'null'
 has_camera_calibration: false
 has_proprioception: true
 has_suboptimal: true
+introduction: ETH Agent Affordances is a dataset developed by ETH Zurich for agent-object
+  affordance prediction. It contains 800 episodes of a Franka Emika Panda robot interacting
+  with objects, including RGB images, depth data, and robot joint states. The dataset
+  supports research in open-world model-based reinforcement learning and dynamic manipulation,
+  with a focus on generalization to unseen objects and environments. It is accompanied
+  by evaluation scripts and pre-trained models, enabling comparisons across different
+  vision-based robot learning approaches for affordance prediction tasks. While the
+  dataset's license is not explicitly stated, it is primarily intended for academic
+  use and emphasizes the integration of visual and proprioceptive data.
 language_annotations: Templated
 license: 'null'
 name: ETH Agent Affordances
@@ -15,7 +24,10 @@ rgb_cams: 0
 robot: Franka
 robot_morphology: Mobile Manipulator
 scene_type: Kitchen (also toy kitchen)
-short_description: 'null'
+short_description: ETH Agent Affordances is a Franka robot dataset with 800 episodes
+  for affordance tasks, including visual and joint data. It supports open-world RL
+  and dynamic manipulation. While the license is unspecified, it emphasizes generalization
+  to unseen objects for academic research.
 task_description: The robot opens and closes an oven, starting from different initial
   positions and door angles.
 url: https://ieeexplore.ieee.org/iel7/10160211/10160212/10160747.pdf

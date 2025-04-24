@@ -8,6 +8,16 @@ gripper: CLASH hand (https://www.dlr.de/rm/en/desktopdefault.aspx/tabid-8178/#ga
 has_camera_calibration: false
 has_proprioception: true
 has_suboptimal: true
+introduction: DLR Wheelchair Shared Control is a dataset developed by the German Aerospace
+  Center (DLR) for human-robot shared control in wheelchair navigation. The dataset
+  contains 570 episodes of a wheelchair robot navigating complex environments, including
+  RGB images, depth data, and human input commands. It supports research in human-intervention
+  guided policy learning and real-time adaptation to dynamic environments. The dataset
+  emphasizes the integration of human feedback during robot operation, making it a
+  valuable resource for advancing interactive and adaptive robotics research. While
+  the dataset's license is not explicitly stated, it is primarily intended for academic
+  use and is accompanied by evaluation scripts and pre-trained models for wheelchair
+  navigation tasks.
 language_annotations: Templated
 license: 'null'
 name: DLR Wheelchair Shared Control
@@ -15,7 +25,10 @@ rgb_cams: 1
 robot: Franka
 robot_morphology: Single Arm
 scene_type: Table Top, shelf
-short_description: 'null'
+short_description: DLR Wheelchair Shared Control is a DLR dataset with wheelchair
+  robot episodes for shared navigation tasks, including visual and input data. It
+  supports human-intervention learning and real-time adaptation. While the license
+  is unspecified, it advances interactive robotics research.
 task_description: The robot grasps a set of different objects in a table top and a
   shelf.
 url: https://ieeexplore.ieee.org/document/9341156
