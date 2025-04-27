@@ -21,6 +21,7 @@
 # Contents
 
 - [Trending](#trending)
+- [Statistics](#statistics)
 - [Newly Released](#newly-released)
 - [A](#a)
 - [B](#b)
@@ -49,17 +50,20 @@
 
 
 
+## <a name="statistics"></a>Statistics
+### Scene Type Distribution Word Cloud![Scene Word Cloud](./assests/scene_wordcloud.png)
+
 ## <a name="newly-released"></a>Newly Released
-- 2025-04-22: [Language Table](#language_table)
-- 2025-04-22: [DROID](#droid)
-- 2025-04-22: [LSMO Dataset](#lsmo_dataset)
-- 2025-04-22: [DLR Wheelchair Shared Control](#dlr_wheelchair_shared_control)
-- 2025-04-22: [TOTO Benchmark](#toto_benchmark)
-- 2025-04-22: [DobbE](#dobbe)
+- 2025-04-22: [UTokyo xArm Bimanual](#utokyo_xarm_bimanual)
+- 2025-04-22: [Berkeley Cable Routing](#berkeley_cable_routing)
+- 2025-04-22: [UTokyo xArm PickPlace](#utokyo_xarm_pickplace)
+- 2025-04-22: [Berkeley Bridge](#berkeley_bridge)
+- 2025-04-22: [Austin VIOLA](#austin_viola)
+- 2025-04-22: [ALOHA](#aloha)
 - 2025-04-22: [VIMA](#vima)
-- 2025-04-22: [DLR Sara Pour Dataset](#dlr_sara_pour_dataset)
-- 2025-04-22: [Tokyo PR2 Tabletop Manipulation](#tokyo_pr2_tabletop_manipulation)
-- 2025-04-22: [TidyBot](#tidybot)
+- 2025-04-22: [Berkeley Autolab UR5](#berkeley_autolab_ur5)
+- 2025-04-22: [Austin Sirius](#austin_sirius)
+- 2025-04-22: [Austin Mutex](#austin_mutex)
 
 
 
