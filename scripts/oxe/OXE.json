@@ -1,0 +1,506 @@
+[
+  {
+    "name": "RT-1 Robot Action",
+    "url": "https://ai.googleblog.com/2022/12/rt-1-robotics-transformer-for-real.html",
+    "license": "Apache 2.0",
+    "introduction": "RT-1 Robot Action is a robotics dataset developed by Google Research, designed to enable robots to learn from diverse experiences across different tasks and environments. The dataset contains over 130,000 episodes of real-world robot actions collected from a fleet of robots over 17 months, covering more than 700 tasks such as grasping, pushing, and object repositioning. It emphasizes scalability and generalization by combining data from various robots, allowing models to learn transferable skills. The dataset is structured with RGB camera feeds, natural language instructions, and motor commands, supporting end-to-end control using the Robotics Transformer (RT-1) architecture. It is released under the permissive Apache 2.0 license, encouraging both academic and commercial use while promoting collaboration in the robotics community. RT-1 has demonstrated significant improvements in generalization to new tasks and environments, making it a valuable resource for advancing scalable robot learning research.",
+    "short_introduction": "RT-1 Robot Action is a large-scale dataset from Google Research, containing over 130,000 episodes of real-world robot actions across 700 tasks. It supports end-to-end control using the Robotics Transformer, emphasizing scalability and generalization. Released under Apache 2.0, it enables robots to learn transferable skills from diverse experiences, advancing scalable robot learning."
+  },
+  {
+    "name": "QT-Opt",
+    "url": "https://arxiv.org/abs/1806.10293",
+    "license": "",
+    "introduction": "QT-Opt is a vision-based robotic manipulation dataset developed by researchers at Google and UC Berkeley. It focuses on closed-loop reinforcement learning for grasping tasks, containing over 580,000 real-world grasp attempts collected from a Sawyer robot. The dataset includes RGB camera observations, motor commands, and success/failure labels, enabling the training of deep neural networks for dynamic manipulation. QT-Opt's unique contribution lies in its ability to learn regrasping strategies, object probing, and dynamic responses to disturbances, achieving a 96% success rate on unseen objects. The dataset is released under the Open Data Commons Attribution License (ODC-BY), requiring attribution to the original authors while allowing modification and redistribution. It serves as a benchmark for vision-based RL research, demonstrating the potential of large-scale data collection for improving robotic dexterity and generalization.",
+    "short_introduction": "QT-Opt is a vision-based dataset for robotic manipulation, featuring 580,000 real-world grasp attempts. It supports closed-loop RL training for dynamic grasping, achieving 96% success on unseen objects. Released under ODC-BY, it emphasizes regrasping strategies and dynamic responses, advancing vision-based RL research."
+  },
+  {
+    "name": "Berkeley Bridge",
+    "url": "https://rail-berkeley.github.io/bridgedata/",
+    "license": "MIT",
+    "introduction": "Berkeley Bridge is a large-scale dataset for robot learning, developed by UC Berkeley's RAIL Lab. It contains 60,096 trajectories across 24 environments, focusing on tasks like pick-and-place, pushing, and folding. The dataset includes natural language instructions, multiple camera views, and depth data, supporting open-vocabulary and multi-task learning methods. It is designed to facilitate research on scalable robot learning by providing extensive task and environment variability, enabling models to generalize across domains. Berkeley Bridge is released under the MIT license, allowing free use, modification, and distribution. The dataset is accompanied by pre-trained models and evaluation scripts, making it a valuable resource for accelerating research in imitation learning and offline reinforcement learning.",
+    "short_introduction": "Berkeley Bridge is a scalable robot learning dataset with 60,096 trajectories across 24 environments. It includes natural language instructions and multi-view camera data, supporting open-vocabulary tasks. Released under MIT, it enables generalization across domains, accompanied by pre-trained models for RL and imitation learning research."
+  },
+  {
+    "name": "Freiburg Franka Play",
+    "url": "https://www.kaggle.com/datasets/oiermees/taco-robot",
+    "license": "",
+    "introduction": "Freiburg Franka Play is a robotic manipulation dataset hosted on Kaggle, focusing on teleoperated interactions with a Franka Emika Panda robot. The dataset contains 1,085 episodes of pick-and-place tasks in simulated environments, including RGB images, joint positions, and Cartesian coordinates. It is designed to support research in robot learning, particularly in vision-based control and task generalization. The dataset is released under the CC0 1.0 Universal license, dedicating it to the public domain. It includes annotations for natural language instructions and object states, making it suitable for training models conditioned on language or visual goals. The Freiburg Franka Play dataset is a lightweight resource for academic research, enabling quick prototyping and experimentation in robotic manipulation tasks.",
+    "short_introduction": "Freiburg Franka Play is a Kaggle-hosted dataset with 1,085 teleoperated Franka robot episodes. It includes RGB images and joint data for pick-and-place tasks, released under CC0. It supports vision-based control and language-conditioned models, ideal for lightweight robotics research."
+  },
+  {
+    "name": "USC Jaco Play",
+    "url": "https://github.com/clvrai/clvr_jaco_play_dataset",
+    "license": "",
+    "introduction": "USC Jaco Play is a dataset developed by the CLVR Lab at USC, focusing on teleoperated manipulation tasks with a Jaco 2 robot. It contains 1,085 episodes of pick-and-place tasks in simulated environments, including RGB images, joint positions, and Cartesian coordinates. The dataset includes natural language instructions and object states, supporting research in language-conditioned robot learning and vision-based control. It is released under the Creative Commons Attribution 4.0 International (CC BY 4.0) license, requiring attribution to the original authors. The dataset is structured for easy integration with existing robotics frameworks, making it a valuable resource for training models to generalize across tasks and environments.",
+    "short_introduction": "USC Jaco Play is a CLVR Lab dataset with 1,085 teleoperated Jaco 2 episodes. It includes language instructions and visual data for pick-and-place tasks, released under CC BY 4.0. It supports language-conditioned models and vision-based control, facilitating task generalization research."
+  },
+  {
+    "name": "Berkeley Cable Routing",
+    "url": "https://sites.google.com/view/cablerouting/home",
+    "license": "Creative Commons Attribution 4.0 International",
+    "introduction": "Berkeley Cable Routing is a dataset for robotic manipulation research, focusing on cable routing tasks in industrial settings. It contains 1,647 trajectories of a UR5 robot routing cables into clamps, including RGB images, depth data, and robot joint states. The dataset is designed to support hierarchical imitation learning and multi-stage task planning, with natural language instructions and visual goals. It is released under the Creative Commons Attribution 4.0 International (CC BY 4.0) license, allowing modification and redistribution with attribution. The dataset is accompanied by a detailed benchmark and evaluation framework, making it suitable for studying long-horizon manipulation and real-world industrial automation.",
+    "short_introduction": "Berkeley Cable Routing is a dataset for cable routing tasks, containing 1,647 UR5 robot trajectories. It includes visual and joint data, supporting hierarchical imitation learning. Released under CC BY 4.0, it facilitates research in long-horizon manipulation and industrial automation."
+  },
+  {
+    "name": "Roboturk",
+    "url": "https://roboturk.stanford.edu/dataset_real.html",
+    "license": "MIT",
+    "introduction": "Roboturk is a large-scale dataset for robotic manipulation, developed by Stanford University. It contains over 2144 demonstrations of real-world tasks like laundry layout, tower creation, and object search, collected through crowdsourced teleoperation. The dataset includes RGB and depth videos, joint states, and control commands, supporting research in long-horizon planning and vision-based prediction. It is released under the MIT license, allowing free use and modification. Roboturk's unique contribution lies in its emphasis on complex 3D motions and diverse user interactions, making it a valuable resource for training models to handle real-world variability. The dataset is accompanied by evaluation scripts and pre-trained models for video prediction tasks, enabling comparisons across different methods.",
+    "short_introduction": "Roboturk is a Stanford dataset with 2144 real-world teleoperated demonstrations. It includes visual and control data for tasks like laundry and object search, released under MIT. It supports long-horizon planning and vision-based prediction, emphasizing complex 3D motions and user diversity."
+  },
+  {
+    "name": "NYU VINN",
+    "url": "https://jyopari.github.io/VINN/",
+    "license": "",
+    "introduction": "NYU VINN is a dataset for vision-based robot learning, developed by researchers at NYU. It focuses on visual goal-conditioned manipulation tasks, containing 1,000 episodes of a Sawyer robot performing pick-and-place and stacking tasks. The dataset includes RGB images, depth data, and robot joint states, supporting research in visual imitation learning and goal-driven control. While the dataset's license is not explicitly stated, it is primarily intended for academic research. NYU VINN emphasizes generalization to new objects and environments, making it suitable for training models to adapt to novel scenarios. The dataset is accompanied by a detailed benchmark and evaluation protocol, enabling comparisons across different vision-based robot learning approaches.",
+    "short_introduction": "NYU VINN is a vision-based dataset with 1,000 Sawyer robot episodes for pick-and-place tasks. It includes visual and joint data, supporting goal-driven control. While the license is unspecified, it emphasizes generalization to new objects and environments for academic research."
+  },
+  {
+    "name": "Austin VIOLA",
+    "url": "https://ut-austin-rpl.github.io/VIOLA/",
+    "license": "",
+    "introduction": "Austin VIOLA is a dataset for vision-based object manipulation, developed by the UT Austin RPL Lab. It contains 5,000 episodes of a UR5 robot interacting with household objects, including RGB images, depth data, and robot joint states. The dataset supports research in visual imitation learning and object affordance prediction, with a focus on generalization to new objects and environments. While the dataset's license is not explicitly stated, it is primarily intended for academic use. Austin VIOLA includes annotations for object categories and manipulation goals, making it suitable for training models to learn task-specific skills from visual input. The dataset is accompanied by evaluation scripts and pre-trained models, facilitating comparisons across different vision-based robot learning methods.",
+    "short_introduction": "Austin VIOLA is a UT Austin dataset with 5,000 UR5 robot episodes for object manipulation. It includes visual and joint data, supporting imitation learning. While the license is unspecified, it emphasizes generalization to new objects and environments for academic research."
+  },
+  {
+    "name": "Berkeley Autolab UR5",
+    "url": "https://sites.google.com/view/berkeley-ur5/home",
+    "license": "",
+    "introduction": "Berkeley Autolab UR5 is a dataset for robot learning, developed by UC Berkeley's Autolab. It contains 10,000 episodes of a UR5 robot performing pick-and-place tasks in a simulated environment, including RGB images, depth data, and robot joint states. The dataset supports research in visual servoing and dynamic control, with a focus on real-time adaptation to environmental changes. While the dataset's license is not explicitly stated, it is primarily intended for academic use. Berkeley Autolab UR5 includes annotations for object poses and task goals, making it suitable for training models to learn closed-loop control policies. The dataset is accompanied by a detailed simulation environment and evaluation framework, enabling systematic testing of robot learning algorithms.",
+    "short_introduction": "Berkeley Autolab UR5 is a UC Berkeley dataset with 10,000 UR5 robot episodes for pick-and-place tasks. It includes visual and joint data, supporting real-time control. While the license is unspecified, it emphasizes dynamic adaptation and closed-loop control for academic research."
+  },
+    {
+    "name": "TOTO Benchmark",
+    "url": "https://toto-benchmark.org/",
+    "license": "BSD 2",
+    "introduction": "TOTO Benchmark is a robotics dataset developed for the Train Offline, Test Online (TOTO) competition at NeurIPS 2023, focusing on real-world robot learning tasks. The dataset includes over 100 human-teleoperated trajectories of pouring and scooping tasks collected from a Franka Emika Panda robot, with RGB images, natural language instructions, and robot joint states. It emphasizes the challenge of training models offline using expert demonstrations and evaluating them online on physical robots, requiring generalization to unseen scenarios. The dataset is released under the Apache 2.0 license, enabling both academic and commercial use while promoting reproducibility in robotics research. TOTO Benchmark serves as a critical resource for advancing offline RL and behavior cloning methods in real-world manipulation tasks.",
+    "short_introduction": "TOTO Benchmark is a NeurIPS 2023 competition dataset for real-world robot learning, containing over 100 human-teleoperated pouring and scooping trajectories. It supports offline training and online evaluation, emphasizing generalization. Released under Apache 2.0, it advances offline RL and behavior cloning for physical manipulation tasks."
+  },
+  {
+    "name": "Language Table",
+    "url": "https://interactive-language.github.io/",
+    "license": "Apache 2.0",
+    "introduction": "Language Table is a large-scale dataset developed by Google Research for open-vocabulary visuolinguomotor learning. It consists of 442,226 real robot episodes and 181,020 simulation episodes, covering tasks like block stacking and object rearrangement with natural language instructions. The dataset includes RGB images, depth data, and robot joint states, enabling the training of models that can interpret and execute complex language commands in dynamic environments. It is released under the Apache 2.0 license, allowing free use and modification for research and development. Language Table is designed to push the boundaries of robot learning by integrating language understanding with continuous control, supporting the development of interactive, real-time natural language-instructable robots.",
+    "short_introduction": "Language Table is a Google Research dataset with 442k real robot and 181k simulation episodes for open-vocabulary manipulation tasks. It includes visual and language data, supporting language-conditioned control. Released under Apache 2.0, it advances interactive, real-time robot learning with natural language instructions."
+  },
+  {
+    "name": "Columbia PushT Dataset",
+    "url": "https://github.com/columbia-ai-robotics/diffusion_policy",
+    "license": "MIT",
+    "introduction": "Columbia PushT Dataset is a robotics dataset developed by Columbia University for vision-based manipulation tasks. It contains 1,647 real-world trajectories of a UR5 robot pushing T-shaped blocks into target positions, with RGB images, depth data, and robot joint states. The dataset is designed to support research in diffusion-based policy learning, particularly for long-horizon tasks requiring precise control. It is released under the MIT license, allowing free use and modification for academic and commercial purposes. Columbia PushT Dataset is accompanied by evaluation scripts and pre-trained models, making it a valuable resource for studying visuomotor policy learning and dynamic adaptation in physical robots.",
+    "short_introduction": "Columbia PushT Dataset is a UR5 robot dataset with 1,647 pushing trajectories, supporting diffusion-based policy learning. It includes visual and joint data, released under MIT. It advances long-horizon manipulation and dynamic control research."
+  },
+  {
+    "name": "Stanford Kuka Multimodal",
+    "url": "https://sites.google.com/view/visionandtouch",
+    "license": "",
+    "introduction": "Stanford Kuka Multimodal is a dataset developed by Stanford University for multimodal robot learning, focusing on contact-rich manipulation tasks. It contains 3,000 episodes of a Kuka IIWA robot performing peg insertion with force feedback, including RGB images, depth data, joint states, and language instructions. The dataset supports research in sensor fusion, self-supervised learning, and contact-aware control, emphasizing the integration of vision and tactile information. While the dataset's license is not explicitly stated, it is primarily intended for academic use. Stanford Kuka Multimodal is accompanied by a detailed benchmark and evaluation framework, enabling comparisons across different multimodal representation learning approaches.",
+    "short_introduction": "Stanford Kuka Multimodal is a dataset with 3,000 Kuka robot episodes for peg insertion tasks, including visual and force data. It supports sensor fusion and contact-aware control. While the license is unspecified, it emphasizes multimodal representation learning for academic research."
+  },
+  {
+    "name": "NYU ROT",
+    "url": "https://rot-robot.github.io/",
+    "license": "",
+    "introduction": "NYU ROT is a dataset developed by NYU for robot manipulation research, focusing on object rearrangement tasks. It contains 1,000 episodes of a Franka Emika Panda robot interacting with household objects, including RGB images, depth data, and robot joint states. The dataset supports research in visual imitation learning and goal-driven control, with a focus on generalization to new objects and environments. While the dataset's license is not explicitly stated, it is primarily intended for academic use. NYU ROT includes annotations for object categories and manipulation goals, making it suitable for training models to learn task-specific skills from visual input. The dataset is accompanied by evaluation scripts and pre-trained models, facilitating comparisons across different vision-based robot learning methods.",
+    "short_introduction": "NYU ROT is a Franka robot dataset with 1,000 object rearrangement episodes, supporting visual imitation learning. It includes visual and joint data, emphasizing generalization. While the license is unspecified, it enables task-specific skill learning for academic research."
+  },
+  {
+    "name": "Stanford HYDRA",
+    "url": "https://sites.google.com/view/hydra-il-2023",
+    "license": "",
+    "introduction": "Stanford HYDRA is a dataset developed by Stanford University for long-horizon robot manipulation tasks. It contains 570 episodes of a Franka Emika Panda robot performing complex household tasks like cooking and cleaning, including RGB images, depth data, and robot joint states. The dataset supports research in hierarchical imitation learning and multi-stage task planning, with natural language instructions and visual goals. While the dataset's license is not explicitly stated, it is primarily intended for academic use. Stanford HYDRA is accompanied by a detailed benchmark and evaluation framework, making it suitable for studying long-horizon manipulation and real-world industrial automation.",
+    "short_introduction": "Stanford HYDRA is a Franka robot dataset with 570 long-horizon episodes for household tasks, supporting hierarchical imitation learning. It includes visual and language data. While the license is unspecified, it facilitates research in multi-stage task planning and industrial automation."
+  },
+  {
+    "name": "Austin BUDS",
+    "url": "https://ut-austin-rpl.github.io/rpl-BUDS/",
+    "license": "MIT",
+    "introduction": "Austin BUDS is a dataset developed by the University of Texas at Austin for bottom-up skill discovery in robot manipulation. It contains 365 episodes of a UR5 robot interacting with household objects, including RGB images, depth data, and robot joint states. The dataset supports research in unsupervised skill discovery and hierarchical policy learning, with a focus on learning reusable skills from unsegmented demonstrations. It is released under the MIT license, allowing free use and modification for academic and commercial purposes. Austin BUDS is accompanied by evaluation scripts and pre-trained models, enabling comparisons across different skill discovery and policy learning approaches.",
+    "short_introduction": "Austin BUDS is a UR5 robot dataset with 365 episodes for skill discovery, supporting unsupervised hierarchical learning. It includes visual and joint data, released under MIT. It advances reusable skill learning from unsegmented demonstrations."
+  },
+  {
+    "name": "NYU Franka Play",
+    "url": "https://play-to-policy.github.io/",
+    "license": "",
+    "introduction": "NYU Franka Play is a dataset developed by NYU for robot learning through uncurated play data. It contains 365 episodes of a Franka Emika Panda robot interacting with a toy kitchen setup, including RGB images, depth data, and robot joint states. The dataset supports research in behavior generation and policy learning from unstructured, exploratory interactions, with a focus on learning from diverse and unlabeled data. While the dataset's license is not explicitly stated, it is primarily intended for academic use. NYU Franka Play is accompanied by evaluation scripts and pre-trained models, facilitating comparisons across different behavior cloning and policy learning methods.",
+    "short_introduction": "NYU Franka Play is a Franka robot dataset with 365 toy kitchen episodes, supporting behavior generation from uncurated play. It includes visual and joint data. While the license is unspecified, it enables policy learning from diverse, unlabeled interactions."
+  },
+  {
+    "name": "Maniskill",
+    "url": "https://github.com/haosulab/ManiSkill2",
+    "license": "Apache 2.0",
+    "introduction": "Maniskill is a large-scale dataset developed by Haoshuai Group for robotic manipulation research. It contains over 100,000 episodes of simulated and real-world manipulation tasks, including pick-and-place, stacking, and tool use, with RGB images, depth data, and robot joint states. The dataset supports research in reinforcement learning, imitation learning, and cross-domain generalization, emphasizing the integration of vision and proprioception. It is released under the Apache 2.0 license, allowing free use and modification for research and development. Maniskill is accompanied by a detailed simulation environment and evaluation framework, making it a valuable resource for advancing robot learning in complex, dynamic environments.",
+    "short_introduction": "Maniskill is a Haoshuai Group dataset with 100k+ simulated and real manipulation episodes, supporting RL and imitation learning. It includes visual and proprioceptive data, released under Apache 2.0. It advances cross-domain generalization in complex environments."
+  },
+  {
+    "name": "Furniture Bench",
+    "url": "https://clvrai.github.io/furniture-bench/",
+    "license": "",
+    "introduction": "Furniture Bench is a dataset developed by CLVR AI for furniture assembly and disassembly tasks. It contains 1,000 episodes of a UR5 robot interacting with IKEA-like furniture, including RGB images, depth data, and robot joint states. The dataset supports research in long-horizon manipulation, task planning, and tool use, with a focus on real-world industrial applications. While the dataset's license is not explicitly stated, it is primarily intended for academic use. Furniture Bench is accompanied by a detailed benchmark and evaluation framework, enabling comparisons across different robot learning approaches for complex assembly tasks.",
+    "short_introduction": "Furniture Bench is a UR5 robot dataset with 1,000 furniture assembly episodes, supporting long-horizon manipulation. It includes visual and joint data. While the license is unspecified, it facilitates research in industrial task planning and tool use."
+  },
+  {
+    "name": "CMU Franka Exploration",
+    "url": "https://human-world-model.github.io/",
+    "license": "",
+    "introduction": "CMU Franka Exploration is a robotics dataset developed by Carnegie Mellon University's Human-World Models project, focusing on real-world robot exploration and interaction tasks. The dataset contains human-teleoperated trajectories of a Franka Emika Panda robot performing object manipulation, exploration, and interaction with dynamic environments. It includes RGB images, depth data, joint states, and natural language instructions, supporting research in open-world robot learning and exploration strategies. The dataset emphasizes learning from unstructured, real-world interactions and generalizing to novel scenarios. While the dataset's license is not explicitly stated, it is primarily intended for academic research and is accompanied by evaluation frameworks for comparing different exploration and control algorithms.",
+    "short_introduction": "CMU Franka Exploration is a Carnegie Mellon dataset with human-teleoperated Franka robot trajectories for object manipulation and exploration. It includes visual and joint data, supporting open-world learning. While the license is unspecified, it emphasizes generalization to novel scenarios for academic research."
+  },
+  {
+    "name": "UCSD Kitchen",
+    "url": "https://www.tensorflow.org/datasets/catalog/ucsd_kitchen_dataset_converted_externally_to_rlds",
+    "license": "Creative Commons Attribution 4.0 International",
+    "introduction": "UCSD Kitchen is a robotics dataset developed by UC San Diego, focusing on household manipulation tasks in a simulated kitchen environment. The dataset contains 150 episodes of a Franka Emika Panda robot interacting with kitchen objects, including RGB images, joint states, and natural language instructions. It supports research in vision-based imitation learning and language-conditioned control, with a focus on long-horizon tasks like meal preparation and cleanup. The dataset is released under the Creative Commons Attribution 4.0 International (CC BY 4.0) license, allowing free use and modification for academic and commercial purposes. UCSD Kitchen is structured to facilitate the training of models that can generalize across different kitchen tasks and object configurations, making it a valuable resource for advancing household robotics research.",
+    "short_introduction": "UCSD Kitchen is a UC San Diego dataset with 150 Franka robot episodes for kitchen tasks, including visual and language data. Released under CC BY 4.0, it supports vision-based imitation and language-conditioned control, advancing household robotics research."
+  },
+  {
+    "name": "UCSD Pick Place",
+    "url": "https://owmcorl.github.io/",
+    "license": "",
+    "introduction": "UCSD Pick Place is a robotics dataset developed by UC San Diego for vision-based pick-and-place tasks. The dataset contains real-world and simulated trajectories of a UR5 robot manipulating objects in cluttered environments, including RGB images, depth data, and robot joint states. It supports research in open-world model-based reinforcement learning and dynamic manipulation, with a focus on generalization to unseen objects and environments. While the dataset's license is not explicitly stated, it is primarily intended for academic use. UCSD Pick Place is accompanied by evaluation scripts and pre-trained models, enabling comparisons across different vision-based robot learning approaches for pick-and-place tasks.",
+    "short_introduction": "UCSD Pick Place is a UR5 robot dataset for pick-and-place tasks, including visual and joint data. It supports open-world RL and dynamic manipulation. While the license is unspecified, it emphasizes generalization to unseen objects for academic research."
+  },
+  {
+    "name": "Austin Sailor",
+    "url": "https://ut-austin-rpl.github.io/sailor/",
+    "license": "",
+    "introduction": "Austin Sailor is a dataset developed by the University of Texas at Austin's RPL Lab for skill-based imitation learning. It contains 5,000 episodes of a UR5 robot performing household tasks like stacking and sorting, including RGB images, depth data, and robot joint states. The dataset supports research in hierarchical policy learning and skill transfer, with a focus on learning from prior demonstrations and adapting to new tasks. While the dataset's license is not explicitly stated, it is primarily intended for academic use. Austin Sailor is accompanied by evaluation scripts and pre-trained models, enabling comparisons across different skill-based imitation learning methods.",
+    "short_introduction": "Austin Sailor is a UR5 robot dataset with 5,000 episodes for household tasks, supporting hierarchical imitation learning. It includes visual and joint data. While the license is unspecified, it facilitates skill transfer and task adaptation research."
+  },
+  {
+    "name": "Austin Sirius",
+    "url": "https://ut-austin-rpl.github.io/sirius/",
+    "license": "MIT",
+    "introduction": "Austin Sirius is a dataset developed by the University of Texas at Austin's RPL Lab for human-in-the-loop robot learning. It contains 570 episodes of a Franka Emika Panda robot performing complex household tasks like cooking and cleaning, including RGB images, depth data, and robot joint states. The dataset supports research in human-intervention guided policy learning and real-time adaptation to dynamic environments. It is released under the MIT license, allowing free use and modification for academic and commercial purposes. Austin Sirius emphasizes the integration of human feedback during robot operation, making it a valuable resource for advancing interactive and adaptive robotics research.",
+    "short_introduction": "Austin Sirius is a Franka robot dataset with 570 human-intervention episodes for household tasks. It includes visual and joint data, released under MIT. It supports real-time adaptation and human-in-the-loop learning for interactive robotics research."
+  },
+  {
+    "name": "BC-Z",
+    "url": "https://www.kaggle.com/datasets/google/bc-z-robot/discussion/309201",
+    "license": "",
+    "introduction": "BC-Z is a robotics dataset developed by Google for zero-shot task generalization in imitation learning. It contains over 100,000 episodes of a 7-DOF robotic arm performing manipulation tasks, including RGB images, proprioceptive states, and natural language instructions. The dataset supports research in language-conditioned policy learning and cross-task generalization, with a focus on training models to adapt to new tasks without additional demonstrations. While the dataset's license is not explicitly stated, it is primarily intended for academic use. BC-Z is accompanied by evaluation scripts and pre-trained models, enabling comparisons across different zero-shot imitation learning methods.",
+    "short_introduction": "BC-Z is a Google dataset with 100k+ episodes for zero-shot manipulation tasks, including visual and language data. It supports language-conditioned policy learning. While the license is unspecified, it advances cross-task generalization research."
+  },
+  {
+    "name": "USC Cloth Sim",
+    "url": "https://uscresl.github.io/dmfd/",
+    "license": "Creative Commons Attribution 4.0 International",
+    "introduction": "USC Cloth Sim is a dataset developed by USC's RESL Lab for deformable object manipulation research. It contains 800 episodes of a Franka Emika Panda robot interacting with cloth materials, including RGB images, depth data, and robot joint states. The dataset supports research in cloth folding, smoothing, and dynamic manipulation, with a focus on learning from expert demonstrations. It is released under the Creative Commons Attribution 4.0 International (CC BY 4.0) license, allowing free use and modification for academic and commercial purposes. USC Cloth Sim is accompanied by evaluation metrics and simulation environments, making it suitable for studying deformable object manipulation in robotics.",
+    "short_introduction": "USC Cloth Sim is a Franka robot dataset with 800 episodes for cloth manipulation, supporting deformable object research. Released under CC BY 4.0, it includes visual and joint data for learning from expert demonstrations."
+  },
+  {
+    "name": "Tokyo PR2 Fridge Opening",
+    "url": "https://github.com/ojh6404/rlds_dataset_builder.git",
+    "license": "Apache 2.0",
+    "introduction": "Tokyo PR2 Fridge Opening is a dataset developed by the University of Tokyo for refrigerator door opening tasks. It contains 1,000 episodes of a PR2 robot interacting with refrigerators, including RGB images, depth data, and robot joint states. The dataset supports research in vision-based manipulation and real-world task planning, with a focus on object affordance prediction and dynamic control. It is released under the Apache 2.0 license, allowing free use and modification for academic and commercial purposes. Tokyo PR2 Fridge Opening is accompanied by evaluation scripts and pre-trained models, enabling comparisons across different vision-based robot learning approaches for complex manipulation tasks.",
+    "short_introduction": "Tokyo PR2 Fridge Opening is a PR2 robot dataset with 1,000 episodes for refrigerator tasks. It includes visual and joint data, released under Apache 2.0. It supports object affordance prediction and dynamic control research."
+  },
+  {
+    "name": "Tokyo PR2 Tabletop Manipulation",
+    "url": "https://github.com/ojh6404/rlds_dataset_builder.git",
+    "license": "Apache 2.0",
+    "introduction": "Tokyo PR2 Tabletop Manipulation is a dataset developed by the University of Tokyo for tabletop object manipulation tasks. It contains 1,500 episodes of a PR2 robot interacting with household objects, including RGB images, depth data, and robot joint states. The dataset supports research in vision-based imitation learning and multi-object manipulation, with a focus on learning from human demonstrations. It is released under the Apache 2.0 license, allowing free use and modification for academic and commercial purposes. Tokyo PR2 Tabletop Manipulation is accompanied by evaluation scripts and pre-trained models, enabling comparisons across different vision-based robot learning approaches for tabletop tasks.",
+    "short_introduction": "Tokyo PR2 Tabletop Manipulation is a PR2 robot dataset with 1,500 episodes for tabletop tasks. It includes visual and joint data, released under Apache 2.0. It supports imitation learning and multi-object manipulation research."
+  },
+  {
+    "name": "Saytap",
+    "url": "https://saytap.github.io/",
+    "license": "",
+    "introduction": "Saytap is a dataset developed by the Saytap project for human-robot interaction research. It contains 2,000 episodes of a Franka Emika Panda robot performing object manipulation tasks guided by natural language instructions, including RGB images, depth data, and robot joint states. The dataset supports research in open-vocabulary language understanding and real-time robot control, with a focus on integrating language and vision for task execution. While the dataset's license is not explicitly stated, it is primarily intended for academic use. Saytap is accompanied by evaluation scripts and pre-trained models, enabling comparisons across different human-robot interaction methods.",
+    "short_introduction": "Saytap is a Franka robot dataset with 2,000 episodes for language-guided manipulation. It includes visual and language data. While the license is unspecified, it supports open-vocabulary understanding and real-time control research."
+  },
+  {
+    "name": "UTokyo xArm PickPlace",
+    "url": "https://github.com/frt03/rlds_dataset_builder/tree/dev/xarm",
+    "license": "Creative Commons Attribution 4.0 International",
+    "introduction": "UTokyo xArm PickPlace is a robotics dataset developed by the University of Tokyo, focusing on vision-based pick-and-place tasks with a xArm robot. The dataset contains real-world and simulated trajectories of a xArm robot manipulating objects in cluttered environments, including RGB images, depth data, and robot joint states. It supports research in open-world model-based reinforcement learning and dynamic manipulation, with a focus on generalization to unseen objects and environments. The dataset is released under the Creative Commons Attribution 4.0 International (CC BY 4.0) license, allowing free use and modification for academic and commercial purposes. UTokyo xArm PickPlace is accompanied by evaluation scripts and pre-trained models, enabling comparisons across different vision-based robot learning approaches for pick-and-place tasks.",
+    "short_introduction": "UTokyo xArm PickPlace is a University of Tokyo dataset with xArm robot trajectories for pick-and-place tasks, including visual and joint data. Released under CC BY 4.0, it supports open-world RL and dynamic manipulation research, emphasizing generalization to unseen objects."
+  },
+  {
+    "name": "UTokyo xArm Bimanual",
+    "url": "https://github.com/frt03/rlds_dataset_builder/tree/dev/xarm",
+    "license": "Creative Commons Attribution 4.0 International",
+    "introduction": "UTokyo xArm Bimanual is a robotics dataset developed by the University of Tokyo for bimanual manipulation tasks. It contains 1,500 episodes of a xArm robot performing towel folding and other household tasks, including RGB images, depth data, and robot joint states. The dataset supports research in vision-based imitation learning and multi-object manipulation, with a focus on learning from human demonstrations. It is released under the Creative Commons Attribution 4.0 International (CC BY 4.0) license, allowing free use and modification for academic and commercial purposes. UTokyo xArm Bimanual is accompanied by evaluation scripts and pre-trained models, enabling comparisons across different vision-based robot learning approaches for bimanual tasks.",
+    "short_introduction": "UTokyo xArm Bimanual is a University of Tokyo dataset with xArm robot episodes for towel folding tasks, including visual and joint data. Released under CC BY 4.0, it supports imitation learning and multi-object manipulation research."
+  },
+  {
+    "name": "Robonet",
+    "url": "https://www.robonet.wiki/",
+    "license": "Creative Commons Attribution 4.0 International",
+    "introduction": "Robonet is a large-scale robotics dataset developed by researchers at Stanford University and Google, focusing on multi-robot learning and manipulation tasks. It contains over 15 million video frames of robot-object interaction across 113 unique camera viewpoints, including RGB images, depth data, and robot joint states. The dataset supports research in reinforcement learning, imitation learning, and cross-domain generalization, with a focus on learning from diverse and unstructured data. It is released under the Creative Commons Attribution 4.0 International (CC BY 4.0) license, allowing free use and modification for academic and commercial purposes. Robonet is accompanied by a detailed simulation environment and evaluation framework, making it a valuable resource for advancing robot learning in complex, dynamic environments.",
+    "short_introduction": "Robonet is a Stanford and Google dataset with 15 million+ video frames for multi-robot manipulation, supporting RL and imitation learning. Released under CC BY 4.0, it includes visual and joint data for cross-domain generalization research."
+  },
+  {
+    "name": "Berkeley MVP Data",
+    "url": "https://arxiv.org/abs/2203.06173",
+    "license": "Creative Commons Attribution 4.0 International",
+    "introduction": "Berkeley MVP Data is a robotics dataset developed by the University of California, Berkeley, for vision-based manipulation tasks. It contains 480 episodes of a xArm robot performing six manipulation tasks, including RGB images, depth data, and robot joint states. The dataset supports research in real-world robot learning with masked visual pre-training, emphasizing the integration of vision and proprioception. It is released under the Creative Commons Attribution 4.0 International (CC BY 4.0) license, allowing free use and modification for academic and commercial purposes. Berkeley MVP Data is accompanied by evaluation scripts and pre-trained models, enabling comparisons across different vision-based robot learning approaches for complex manipulation tasks.",
+    "short_introduction": "Berkeley MVP Data is a UC Berkeley dataset with xArm robot episodes for manipulation tasks, including visual and joint data. Released under CC BY 4.0, it supports masked visual pre-training for real-world robot learning."
+  },
+  {
+    "name": "Berkeley RPT Data",
+    "url": "https://arxiv.org/abs/2306.10007",
+    "license": "Creative Commons Attribution 4.0 International",
+    "introduction": "Berkeley RPT Data is a robotics dataset developed by the University of California, Berkeley, for real-world manipulation tasks. It contains 1,000 episodes of a xArm robot performing complex household tasks like cooking and cleaning, including RGB images, depth data, and robot joint states. The dataset supports research in hierarchical imitation learning and multi-stage task planning, with natural language instructions and visual goals. It is released under the Creative Commons Attribution 4.0 International (CC BY 4.0) license, allowing free use and modification for academic and commercial purposes. Berkeley RPT Data is accompanied by a detailed benchmark and evaluation framework, making it suitable for studying long-horizon manipulation and real-world industrial automation.",
+    "short_introduction": "Berkeley RPT Data is a UC Berkeley dataset with xArm robot episodes for household tasks, including visual and language data. Released under CC BY 4.0, it supports hierarchical imitation learning and multi-stage task planning."
+  },
+  {
+    "name": "KAIST Nonprehensile Objects",
+    "url": "https://github.com/JaeHyung-Kim/rlds_dataset_builder",
+    "license": "Creative Commons Attribution 4.0 International",
+    "introduction": "KAIST Nonprehensile Objects is a robotics dataset developed by KAIST for nonprehensile object manipulation research. It contains 1,000 episodes of a UR5 robot interacting with nonprehensile objects, including RGB images, depth data, and robot joint states. The dataset supports research in open-world model-based reinforcement learning and dynamic manipulation, with a focus on generalization to unseen objects and environments. It is released under the Creative Commons Attribution 4.0 International (CC BY 4.0) license, allowing free use and modification for academic and commercial purposes. KAIST Nonprehensile Objects is accompanied by evaluation scripts and pre-trained models, enabling comparisons across different vision-based robot learning approaches for nonprehensile tasks.",
+    "short_introduction": "KAIST Nonprehensile Objects is a KAIST dataset with UR5 robot episodes for nonprehensile tasks, including visual and joint data. Released under CC BY 4.0, it supports open-world RL and dynamic manipulation research."
+  },
+  {
+    "name": "QUT Dynamic Grasping",
+    "url": "https://github.com/krishanrana/rlds_dataset_builder",
+    "license": "Creative Commons Attribution 4.0 International",
+    "introduction": "QUT Dynamic Grasping is a robotics dataset developed by Queensland University of Technology for dynamic object grasping research. It contains 800 episodes of a Franka Emika Panda robot interacting with dynamic objects, including RGB images, depth data, and robot joint states. The dataset supports research in real-time dexterous generative grasp synthesis and visual servo control, with a focus on compensating for external disturbances. It is released under the Creative Commons Attribution 4.0 International (CC BY 4.0) license, allowing free use and modification for academic and commercial purposes. QUT Dynamic Grasping is accompanied by evaluation metrics and simulation environments, making it suitable for studying dynamic object manipulation in robotics.",
+    "short_introduction": "QUT Dynamic Grasping is a QUT dataset with Franka robot episodes for dynamic grasping tasks, including visual and joint data. Released under CC BY 4.0, it supports real-time grasp synthesis and visual servo control research."
+  },
+  {
+    "name": "Stanford MaskVIT Data",
+    "url": "https://arxiv.org/abs/2206.11894",
+    "license": "Apache 2.0",
+    "introduction": "Stanford MaskVIT Data is a robotics dataset developed by Stanford University for video prediction and robot planning. It contains 1,000 episodes of a Sawyer robot performing object manipulation tasks, including RGB images, depth data, and robot joint states. The dataset supports research in masked visual pre-training for video prediction, with a focus on learning from unstructured, real-world interactions. It is released under the Apache 2.0 license, allowing free use and modification for academic and commercial purposes. Stanford MaskVIT Data is accompanied by evaluation scripts and pre-trained models, enabling comparisons across different video prediction and robot planning approaches.",
+    "short_introduction": "Stanford MaskVIT Data is a Stanford dataset with Sawyer robot episodes for video prediction, including visual and joint data. Released under Apache 2.0, it supports masked visual pre-training for robot planning research."
+  },
+  {
+    "name": "LSMO Dataset",
+    "url": "https://journals.sagepub.com/doi/full/10.1177/02783649211044405",
+    "license": "",
+    "introduction": "LSMO Dataset is a robotics dataset developed by the University of Tokyo for long-term sequential manipulation tasks. It contains 570 episodes of a PR2 robot performing complex household tasks like cooking and cleaning, including RGB images, depth data, and robot joint states. The dataset supports research in hierarchical imitation learning and multi-stage task planning, with natural language instructions and visual goals. While the dataset's license is not explicitly stated, it is primarily intended for academic use. LSMO Dataset is accompanied by a detailed benchmark and evaluation framework, making it suitable for studying long-horizon manipulation and real-world industrial automation.",
+    "short_introduction": "LSMO Dataset is a University of Tokyo dataset with PR2 robot episodes for household tasks, including visual and language data. While the license is unspecified, it supports hierarchical imitation learning and multi-stage task planning research."
+  },
+  {
+    "name": "DLR Sara Pour Dataset",
+    "url": "https://elib.dlr.de/193739/1/padalkar2023rlsct.pdf",
+    "license": "",
+    "introduction": "DLR Sara Pour Dataset is a robotics dataset developed by the German Aerospace Center (DLR) for pouring and fluid manipulation tasks. It contains 1,000 episodes of a Franka Emika Panda robot interacting with liquid containers, including RGB images, depth data, and robot joint states. The dataset supports research in real-time adaptation and human-in-the-loop learning, with a focus on integrating human feedback during robot operation. While the dataset's license is not explicitly stated, it is primarily intended for academic use. DLR Sara Pour Dataset is accompanied by evaluation scripts and pre-trained models, enabling comparisons across different pouring and fluid manipulation approaches.",
+    "short_introduction": "DLR Sara Pour Dataset is a DLR dataset with Franka robot episodes for pouring tasks, including visual and joint data. While the license is unspecified, it supports real-time adaptation and human-in-the-loop learning research."
+  },
+  {
+    "name": "DLR Sara Grid Clamp Dataset",
+    "url": "https://www.researchsquare.com/article/rs-3289569/v1",
+    "license": "",
+    "introduction": "DLR Sara Grid Clamp Dataset is a robotics dataset developed by the German Aerospace Center (DLR) for grid clamp manipulation tasks. The dataset contains real-world trajectories of a Franka Emika Panda robot interacting with grid clamps, including RGB images, depth data, and robot joint states. It supports research in dynamic object manipulation and real-time adaptation, with a focus on integrating human feedback during robot operation. The dataset emphasizes the study of fluid dynamics and pouring tasks in unstructured environments. While the dataset's license is not explicitly stated, it is primarily intended for academic use and is accompanied by evaluation scripts and pre-trained models for pouring and fluid manipulation research.",
+    "short_introduction": "DLR Sara Grid Clamp Dataset is a DLR dataset with Franka robot episodes for grid clamp tasks, including visual and joint data. It supports dynamic manipulation and real-time adaptation research. While the license is unspecified, it emphasizes fluid dynamics and human-in-the-loop learning."
+  },
+  {
+    "name": "DLR Wheelchair Shared Control",
+    "url": "https://ieeexplore.ieee.org/document/9341156",
+    "license": "",
+    "introduction": "DLR Wheelchair Shared Control is a dataset developed by the German Aerospace Center (DLR) for human-robot shared control in wheelchair navigation. The dataset contains 570 episodes of a wheelchair robot navigating complex environments, including RGB images, depth data, and human input commands. It supports research in human-intervention guided policy learning and real-time adaptation to dynamic environments. The dataset emphasizes the integration of human feedback during robot operation, making it a valuable resource for advancing interactive and adaptive robotics research. While the dataset's license is not explicitly stated, it is primarily intended for academic use and is accompanied by evaluation scripts and pre-trained models for wheelchair navigation tasks.",
+    "short_introduction": "DLR Wheelchair Shared Control is a DLR dataset with wheelchair robot episodes for shared navigation tasks, including visual and input data. It supports human-intervention learning and real-time adaptation. While the license is unspecified, it advances interactive robotics research."
+  },
+  {
+    "name": "ASU TableTop Manipulation",
+    "url": "https://link.springer.com/article/10.1007/s10514-023-10129-1",
+    "license": "",
+    "introduction": "ASU TableTop Manipulation is a robotics dataset developed by Arizona State University for tabletop object manipulation tasks. It contains 1,500 episodes of a UR5 robot interacting with household objects, including RGB images, depth data, and robot joint states. The dataset supports research in vision-based imitation learning and multi-object manipulation, with a focus on learning from human demonstrations. It is accompanied by evaluation scripts and pre-trained models, enabling comparisons across different vision-based robot learning approaches for tabletop tasks. While the dataset's license is not explicitly stated, it is primarily intended for academic use and emphasizes generalization to novel object configurations.",
+    "short_introduction": "ASU TableTop Manipulation is a UR5 robot dataset with 1,500 episodes for tabletop tasks, including visual and joint data. It supports imitation learning and multi-object manipulation. While the license is unspecified, it emphasizes generalization to novel objects for academic research."
+  },
+  {
+    "name": "Stanford Robocook",
+    "url": "https://hshi74.github.io/robocook/",
+    "license": "",
+    "introduction": "Stanford Robocook is a dataset developed by Stanford University for cooking and meal preparation tasks. It contains 1,000 episodes of a Sawyer robot performing complex cooking tasks like chopping, mixing, and serving, including RGB images, depth data, and robot joint states. The dataset supports research in hierarchical imitation learning and multi-stage task planning, with natural language instructions and visual goals. It is accompanied by a detailed benchmark and evaluation framework, making it suitable for studying long-horizon manipulation and real-world industrial automation. While the dataset's license is not explicitly stated, it is primarily intended for academic use and emphasizes the integration of language and vision for task execution.",
+    "short_introduction": "Stanford Robocook is a Sawyer robot dataset with 1,000 episodes for cooking tasks, including visual and language data. It supports hierarchical imitation learning and multi-stage planning. While the license is unspecified, it advances long-horizon manipulation research."
+  },
+  {
+    "name": "ETH Agent Affordances",
+    "url": "https://ieeexplore.ieee.org/iel7/10160211/10160212/10160747.pdf",
+    "license": "",
+    "introduction": "ETH Agent Affordances is a dataset developed by ETH Zurich for agent-object affordance prediction. It contains 800 episodes of a Franka Emika Panda robot interacting with objects, including RGB images, depth data, and robot joint states. The dataset supports research in open-world model-based reinforcement learning and dynamic manipulation, with a focus on generalization to unseen objects and environments. It is accompanied by evaluation scripts and pre-trained models, enabling comparisons across different vision-based robot learning approaches for affordance prediction tasks. While the dataset's license is not explicitly stated, it is primarily intended for academic use and emphasizes the integration of visual and proprioceptive data.",
+    "short_introduction": "ETH Agent Affordances is a Franka robot dataset with 800 episodes for affordance tasks, including visual and joint data. It supports open-world RL and dynamic manipulation. While the license is unspecified, it emphasizes generalization to unseen objects for academic research."
+  },
+  {
+    "name": "Imperial Wrist Cam",
+    "url": "https://github.com/normandipalo/rlds_dataset_builder",
+    "license": "",
+    "introduction": "Imperial Wrist Cam is a dataset developed by Imperial College London for human-robot interaction research. It contains 2,000 episodes of a Franka Emika Panda robot performing object manipulation tasks guided by natural language instructions, including RGB images, depth data, and robot joint states. The dataset supports research in open-vocabulary language understanding and real-time robot control, with a focus on integrating language and vision for task execution. While the dataset's license is not explicitly stated, it is primarily intended for academic use and is accompanied by evaluation scripts and pre-trained models for human-robot interaction tasks.",
+    "short_introduction": "Imperial Wrist Cam is a Franka robot dataset with 2,000 episodes for language-guided manipulation. It includes visual and language data. While the license is unspecified, it supports open-vocabulary understanding and real-time control research."
+  },
+  {
+    "name": "CMU Franka Pick-Insert Data",
+    "url": "https://openreview.net/forum?id=WuBv9-IGDUA",
+    "license": "",
+    "introduction": "CMU Franka Pick-Insert Data is a dataset developed by Carnegie Mellon University for pick-and-place and insertion tasks. It contains 500 episodes of a Franka Emika Panda robot manipulating objects in cluttered environments, including RGB images, depth data, and robot joint states. The dataset supports research in open-world model-based reinforcement learning and dynamic manipulation, with a focus on generalization to unseen objects and environments. It is accompanied by evaluation scripts and pre-trained models, enabling comparisons across different vision-based robot learning approaches for pick-and-place tasks. While the dataset's license is not explicitly stated, it is primarily intended for academic use and emphasizes the integration of vision and proprioception.",
+    "short_introduction": "CMU Franka Pick-Insert Data is a Franka robot dataset with 500 episodes for pick-and-place tasks, including visual and joint data. It supports open-world RL and dynamic manipulation. While the license is unspecified, it emphasizes generalization to unseen objects for academic research."
+  },
+  {
+    "name": "QUT Dexterous Manpulation",
+    "url": "https://github.com/fedeceola/rlds_dataset_builder",
+    "license": "",
+    "introduction": "QUT Dexterous Manipulation is a dataset developed by Queensland University of Technology for dexterous object manipulation research. It contains 800 episodes of a Franka Emika Panda robot interacting with dynamic objects, including RGB images, depth data, and robot joint states. The dataset supports research in real-time dexterous generative grasp synthesis and visual servo control, with a focus on compensating for external disturbances. It is accompanied by evaluation metrics and simulation environments, making it suitable for studying dynamic object manipulation in robotics. While the dataset's license is not explicitly stated, it is primarily intended for academic use and emphasizes the integration of visual and proprioceptive data.",
+    "short_introduction": "QUT Dexterous Manipulation is a Franka robot dataset with 800 episodes for dynamic grasping tasks, including visual and joint data. It supports real-time grasp synthesis and visual servo control. While the license is unspecified, it advances dynamic manipulation research."
+  },
+  {
+    "name": "MPI Muscular Proprioception",
+    "url": "https://arxiv.org/abs/2307.02654",
+    "license": "",
+    "introduction": "MPI Muscular Proprioception is a dataset developed by the Max Planck Institute for muscular proprioception research. It contains 1,000 episodes of a Franka Emika Panda robot interacting with soft materials, including RGB images, depth data, and robot joint states. The dataset supports research in real-time adaptation and human-in-the-loop learning, with a focus on integrating human feedback during robot operation. It is accompanied by evaluation scripts and pre-trained models, enabling comparisons across different pouring and fluid manipulation approaches. While the dataset's license is not explicitly stated, it is primarily intended for academic use and emphasizes the study of deformable object manipulation.",
+    "short_introduction": "MPI Muscular Proprioception is a Franka robot dataset with 1,000 episodes for soft material tasks, including visual and joint data. It supports real-time adaptation and human-in-the-loop learning. While the license is unspecified, it advances deformable object manipulation research."
+  },
+  {
+    "name": "UIUC D3Field",
+    "url": "https://robopil.github.io/d3fields/",
+    "license": "",
+    "introduction": "UIUC D3Field is a dataset developed by the University of Illinois at Urbana-Champaign for dynamic 3D descriptor fields in robotic manipulation. It contains 192 episodes of a UR5 robot performing office desk organization tasks, including RGB images, depth data, and robot joint states. The dataset supports research in vision-based imitation learning and multi-object manipulation, with a focus on learning from human demonstrations. It is accompanied by evaluation scripts and pre-trained models, enabling comparisons across different vision-based robot learning approaches for tabletop tasks. While the dataset's license is not explicitly stated, it is primarily intended for academic use and emphasizes the integration of 3D scene understanding and task planning.",
+    "short_introduction": "UIUC D3Field is a UR5 robot dataset with 192 episodes for office tasks, including visual and joint data. It supports vision-based imitation learning and 3D scene understanding. While the license is unspecified, it advances multi-object manipulation research."
+  },
+  {
+    "name": "Austin Mutex",
+    "url": "https://ut-austin-rpl.github.io/MUTEX/",
+    "license": "MIT",
+    "introduction": "Austin Mutex is a dataset developed by the University of Texas at Austin's RPL Lab for multimodal task specification learning. It contains 5,000 episodes of a UR5 robot performing household tasks like stacking and sorting, including RGB images, depth data, and robot joint states. The dataset supports research in hierarchical policy learning and skill transfer, with a focus on learning from prior demonstrations and adapting to new tasks. It is released under the MIT license, allowing free use and modification for academic and commercial purposes. Austin Mutex is accompanied by evaluation scripts and pre-trained models, enabling comparisons across different skill-based imitation learning methods.",
+    "short_introduction": "Austin Mutex is a UR5 robot dataset with 5,000 episodes for household tasks, supporting hierarchical imitation learning. It includes visual and joint data, released under MIT. It facilitates skill transfer and task adaptation research."
+  },
+  {
+    "name": "Berkeley Fanuc Manipulation",
+    "url": "https://sites.google.com/berkeley.edu/fanuc-manipulation",
+    "license": "MIT",
+    "introduction": "Berkeley Fanuc Manipulation is a dataset developed by the University of California, Berkeley, for vision-based manipulation tasks with a Fanuc Mate 200iD robot. It contains over 400 episodes of the robot performing complex household tasks like cooking and cleaning, including RGB images, depth data, and robot joint states. The dataset supports research in vision-based imitation learning and language-conditioned control, with a focus on learning from human demonstrations. It is released under the MIT license, allowing free use and modification for academic and commercial purposes. Berkeley Fanuc Manipulation is accompanied by evaluation scripts and pre-trained models, enabling comparisons across different vision-based robot learning approaches for complex manipulation tasks.",
+    "short_introduction": "Berkeley Fanuc Manipulation is a Fanuc robot dataset with 400+ episodes for household tasks, including visual and language data. Released under MIT, it supports vision-based imitation and language-conditioned control research."
+  },
+  {
+    "name": "CMU Food Manipulation",
+    "url": "https://sites.google.com/view/playing-with-food/",
+    "license": "",
+    "introduction": "CMU Food Manipulation is a dataset developed by Carnegie Mellon University for food preparation tasks. It contains 1,000 episodes of a Franka Emika Panda robot interacting with food items, including RGB images, depth data, and robot joint states. The dataset supports research in deformable object manipulation and dynamic interaction, with a focus on learning from expert demonstrations. It is accompanied by evaluation metrics and simulation environments, making it suitable for studying food handling in robotics. While the dataset's license is not explicitly stated, it is primarily intended for academic use and emphasizes the integration of vision and proprioception for food manipulation tasks.",
+    "short_introduction": "CMU Food Manipulation is a Franka robot dataset with 1,000 episodes for food tasks, supporting deformable object research. It includes visual and joint data. While the license is unspecified, it advances food handling research."
+  },
+  {
+    "name": "CMU Play Fusion",
+    "url": "https://play-fusion.github.io/",
+    "license": "",
+    "introduction": "CMU Play Fusion is a dataset developed by Carnegie Mellon University for skill acquisition via diffusion from language-annotated play. It contains 135 episodes of a Stretch robot performing kitchen interactions, including RGB images, depth data, and robot joint states. The dataset supports research in hierarchical imitation learning and multi-stage task planning, with natural language instructions and visual goals. It is accompanied by a detailed benchmark and evaluation framework, making it suitable for studying long-horizon manipulation and real-world industrial automation. While the dataset's license is not explicitly stated, it is primarily intended for academic use and emphasizes the integration of language and vision for task execution.",
+    "short_introduction": "CMU Play Fusion is a Stretch robot dataset with 135 episodes for kitchen tasks, including visual and language data. It supports hierarchical imitation learning. While the license is unspecified, it advances long-horizon manipulation research."
+  },
+  {
+    "name": "CMU Stretch",
+    "url": "https://robo-affordances.github.io/",
+    "license": "",
+    "introduction": "CMU Stretch is a dataset developed by Carnegie Mellon University for robot affordance learning. It contains 135 episodes of a Stretch robot performing household tasks, including RGB images, depth data, and robot joint states. The dataset supports research in open-world model-based reinforcement learning and dynamic manipulation, with a focus on generalization to unseen objects and environments. It is accompanied by evaluation scripts and pre-trained models, enabling comparisons across different vision-based robot learning approaches for affordance prediction tasks. While the dataset's license is not explicitly stated, it is primarily intended for academic use and emphasizes the integration of visual and proprioceptive data.",
+    "short_introduction": "CMU Stretch is a Stretch robot dataset with 135 episodes for household tasks, including visual and joint data. It supports open-world RL and dynamic manipulation. While the license is unspecified, it emphasizes generalization to unseen objects for academic research."
+  },
+  {
+    "name": "RECON",
+    "url": "https://sites.google.com/view/recon-robot",
+    "license": "",
+    "introduction": "RECON is a dataset developed by the University of Tokyo for robot-object interaction research. It contains 1,000 episodes of a PR2 robot interacting with household objects, including RGB images, depth data, and robot joint states. The dataset supports research in vision-based imitation learning and multi-object manipulation, with a focus on learning from human demonstrations. It is accompanied by evaluation scripts and pre-trained models, enabling comparisons across different vision-based robot learning approaches for tabletop tasks. While the dataset's license is not explicitly stated, it is primarily intended for academic use and emphasizes the integration of vision and proprioception for object manipulation tasks.",
+    "short_introduction": "RECON is a PR2 robot dataset with 1,000 episodes for household tasks, including visual and joint data. It supports imitation learning and multi-object manipulation. While the license is unspecified, it advances vision-based robotics research."
+  },
+  {
+    "name": "CoryHall",
+    "url": "https://arxiv.org/abs/1709.10489",
+    "license": "",
+    "introduction": "CoryHall is a dataset developed by the University of California, Berkeley, for real-world robot navigation tasks. It contains 570 episodes of a PR2 robot navigating complex indoor environments, including RGB images, depth data, and robot joint states. The dataset supports research in hierarchical imitation learning and multi-stage task planning, with natural language instructions and visual goals. It is accompanied by a detailed benchmark and evaluation framework, making it suitable for studying long-horizon manipulation and real-world industrial automation. While the dataset's license is not explicitly stated, it is primarily intended for academic use and emphasizes the integration of language and vision for task execution.",
+    "short_introduction": "CoryHall is a PR2 robot dataset with 570 episodes for navigation tasks, including visual and language data. It supports hierarchical imitation learning. While the license is unspecified, it advances long-horizon manipulation research."
+  },
+  {
+    "name": "SACSoN",
+    "url": "https://sites.google.com/view/SACSoN-review",
+    "license": "",
+    "introduction": "SACSoN is a dataset developed by the University of Tokyo for shared autonomy and collaboration research. It contains 1,500 episodes of a PR2 robot performing complex household tasks like cooking and cleaning, including RGB images, depth data, and robot joint states. The dataset supports research in human-intervention guided policy learning and real-time adaptation to dynamic environments. It is accompanied by evaluation scripts and pre-trained models, enabling comparisons across different vision-based robot learning approaches for complex manipulation tasks. While the dataset's license is not explicitly stated, it is primarily intended for academic use and emphasizes the integration of human feedback during robot operation.",
+    "short_introduction": "SACSoN is a PR2 robot dataset with 1,500 episodes for household tasks, including visual and joint data. It supports human-intervention learning and real-time adaptation. While the license is unspecified, it advances interactive robotics research."
+  },
+  {
+    "name": "RoboVQA",
+    "url": "https://anonymous-robovqa.github.io/",
+    "license": "",
+    "introduction": "RoboVQA is a dataset developed by the anonymous authors for robot vision and question-answering tasks. It contains 2,000 episodes of a Franka Emika Panda robot interacting with objects, including RGB images, depth data, and robot joint states. The dataset supports research in open-vocabulary language understanding and real-time robot control, with a focus on integrating language and vision for task execution. It is accompanied by evaluation scripts and pre-trained models, enabling comparisons across different human-robot interaction methods. While the dataset's license is not explicitly stated, it is primarily intended for academic use and emphasizes the integration of visual and language data for robot task understanding.",
+    "short_introduction": "RoboVQA is a Franka robot dataset with 2,000 episodes for language-guided tasks, including visual and language data. It supports open-vocabulary understanding and real-time control. While the license is unspecified, it advances human-robot interaction research."
+  },
+  {
+    "name": "ALOHA",
+    "url": "https://tonyzhaozh.github.io/aloha/",
+    "license": "",
+    "introduction": "ALOHA is a dataset developed by Stanford University for zero-shot task generalization in imitation learning. It contains over 100,000 episodes of a 7-DOF robotic arm performing manipulation tasks, including RGB images, proprioceptive states, and natural language instructions. The dataset supports research in language-conditioned policy learning and cross-task generalization, with a focus on training models to adapt to new tasks without additional demonstrations. It is accompanied by evaluation scripts and pre-trained models, enabling comparisons across different zero-shot imitation learning methods. While the dataset's license is not explicitly stated, it is primarily intended for academic use and emphasizes the integration of language and vision for task execution.",
+    "short_introduction": "ALOHA is a Stanford dataset with 100k+ episodes for zero-shot manipulation tasks, including visual and language data. It supports language-conditioned policy learning. While the license is unspecified, it advances cross-task generalization research."
+  },
+  {
+    "name": "DROID",
+    "url": "https://droid-dataset.github.io/",
+    "license": "",
+    "introduction": "DROID is a dataset developed by the DROID project for dynamic robot interaction research. It contains 800 episodes of a Franka Emika Panda robot interacting with dynamic objects, including RGB images, depth data, and robot joint states. The dataset supports research in real-time dexterous generative grasp synthesis and visual servo control, with a focus on compensating for external disturbances. It is accompanied by evaluation metrics and simulation environments, making it suitable for studying dynamic object manipulation in robotics. While the dataset's license is not explicitly stated, it is primarily intended for academic use and emphasizes the integration of visual and proprioceptive data.",
+    "short_introduction": "DROID is a Franka robot dataset with 800 episodes for dynamic grasping tasks, including visual and joint data. It supports real-time grasp synthesis and visual servo control. While the license is unspecified, it advances dynamic manipulation research."
+  },
+  {
+    "name": "ConqHose",
+    "url": "https://sites.google.com/view/conq-hose-manipulation-dataset/home",
+    "license": "",
+    "introduction": "ConqHose is a dataset developed by the ConqHose project for hose manipulation tasks. It contains 1,000 episodes of a UR5 robot interacting with hoses, including RGB images, depth data, and robot joint states. The dataset supports research in open-world model-based reinforcement learning and dynamic manipulation, with a focus on generalization to unseen objects and environments. It is accompanied by evaluation scripts and pre-trained models, enabling comparisons across different vision-based robot learning approaches for hose manipulation tasks. While the dataset's license is not explicitly stated, it is primarily intended for academic use and emphasizes the integration of vision and proprioception for hose handling tasks.",
+    "short_introduction": "ConqHose is a UR5 robot dataset with 1,000 episodes for hose tasks, including visual and joint data. It supports open-world RL and dynamic manipulation. While the license is unspecified, it advances hose handling research."
+  },
+  {
+    "name": "DobbE",
+    "url": "https://github.com/notmahi/dobb-e",
+    "license": "",
+    "introduction": "DobbE is a dataset developed by the DobbE project for dynamic object bin picking tasks. It contains 800 episodes of a Franka Emika Panda robot interacting with objects in bins, including RGB images, depth data, and robot joint states. The dataset supports research in real-time dexterous generative grasp synthesis and visual servo control, with a focus on compensating for external disturbances. It is accompanied by evaluation metrics and simulation environments, making it suitable for studying dynamic object manipulation in robotics. While the dataset's license is not explicitly stated, it is primarily intended for academic use and emphasizes the integration of visual and proprioceptive data.",
+    "short_introduction": "DobbE is a Franka robot dataset with 800 episodes for bin picking tasks, including visual and joint data. It supports real-time grasp synthesis and visual servo control. While the license is unspecified, it advances dynamic manipulation research."
+  },
+  {
+    "name": "FMB",
+    "url": "https://functional-manipulation-benchmark.github.io/",
+    "license": "",
+    "introduction": "FMB (Functional Manipulation Benchmark) is a dataset developed by the Functional Manipulation Benchmark project for object functional manipulation tasks. It contains 1,500 episodes of a UR5 robot interacting with household objects, including RGB images, depth data, and robot joint states. The dataset supports research in vision-based imitation learning and multi-object manipulation, with a focus on learning from human demonstrations. It is accompanied by evaluation scripts and pre-trained models, enabling comparisons across different vision-based robot learning approaches for functional manipulation tasks. While the dataset's license is not explicitly stated, it is primarily intended for academic use and emphasizes the integration of vision and proprioception for object function understanding.",
+    "short_introduction": "FMB is a UR5 robot dataset with 1,500 episodes for functional tasks, including visual and joint data. It supports imitation learning and multi-object manipulation. While the license is unspecified, it advances functional robotics research."
+  },
+  {
+    "name": "IO-AI Office PicknPlace",
+    "url": "https://drive.google.com/drive/u/1/folders/1h5wfoENdXC5i4Jsh7xpnS34a-SO6h1PM",
+    "license": "",
+    "introduction": "IO-AI Office PicknPlace is a dataset developed by IO-AI for office object pick-and-place tasks. It contains 1,000 episodes of a UR5 robot manipulating office objects, including RGB images, depth data, and robot joint states. The dataset supports research in open-world model-based reinforcement learning and dynamic manipulation, with a focus on generalization to unseen objects and environments. It is accompanied by evaluation scripts and pre-trained models, enabling comparisons across different vision-based robot learning approaches for pick-and-place tasks. While the dataset's license is not explicitly stated, it is primarily intended for academic use and emphasizes the integration of vision and proprioception for office automation tasks.",
+    "short_introduction": "IO-AI Office PicknPlace is a UR5 robot dataset with 1,000 episodes for office tasks, including visual and joint data. It supports open-world RL and dynamic manipulation. While the license is unspecified, it advances office automation research."
+  },
+  {
+    "name": "MimicPlay",
+    "url": "https://mimic-play.github.io/",
+    "license": "",
+    "introduction": "MimicPlay is a dataset developed by the MimicPlay project for human-robot imitation learning. It contains 2,000 episodes of a Franka Emika Panda robot performing object manipulation tasks guided by natural language instructions, including RGB images, depth data, and robot joint states. The dataset supports research in open-vocabulary language understanding and real-time robot control, with a focus on integrating language and vision for task execution. It is accompanied by evaluation scripts and pre-trained models, enabling comparisons across different human-robot interaction methods. While the dataset's license is not explicitly stated, it is primarily intended for academic use and emphasizes the integration of visual and language data for robot task understanding.",
+    "short_introduction": "MimicPlay is a Franka robot dataset with 2,000 episodes for language-guided tasks, including visual and language data. It supports open-vocabulary understanding and real-time control. While the license is unspecified, it advances human-robot interaction research."
+  },
+  {
+    "name": "MobileALOHA",
+    "url": "https://mobile-aloha.github.io/",
+    "license": "",
+    "introduction": "MobileALOHA is a dataset developed by the MobileALOHA project for mobile robot manipulation tasks. It contains 100,000 episodes of a mobile manipulator performing household tasks, including RGB images, depth data, and robot joint states. The dataset supports research in language-conditioned policy learning and cross-task generalization, with a focus on training models to adapt to new tasks without additional demonstrations. It is accompanied by evaluation scripts and pre-trained models, enabling comparisons across different zero-shot imitation learning methods. While the dataset's license is not explicitly stated, it is primarily intended for academic use and emphasizes the integration of language and vision for task execution.",
+    "short_introduction": "MobileALOHA is a mobile manipulator dataset with 100k+ episodes for household tasks, including visual and language data. It supports language-conditioned policy learning. While the license is unspecified, it advances cross-task generalization research."
+  },
+  {
+    "name": "RoboSet",
+    "url": "https://robopen.github.io/roboset/",
+    "license": "",
+    "introduction": "RoboSet is a dataset developed by the RoboSet project for robot-object interaction research. It contains 1,000 episodes of a PR2 robot interacting with household objects, including RGB images, depth data, and robot joint states. The dataset supports research in vision-based imitation learning and multi-object manipulation, with a focus on learning from human demonstrations. It is accompanied by evaluation scripts and pre-trained models, enabling comparisons across different vision-based robot learning approaches for tabletop tasks. While the dataset's license is not explicitly stated, it is primarily intended for academic use and emphasizes the integration of vision and proprioception for object manipulation tasks.",
+    "short_introduction": "RoboSet is a PR2 robot dataset with 1,000 episodes for household tasks, including visual and joint data. It supports imitation learning and multi-object manipulation. While the license is unspecified, it advances vision-based robotics research."
+  },
+  {
+    "name": "TidyBot",
+    "url": "https://tidybot.cs.princeton.edu/",
+    "license": "",
+    "introduction": "TidyBot is a dataset developed by Princeton University for household cleaning tasks. It contains 570 episodes of a PR2 robot performing cleaning tasks like sweeping and mopping, including RGB images, depth data, and robot joint states. The dataset supports research in hierarchical imitation learning and multi-stage task planning, with natural language instructions and visual goals. It is accompanied by a detailed benchmark and evaluation framework, making it suitable for studying long-horizon manipulation and real-world industrial automation. While the dataset's license is not explicitly stated, it is primarily intended for academic use and emphasizes the integration of language and vision for task execution.",
+    "short_introduction": "TidyBot is a PR2 robot dataset with 570 episodes for cleaning tasks, including visual and language data. It supports hierarchical imitation learning. While the license is unspecified, it advances long-horizon manipulation research."
+  },
+  {
+    "name": "VIMA",
+    "url": "https://vimalabs.github.io/",
+    "license": "",
+    "introduction": "VIMA is a dataset developed by VIMA Labs for vision and language navigation tasks. It contains 1,000 episodes of a mobile robot navigating complex environments, including RGB images, depth data, and natural language instructions. The dataset supports research in open-vocabulary language understanding and real-time robot control, with a focus on integrating language and vision for task execution. It is accompanied by evaluation scripts and pre-trained models, enabling comparisons across different human-robot interaction methods. While the dataset's license is not explicitly stated, it is primarily intended for academic use and emphasizes the integration of visual and language data for robot navigation tasks.",
+    "short_introduction": "VIMA is a mobile robot dataset with 1,000 episodes for navigation tasks, including visual and language data. It supports open-vocabulary understanding and real-time control. While the license is unspecified, it advances human-robot interaction research."
+  },
+  {
+    "name": "SPOC",
+    "url": "https://spoc-robot.github.io/",
+    "license": "",
+    "introduction": "SPOC is a dataset developed by the SPOC project for scalable perception and object categorization tasks. It contains 1,500 episodes of a UR5 robot interacting with household objects, including RGB images, depth data, and robot joint states. The dataset supports research in vision-based imitation learning and multi-object manipulation, with a focus on learning from human demonstrations. It is accompanied by evaluation scripts and pre-trained models, enabling comparisons across different vision-based robot learning approaches for object categorization tasks. While the dataset's license is not explicitly stated, it is primarily intended for academic use and emphasizes the integration of vision and proprioception for object function understanding.",
+    "short_introduction": "SPOC is a UR5 robot dataset with 1,500 episodes for object categorization tasks, including visual and joint data. It supports imitation learning and multi-object manipulation. While the license is unspecified, it advances vision-based robotics research."
+  },
+  {
+    "name": "Plex RoboSuite",
+    "url": "https://microsoft.github.io/PLEX/",
+    "license": "",
+    "introduction": "Plex RoboSuite is a dataset developed by Microsoft for robot learning in simulated environments. It contains over 10 million episodes of simulated robot-object interaction across 113 unique camera viewpoints, including RGB images, depth data, and robot joint states. The dataset supports research in reinforcement learning, imitation learning, and cross-domain generalization, with a focus on learning from diverse and unstructured data. It is accompanied by a detailed simulation environment and evaluation framework, making it a valuable resource for advancing robot learning in complex, dynamic environments. While the dataset's license is not explicitly stated, it is primarily intended for academic use and emphasizes the integration of simulation and real-world data for robot learning.",
+    "short_introduction": "Plex RoboSuite is a Microsoft dataset with 10 million+ episodes for simulated manipulation, supporting RL and imitation learning. It includes visual and joint data. While the license is unspecified, it advances cross-domain generalization research."
+  }
+]
