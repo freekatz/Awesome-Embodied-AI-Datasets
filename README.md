@@ -15,7 +15,7 @@
 
 > [!NOTE]
 > - Total datasets: 72
-> - Latest Update:  2025-04-27
+> - Latest Update:  2025-05-21
 
 
 # Contents
@@ -54,16 +54,6 @@
 ### Scene Type Distribution Word Cloud![Scene Word Cloud](./assets/scene_wordcloud.png)
 
 ## <a name="newly-released"></a>Newly Released
-- 2025-04-22: [Language Table](#language_table)
-- 2025-04-22: [DROID](#droid)
-- 2025-04-22: [LSMO Dataset](#lsmo_dataset)
-- 2025-04-22: [DLR Wheelchair Shared Control](#dlr_wheelchair_shared_control)
-- 2025-04-22: [TOTO Benchmark](#toto_benchmark)
-- 2025-04-22: [DobbE](#dobbe)
-- 2025-04-22: [VIMA](#vima)
-- 2025-04-22: [DLR Sara Pour Dataset](#dlr_sara_pour_dataset)
-- 2025-04-22: [Tokyo PR2 Tabletop Manipulation](#tokyo_pr2_tabletop_manipulation)
-- 2025-04-22: [TidyBot](#tidybot)
 
 
 
@@ -111,9 +101,11 @@ Task: The robot performs various household-like tasks, such as setting up the ta
 
 ### <a name="aloha" href="./datasets/ALOHA">ALOHA</a>
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 Homepage: <a href="https://tonyzhaozh.github.io/aloha/" target="_blank">https://tonyzhaozh.github.io/aloha/</a>
 
-ALOHA is a Stanford dataset with 100k+ episodes for zero-shot manipulation tasks, including visual and language data. It supports language-conditioned policy learning. While the license is unspecified, it advances cross-task generalization research.
+ALOHA is a Low-cost Open-source Hardware System for Bimanual Teleoperation. With a $20k budget, it is capable of teleoperating precise tasks such as threading a zip tie, dynamic tasks such as juggling a ping pong ball, and contact-rich tasks such as assembling the chain in the NIST board 2.
 
 Task: Bi-manual robot performing complex, dexterous tasks like unwrapping candy and putting on shoes.
 
