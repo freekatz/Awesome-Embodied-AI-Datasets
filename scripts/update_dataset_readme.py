@@ -26,6 +26,7 @@ if __name__ == '__main__':
             'scripts/render_dataset_readme.py',
             '--dataset',
             str(dir.absolute()),
+            '--force',
         ]
         res = subprocess.run(cmd, capture_output=True, text=True, check=True)
         print(f'updating README.md for {dir}')
