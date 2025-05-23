@@ -149,15 +149,20 @@ class DatasetList:
         from wordcloud import WordCloud
         import matplotlib.pyplot as plt
 
-        # Collect scene types and their counts
+        # 1 Collect scene types and their counts
         scene_counts = {}
         for cls_name in self.datasets_with_cls_name:
             for dataset in self.datasets_with_cls_name[cls_name]:
                 scene_type = dataset.meta_info['scene_type']
-                if scene_type in scene_counts:
-                    scene_counts[scene_type] += 1
-                else:
-                    scene_counts[scene_type] = 1
+                scene_type = scene_type.strip()
+                for scene in scene_type.split(','):
+                    scene = scene.strip()
+                    if len(scene) == 0:
+                        continue
+                    if scene in scene_counts:
+                        scene_counts[scene] += 1
+                    else:
+                        scene_counts[scene] = 1
 
         # Generate word cloud
         wordcloud = WordCloud(width=800, height=400, background_color='white').generate_from_frequencies(scene_counts)
@@ -170,8 +175,11 @@ class DatasetList:
         plt.savefig(wordcloud_path, format='png')
         plt.close()
 
-        # Add word cloud to markdown
-        markdown = f"### Scene Type Distribution Word Cloud![Scene Word Cloud](./assets/scene_wordcloud.png)"
+        scene_markdown = f"### Scene Type Distribution Word Cloud\n\n![Scene Word Cloud](./assets/scene_wordcloud.png)"
+
+        # 2 todo
+
+        markdown = scene_markdown
         return markdown
 
     def trending_markdown(self) -> str:

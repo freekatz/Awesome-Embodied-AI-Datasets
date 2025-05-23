@@ -15,7 +15,7 @@
 
 > [!NOTE]
 > - Total datasets: 72
-> - Latest Update:  2025-05-21
+> - Latest Update:  2025-05-23
 
 
 # Contents
@@ -51,7 +51,9 @@
 
 
 ## <a name="statistics"></a>Statistics
-### Scene Type Distribution Word Cloud![Scene Word Cloud](./assets/scene_wordcloud.png)
+### Scene Type Distribution Word Cloud
+
+![Scene Word Cloud](./assets/scene_wordcloud.png)
 
 ## <a name="newly-released"></a>Newly Released
 
