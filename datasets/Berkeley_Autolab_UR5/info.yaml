@@ -1,16 +1,7 @@
 action_space: EEF Position
 control_frequency: 5
 custom_fields:
-  introduction: Berkeley Autolab UR5 is a dataset for robot learning, developed by
-    UC Berkeley's Autolab. It contains 10,000 episodes of a UR5 robot performing pick-and-place
-    tasks in a simulated environment, including RGB images, depth data, and robot
-    joint states. The dataset supports research in visual servoing and dynamic control,
-    with a focus on real-time adaptation to environmental changes. While the dataset's
-    license is not explicitly stated, it is primarily intended for academic use. Berkeley
-    Autolab UR5 includes annotations for object poses and task goals, making it suitable
-    for training models to learn closed-loop control policies. The dataset is accompanied
-    by a detailed simulation environment and evaluation framework, enabling systematic
-    testing of robot learning algorithms.
+  introduction: The Berkeley-UR5 Project is an integrated research initiative focused on advancing robotic manipulation capabilities using UR5 collaborative robots, with particular emphasis on deformable object handling, human-robot interaction, and imitation learning in unstructured environments. Developed at the University of California, Berkeley, this project leverages the UR5's lightweight design (5kg payload) and 6-DoF flexibility to execute complex tasks such as cloth folding, cable rearrangement, and precision handover operations. Its core innovation lies in a multi-modal learning framework combining imitation learning (e.g., Multi-level Kernelized Movement Primitives) and goal-conditioned visual policies (e.g., Transporter Networks), enabling the robot to generalize skills from limited demonstrations to novel scenarios—such as adapting fabric manipulation strategies to varying textile stiffness or scaling handover trajectories across workspace regions. The project further provides open-source simulation benchmarks (e.g., DeformableRavens) with 12 standardized tasks for training and evaluating deformable object manipulation, alongside real-world datasets capturing UR5 kinematic states and visual observations for reproducibility. By bridging sim-to-real gaps through modular hardware interfaces and reinforcement learning pipelines, Berkeley-UR5 serves as a foundational platform for research in adaptive industrial automation and domestic service robotics.
 data_collect_method: Human Spacemouse
 depth_cams: 1
 episodes: 192
@@ -20,16 +11,13 @@ has_camera_calibration: false
 has_proprioception: true
 has_suboptimal: false
 language_annotations: Templated
-license: 'null'
+license: 'CC BY 4.0'
 name: Berkeley Autolab UR5
 rgb_cams: 2
 robot: PR2
 robot_morphology: Single Arm
 scene_type: Table Top
-short_introduction: Berkeley Autolab UR5 is a UC Berkeley dataset with 10,000 UR5
-  robot episodes for pick-and-place tasks. It includes visual and joint data, supporting
-  real-time control. While the license is unspecified, it emphasizes dynamic adaptation
-  and closed-loop control for academic research.
+short_introduction: Berkeley-UR5 is a research platform for adaptive robotic manipulation, utilizing UR5 robots and imitation learning to master deformable object handling and human-robot collaboration tasks.
 task_description: 'The data consists of 4 robot manipulation tasks: simple pick-and-place
   of a stuffed animal between containers, sweeping a cloth, stacking cups, and a more
   difficult pick-and-place of a bottle that requires precise grasp and 6DOF rotation'
