@@ -19,7 +19,7 @@ has_camera_calibration: false
 has_proprioception: true
 has_suboptimal: false
 language_annotations: 'null'
-license: 'null'
+license: 'MIT'
 name: Austin BUDS
 rgb_cams: 2
 robot: Franka
