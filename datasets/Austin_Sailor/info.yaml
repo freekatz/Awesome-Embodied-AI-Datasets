@@ -18,7 +18,7 @@ gripper: Default
 has_camera_calibration: false
 has_proprioception: true
 has_suboptimal: false
-language_annotations: 'null'
+language_annotations: 'MIT'
 license: 'null'
 name: Austin Sailor
 rgb_cams: 2
