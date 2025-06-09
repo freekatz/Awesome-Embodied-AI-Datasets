@@ -15,7 +15,7 @@
 
 > [!NOTE]
 > - Total datasets: 72
-> - Latest Update:  2025-05-23
+> - Latest Update:  2025-06-09
 
 
 # Contents
@@ -63,6 +63,8 @@
 
 ### <a name="austin_buds" href="./datasets/Austin_BUDS">Austin BUDS</a>
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 Homepage: <a href="https://ut-austin-rpl.github.io/rpl-BUDS/" target="_blank">https://ut-austin-rpl.github.io/rpl-BUDS/</a>
 
 Austin BUDS is a UR5 robot dataset with 365 episodes for skill discovery, supporting unsupervised hierarchical learning. It includes visual and joint data, released under MIT. It advances reusable skill learning from unsegmented demonstrations.
@@ -71,13 +73,17 @@ Task: The robot is trying to solve a long-horizon kitchen task by picking up pot
 
 ### <a name="austin_mutex" href="./datasets/Austin_Mutex">Austin Mutex</a>
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 Homepage: <a href="https://ut-austin-rpl.github.io/MUTEX/" target="_blank">https://ut-austin-rpl.github.io/MUTEX/</a>
 
-Austin Mutex is a UR5 robot dataset with 5,000 episodes for household tasks, supporting hierarchical imitation learning. It includes visual and joint data, released under MIT. It facilitates skill transfer and task adaptation research.
+MUTEX is an exocentric-view multi-object tracking dataset featuring challenging real-world scenarios with precise annotations, designed to advance occlusion-robust tracking research.
 
 Task: The Mutex dataset involves a diverse range of tasks in a home environment, encompassing pick and place tasks like "putting bread on a plate," as well as contact-rich tasks such as "opening an air fryer and putting a bowl with dogs in it" or "taking out a tray from the oven and placing bread on it."
 
 ### <a name="austin_sailor" href="./datasets/Austin_Sailor">Austin Sailor</a>
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Homepage: <a href="https://ut-austin-rpl.github.io/sailor/" target="_blank">https://ut-austin-rpl.github.io/sailor/</a>
 
@@ -87,17 +93,21 @@ Task: The robot interacts with diverse objects in a toy kitchen. It picks and pl
 
 ### <a name="austin_sirius" href="./datasets/Austin_Sirius">Austin Sirius</a>
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 Homepage: <a href="https://ut-austin-rpl.github.io/sirius/" target="_blank">https://ut-austin-rpl.github.io/sirius/</a>
 
-Austin Sirius is a Franka robot dataset with 570 human-intervention episodes for household tasks. It includes visual and joint data, released under MIT. It supports real-time adaptation and human-in-the-loop learning for interactive robotics research.
+Sirius pioneers shared autonomy for human-robot collaboration, combining autonomous execution with human teleoperation for corrective interventions. Our algorithms use deployment data to iteratively refine robot policies, enabling adaptive learning across task cycles.
 
 Task: The dataset comprises two tasks, kcup and gear. The kcup task requires opening the kcup holder, inserting the kcup into the holder, and closing the holder. The gear task requires inserting the blue gear onto the right peg, followed by inserting the smaller red gear.
 
 ### <a name="austin_viola" href="./datasets/Austin_VIOLA">Austin VIOLA</a>
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 Homepage: <a href="https://ut-austin-rpl.github.io/VIOLA/" target="_blank">https://ut-austin-rpl.github.io/VIOLA/</a>
 
-Austin VIOLA is a UT Austin dataset with 5,000 UR5 robot episodes for object manipulation. It includes visual and joint data, supporting imitation learning. While the license is unspecified, it emphasizes generalization to new objects and environments for academic research.
+VIOLA is an object - centric imitation learning method for robotic manipulation. It builds on pre - trained visual models, uses Transformer - based policies for prediction, and has a strong structural prior. With a 45.8% higher success rate than the latest methods, it's been applied to real - world tasks like table setting and coffee making.
 
 Task: The robot performs various household-like tasks, such as setting up the table, or making coffee using a coffee machine.
 
@@ -115,7 +125,7 @@ Task: Bi-manual robot performing complex, dexterous tasks like unwrapping candy 
 
 Homepage: <a href="https://link.springer.com/article/10.1007/s10514-023-10129-1" target="_blank">https://link.springer.com/article/10.1007/s10514-023-10129-1</a>
 
-ASU TableTop Manipulation is a UR5 robot dataset with 1,500 episodes for tabletop tasks, including visual and joint data. It supports imitation learning and multi-object manipulation. While the license is unspecified, it emphasizes generalization to novel objects for academic research.
+We introduce "Hierarchical Modularity" for robotic manipulation, breaking tasks into reusable sub-modules and using "Supervised Attention" for dynamic combination. With an automated 3D object pipeline and curriculum learning, it speeds up training by 30 - 50% and boosts cross-robot success by 25%. Validated in simulations and on real robots, it also enables runtime introspection for interpretability.
 
 Task: The robot interacts with a few objects on a table. It picks up, pushes forward, or rotates the objects.
 
@@ -123,9 +133,11 @@ Task: The robot interacts with a few objects on a table. It picks up, pushes for
 
 ### <a name="berkeley_autolab_ur5" href="./datasets/Berkeley_Autolab_UR5">Berkeley Autolab UR5</a>
 
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+
 Homepage: <a href="https://sites.google.com/view/berkeley-ur5/home" target="_blank">https://sites.google.com/view/berkeley-ur5/home</a>
 
-Berkeley Autolab UR5 is a UC Berkeley dataset with 10,000 UR5 robot episodes for pick-and-place tasks. It includes visual and joint data, supporting real-time control. While the license is unspecified, it emphasizes dynamic adaptation and closed-loop control for academic research.
+Berkeley-UR5 is a research platform for adaptive robotic manipulation, utilizing UR5 robots and imitation learning to master deformable object handling and human-robot collaboration tasks.
 
 Task: The data consists of 4 robot manipulation tasks: simple pick-and-place of a stuffed animal between containers, sweeping a cloth, stacking cups, and a more difficult pick-and-place of a bottle that requires precise grasp and 6DOF rotation
 
@@ -171,9 +183,11 @@ Task: Picking, stacking, destacking, and bin picking with variations in objects.
 
 ### <a name="bc-z" href="./datasets/BC-Z">BC-Z</a>
 
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+
 Homepage: <a href="https://www.kaggle.com/datasets/google/bc-z-robot/discussion/309201" target="_blank">https://www.kaggle.com/datasets/google/bc-z-robot/discussion/309201</a>
 
-BC-Z is a Google dataset with 100k+ episodes for zero-shot manipulation tasks, including visual and language data. It supports language-conditioned policy learning. While the license is unspecified, it advances cross-task generalization research.
+BC-Z is a large-scale robotic imitation learning dataset enabling zero-shot generalization to unseen tasks via language or video conditioning, featuring 25K+ real-world manipulation demonstrations.
 
 Task: The robot attempts picking, wiping, and placing tasks on a diverse set of objects on a tabletop, along with a few challenging tasks like stacking cups on top of each other.
 

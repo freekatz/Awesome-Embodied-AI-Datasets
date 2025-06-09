@@ -2,7 +2,7 @@
 
 # dynamic configs
 custom_meta_info_key = 'custom_fields'
-must_meta_info_key = ['license', 'url', 'short_description', 'task_description']
+must_meta_info_key = ['license', 'url', 'short_introduction', 'task_description']
 visible_meta_info_key = []
 visible_meta_info_key_details = [
     'license',

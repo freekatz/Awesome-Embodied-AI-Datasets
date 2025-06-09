@@ -3,7 +3,18 @@
 
 ## Introduction
 
-ASU TableTop Manipulation is a robotics dataset developed by Arizona State University for tabletop object manipulation tasks. It contains 1,500 episodes of a UR5 robot interacting with household objects, including RGB images, depth data, and robot joint states. The dataset supports research in vision-based imitation learning and multi-object manipulation, with a focus on learning from human demonstrations. It is accompanied by evaluation scripts and pre-trained models, enabling comparisons across different vision-based robot learning approaches for tabletop tasks. While the dataset's license is not explicitly stated, it is primarily intended for academic use and emphasizes generalization to novel object configurations.
+In the field of robotic manipulation, achieving efficient training and good policy transferability 
+has always been a major challenge. To address this problem, we propose the "Hierarchical Modularity" approach. 
+This method decomposes complex tasks into reusable sub-modules and uses the "Supervised Attention" mechanism to 
+dynamically combine these sub-modules to meet different task requirements. At the same time, we have constructed
+an automated 3D object synthesis process and adopted a curriculum learning strategy to accelerate the model
+training process. Experiments show that compared with traditional methods, such as BC-Z, our method increases the 
+training speed by 30%-50% and improves the success rate of cross-robot task execution by 25%. We have conducted
+numerous experiments in simulated environments (such as Franka, UR5) and on real UR5 robots, covering tasks such as 
+obstacle avoidance and object relational placement, fully verifying the efficiency and generalization ability of 
+this method. In addition, this method can also introspect the robot's decision-making process at runtime, improving 
+the interpretability of the model and helping to further optimize the robot policy.
+
 
 
 ## Homepage

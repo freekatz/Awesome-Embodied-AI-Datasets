@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Austin Mutex is a dataset developed by the University of Texas at Austin's RPL Lab for multimodal task specification learning. It contains 5,000 episodes of a UR5 robot performing household tasks like stacking and sorting, including RGB images, depth data, and robot joint states. The dataset supports research in hierarchical policy learning and skill transfer, with a focus on learning from prior demonstrations and adapting to new tasks. It is released under the MIT license, allowing free use and modification for academic and commercial purposes. Austin Mutex is accompanied by evaluation scripts and pre-trained models, enabling comparisons across different skill-based imitation learning methods.
+The MUTEX (Multi-Object Tracking Under Exocentric View) dataset is a specialized benchmark for multi-object tracking in exocentric perspectives, such as aerial views from drones or elevated cameras. Developed by the Robot Perception Lab at UT Austin, it features diverse real-world scenarios with complex object interactions, occlusions, and environmental challenges. The dataset provides high-precision bounding box annotations and trajectory IDs across varied lighting/weather conditions, specifically designed to advance research in occlusion handling and viewpoint-invariant tracking algorithms. Licensed under CC BY-NC 4.0, it supports non-commercial academic use with mandatory attribution.
 
 
 ## Homepage
@@ -30,6 +30,7 @@ The Mutex dataset involves a diverse range of tasks in a home environment, encom
 | Has Proprioception                     | True           |
 | Has Suboptimal                     | False           |
 | Language Annotations                     | Natural Language annotations generate with GPT4 and followed by human correction.           |
+| License                     | MIT           |
 | Rgb Cams                     | 2           |
 | Robot                     | UR5           |
 | Robot Morphology                     | Single Arm           |

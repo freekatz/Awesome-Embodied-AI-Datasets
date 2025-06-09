@@ -29,6 +29,7 @@ The robot interacts with diverse objects in a toy kitchen. It picks and places f
 | Has Camera Calibration                     | False           |
 | Has Proprioception                     | True           |
 | Has Suboptimal                     | False           |
+| License                     | MIT           |
 | Rgb Cams                     | 2           |
 | Robot                     | UR5           |
 | Robot Morphology                     | Single Arm           |
