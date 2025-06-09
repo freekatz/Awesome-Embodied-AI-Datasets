@@ -1,19 +1,22 @@
 action_space: EEF Position
 control_frequency: 3
 custom_fields:
-  introduction: RT-1 Robot Action is a robotics dataset developed by Google Research,
-    designed to enable robots to learn from diverse experiences across different tasks
-    and environments. The dataset contains over 130,000 episodes of real-world robot
-    actions collected from a fleet of robots over 17 months, covering more than 700
-    tasks such as grasping, pushing, and object repositioning. It emphasizes scalability
-    and generalization by combining data from various robots, allowing models to learn
-    transferable skills. The dataset is structured with RGB camera feeds, natural
-    language instructions, and motor commands, supporting end-to-end control using
-    the Robotics Transformer (RT-1) architecture. It is released under the permissive
-    Apache 2.0 license, encouraging both academic and commercial use while promoting
-    collaboration in the robotics community. RT-1 has demonstrated significant improvements
-    in generalization to new tasks and environments, making it a valuable resource
-    for advancing scalable robot learning research.
+  introduction: |
+    RT-1 is a multi-task transformer model developed by Google Research, designed to enable real-time, vision-based robotic control through large-scale real-world data training. Trained on 130,000 demonstration episodes collected over 17 months from 13 Everyday Robots (EDR) platforms—each equipped with 7-DoF arms and mobile bases—the dataset captures diverse manipulation tasks across kitchen environments. Key features include:
+
+    Task Diversity: Covers 700+ tasks such as picking/placing objects, opening/closing drawers, inserting elongated items upright, pulling napkins, and opening cans, involving interactions with 1,000+ household objects under randomized lighting and camera views.
+
+    Language-Annotated Trajectories: Each episode is annotated with natural language instructions (e.g., "place the coffee pod into the machine"), enabling language-conditioned policy learning.
+
+    Multi-Modal Data: Synchronized RGB images, joint states, gripper actions, and binary success labels stored in a unified format for efficient transformer training.
+
+    RT-1’s architecture tokenizes visual inputs (via EfficientNet-B3) and robot actions into discrete bins, leveraging a TokenLearner module to compress spatial features and accelerate inference by 2.4×. This design achieves:
+
+    97% success rate on seen tasks and 73% on unseen task-object combinations, outperforming prior models (e.g., Gato, BC-Z) by >40% in generalization.
+
+    Robustness to disturbances: Maintains 89% accuracy under occlusion or object displacement scenarios.
+
+    Cross-domain data absorption: Effectively integrates simulation or heterogeneous robot data (e.g., Kuka bin-picking), improving transfer learning efficiency.
 data_collect_method: Human VR
 depth_cams: 1
 episodes: 5100
@@ -23,17 +26,13 @@ has_camera_calibration: false
 has_proprioception: true
 has_suboptimal: false
 language_annotations: Templated
-license: 'null'
+license: 'Apache 2.0'
 name: RT-1 Robot Action
 rgb_cams: 1
 robot: Franka
 robot_morphology: Mobile Manipulator
 scene_type: Table Top, Kitchen (also toy kitchen)
-short_introduction: RT-1 Robot Action is a large-scale dataset from Google Research,
-  containing over 130,000 episodes of real-world robot actions across 700 tasks. It
-  supports end-to-end control using the Robotics Transformer, emphasizing scalability
-  and generalization. Released under Apache 2.0, it enables robots to learn transferable
-  skills from diverse experiences, advancing scalable robot learning.
+short_introduction: RT-1 is a transformer-based model trained on 130k real-world robotic episodes, enabling real-time control with 97% task success and robust generalization to novel objects, environments, and instructions.
 task_description: Robot picks, places and moves 17 objects from the google micro kitchens.
 url: https://ai.googleblog.com/2022/12/rt-1-robotics-transformer-for-real.html
 wrist_cams: 0

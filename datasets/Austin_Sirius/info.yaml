@@ -1,15 +1,15 @@
 action_space: EEF velocity
 control_frequency: 20
 custom_fields:
-  introduction: Sirius enables collaborative manipulation tasks between humans and robots through shared autonomy. In this framework, robots execute actions autonomously while humans monitor performance and intervene via teleoperation to provide corrective guidance. Our core algorithm leverages deployment data to iteratively refine robot policies across successive rounds of policy learning, enhancing autonomy while minimizing human intervention. This closed-loop system bridges adaptive control and continuous improvement, advancing human-robot teamwork in complex real-world scenarios.
-
-Key technical highlights:
-
-Shared Control: Seamlessly integrates human oversight with robot autonomy.
-
-Intervention-Driven Learning: Corrections via teleoperation directly inform policy updates.
-
-Iterative Policy Refinement: Data from each deployment cycle optimizes future autonomy.
+  introduction: Austin Sirius is a dataset developed by the University of Texas at
+    Austin's RPL Lab for human-in-the-loop robot learning. It contains 570 episodes
+    of a Franka Emika Panda robot performing complex household tasks like cooking
+    and cleaning, including RGB images, depth data, and robot joint states. The dataset
+    supports research in human-intervention guided policy learning and real-time adaptation
+    to dynamic environments. It is released under the MIT license, allowing free use
+    and modification for academic and commercial purposes. Austin Sirius emphasizes
+    the integration of human feedback during robot operation, making it a valuable
+    resource for advancing interactive and adaptive robotics research.
 data_collect_method: Human Spacemouse
 depth_cams: 0
 episodes: 2460
@@ -25,7 +25,10 @@ rgb_cams: 2
 robot: Franka
 robot_morphology: Single Arm
 scene_type: Table Top
-short_introduction: Sirius pioneers shared autonomy for human-robot collaboration, combining autonomous execution with human teleoperation for corrective interventions. Our algorithms use deployment data to iteratively refine robot policies, enabling adaptive learning across task cycles.
+short_introduction: Austin Sirius is a Franka robot dataset with 570 human-intervention
+  episodes for household tasks. It includes visual and joint data, released under
+  MIT. It supports real-time adaptation and human-in-the-loop learning for interactive
+  robotics research.
 task_description: The dataset comprises two tasks, kcup and gear. The kcup task requires
   opening the kcup holder, inserting the kcup into the holder, and closing the holder.
   The gear task requires inserting the blue gear onto the right peg, followed by inserting

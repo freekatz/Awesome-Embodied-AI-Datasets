@@ -1,16 +1,7 @@
 action_space: Joint position
 control_frequency: 50
 custom_fields:
-  introduction: MobileALOHA is a dataset developed by the MobileALOHA project for
-    mobile robot manipulation tasks. It contains 100,000 episodes of a mobile manipulator
-    performing household tasks, including RGB images, depth data, and robot joint
-    states. The dataset supports research in language-conditioned policy learning
-    and cross-task generalization, with a focus on training models to adapt to new
-    tasks without additional demonstrations. It is accompanied by evaluation scripts
-    and pre-trained models, enabling comparisons across different zero-shot imitation
-    learning methods. While the dataset's license is not explicitly stated, it is
-    primarily intended for academic use and emphasizes the integration of language
-    and vision for task execution.
+  introduction: The Mobile ALOHA dataset is a resource for robotic mobile manipulation tasks, collected through a low-cost, whole-body teleoperation system. It extends the ALOHA system by incorporating a mobile base and a whole-body teleoperation interface. The dataset includes approximately 50 demonstrations per task, and co-training with static ALOHA datasets can increase task success rates by up to 90%. This enables robots to autonomously complete complex tasks such as sautéing and serving shrimp, opening a two-door wall cabinet, calling and entering an elevator, and rinsing a pan using a kitchen faucet.
 data_collect_method: Human Puppeteering
 depth_cams: 0
 episodes: 'null'
@@ -20,16 +11,13 @@ has_camera_calibration: false
 has_proprioception: true
 has_suboptimal: false
 language_annotations: Templated
-license: 'null'
+license: 'MIT'
 name: MobileALOHA
 rgb_cams: 3
 robot: 'null'
 robot_morphology: Mobile Manipulator
 scene_type: Table Top, Kitchen (also toy kitchen), Other Household environments, Hallways
-short_introduction: MobileALOHA is a mobile manipulator dataset with 100k+ episodes
-  for household tasks, including visual and language data. It supports language-conditioned
-  policy learning. While the license is unspecified, it advances cross-task generalization
-  research.
+short_introduction: The Mobile ALOHA dataset supports robotic mobile manipulation tasks like cooking and elevator use through low-cost teleoperation, significantly improving success rates.
 task_description: The robot interacts with diverse appliances in a real kitchen and
   indoor environments. It wipes spilled wine, stores a heavy pot to be inside wall
   cabinets, calls an elevator, pushes chairs, and cooks shrimp.

@@ -1,17 +1,14 @@
 action_space: EEF Position
 control_frequency: 3
 custom_fields:
-  introduction: NYU ROT is a dataset developed by NYU for robot manipulation research,
-    focusing on object rearrangement tasks. It contains 1,000 episodes of a Franka
-    Emika Panda robot interacting with household objects, including RGB images, depth
-    data, and robot joint states. The dataset supports research in visual imitation
-    learning and goal-driven control, with a focus on generalization to new objects
-    and environments. While the dataset's license is not explicitly stated, it is
-    primarily intended for academic use. NYU ROT includes annotations for object categories
-    and manipulation goals, making it suitable for training models to learn task-specific
-    skills from visual input. The dataset is accompanied by evaluation scripts and
-    pre-trained models, facilitating comparisons across different vision-based robot
-    learning methods.
+  introduction: |
+    ROT (Regularized Optimal Transport) is a novel imitation learning framework proposed by researchers at New York University, designed to overcome the data inefficiency and high interaction costs of traditional Inverse Reinforcement Learning (IRL) methods. It integrates Optimal Transport (OT)-based trajectory matching with adaptive behavior cloning regularization, enabling robots to achieve high-precision policy learning with minimal demonstrations. Key innovations include:
+
+    One-shot demonstration & one-hour online training: On real-world robotic manipulation tasks (e.g., object pouring, cup placement, hanger mounting), ROT achieves an average success rate of 90.1% with only one expert demonstration and one hour of online fine-tuning, outperforming behavioral cloning (36.1%) and adversarial IRL (14.6%) by significant margins.
+
+    7.8× faster imitation learning: Across 20 simulated tasks (DeepMind Control, OpenAI Robotics, Meta-world), ROT reaches 90% expert performance 7.8× faster than prior state-of-the-art methods by adaptively balancing trajectory matching rewards and BC regularization via Soft Q-Filtering.
+
+    Robustness to distribution shift: By initializing policies with BC pretraining and refining via OT-based IRL with self-tuned regularization, ROT mitigates exploration challenges and distribution shifts in high-dimensional observation spaces.
 data_collect_method: Human Joystick
 depth_cams: 0
 episodes: 480
@@ -27,10 +24,9 @@ rgb_cams: 1
 robot: xArm
 robot_morphology: Single Arm
 scene_type: Table Top
-short_introduction: NYU ROT is a Franka robot dataset with 1,000 object rearrangement
-  episodes, supporting visual imitation learning. It includes visual and joint data,
-  emphasizing generalization. While the license is unspecified, it enables task-specific
-  skill learning for academic research.
+short_introduction: ROT is an efficient imitation learning algorithm that combines optimal transport trajectory matching with adaptive behavior cloning, enabling robots to learn manipulation policies at 90% success rates with just one demonstration and one hour of online training.
+
+
 task_description: The robot arm performs diverse manipulation tasks on a tabletop
   such an box opening, cup stacking, and pouring, among others.
 url: https://rot-robot.github.io/

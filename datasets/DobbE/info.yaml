@@ -1,15 +1,9 @@
 action_space: EEF Position
 control_frequency: 3.75
 custom_fields:
-  introduction: DobbE is a dataset developed by the DobbE project for dynamic object
-    bin picking tasks. It contains 800 episodes of a Franka Emika Panda robot interacting
-    with objects in bins, including RGB images, depth data, and robot joint states.
-    The dataset supports research in real-time dexterous generative grasp synthesis
-    and visual servo control, with a focus on compensating for external disturbances.
-    It is accompanied by evaluation metrics and simulation environments, making it
-    suitable for studying dynamic object manipulation in robotics. While the dataset's
-    license is not explicitly stated, it is primarily intended for academic use and
-    emphasizes the integration of visual and proprioceptive data.
+  introduction: |
+    Dobb-E: On Bringing Robots Home is an open-source framework designed to enable rapid learning of household manipulation tasks via data-driven imitation learning, addressing the critical challenges of scarce real-world training data and complexity in adapting to diverse domestic environments through two key components: The Stick, a low-cost hardware tool using iPhone sensors and 3D-printed parts to collect human demonstrations in real homes, capturing multimodal data (RGB-D, motion, depth) at 100 Hz for high-fidelity task recording without specialized equipment, and Home Pretrained Representations (HPR), a visual foundation model trained on 13 hours of data from 22 New York City homes that generalizes across environments by encoding household-specific features (e.g., lighting variations, clutter) to reduce task-specific retraining; in deployment, Dobb-E learns new tasks in 20 minutes (5 minutes of user demonstration with The Stick and 15 minutes of model fine-tuning to adapt HPR to the target environment), validated across 10 homes and 109 tasks (e.g., opening air fryers, arranging cushions) with an 81% success rate in unseen home settings—outperforming lab-trained baselines by >40%—and robustness to real-world challenges like strong shadows and novice-user demonstration variability.
+
 data_collect_method: Human collection using tools
 depth_cams: 1
 episodes: 'null'
@@ -19,16 +13,14 @@ has_camera_calibration: true
 has_proprioception: false
 has_suboptimal: false
 language_annotations: Natural
-license: 'null'
+license: 'CC BY-NC 4.0'
 name: DobbE
 rgb_cams: 1
 robot: 'null'
 robot_morphology: Mobile Manipulator
 scene_type: Kitchen (also toy kitchen), Other Household environments, Hallways
-short_introduction: DobbE is a Franka robot dataset with 800 episodes for bin picking
-  tasks, including visual and joint data. It supports real-time grasp synthesis and
-  visual servo control. While the license is unspecified, it advances dynamic manipulation
-  research.
+short_introduction: Dobb-E enables robots to learn household tasks in 20 minutes via user demonstrations and adaptive
+  pretrained representations (HPR). Validated in 109 real-home tasks with 81% success, it open-sources data, models, and hardware designs to democratize home robotics.
 task_description: The demo collector uses the Stick to collect data from 7 tasks,
   including door/drawer opening/closing, handle grasping, pick and place, and random
   play data.

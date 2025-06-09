@@ -1,15 +1,24 @@
 action_space: Joint position
 control_frequency: 50
 custom_fields:
-  introduction: Saytap is a dataset developed by the Saytap project for human-robot
-    interaction research. It contains 2,000 episodes of a Franka Emika Panda robot
-    performing object manipulation tasks guided by natural language instructions,
-    including RGB images, depth data, and robot joint states. The dataset supports
-    research in open-vocabulary language understanding and real-time robot control,
-    with a focus on integrating language and vision for task execution. While the
-    dataset's license is not explicitly stated, it is primarily intended for academic
-    use. Saytap is accompanied by evaluation scripts and pre-trained models, enabling
-    comparisons across different human-robot interaction methods.
+  introduction: |
+    SayTap is a novel framework that bridges natural language commands with low-level quadrupedal locomotion control by using foot contact patterns as a universal interface. Developed by researchers at UC Berkeley and Google DeepMind, it allows users to flexibly dictate diverse robotic gaits (e.g., "trot slowly backward" or "jump over obstacles") without manual trajectory engineering. Key innovations include:
+
+    Language-to-Contact Translator:
+
+    Leverages large language models (LLMs) to convert free-form instructions into temporal foot contact patterns (binary sequences indicating ground contact for each leg).
+
+    Achieves >50% accuracy in predicting optimal contact patterns for 30+ tasks, outperforming motion-scripted baselines by 2.1× .
+
+    Contact-Conditioned Controller:
+
+    Uses reinforcement learning to map contact patterns to joint angles and motor torques, with reward functions prioritizing stability and energy efficiency.
+
+    Supports zero-shot transfer to real robots (Unitree Go1, A1) with 87% task success in unstructured environments .
+
+    Feasible Distribution Exposure:
+
+    Novel method to expose controllers to dynamically feasible contact distributions, enabling robust adaptation to terrain perturbations and slippery surfaces .
 data_collect_method: Expert Policy
 depth_cams: 0
 episodes: 256
@@ -19,15 +28,13 @@ has_camera_calibration: false
 has_proprioception: true
 has_suboptimal: false
 language_annotations: Natural
-license: 'null'
+license: 'CC BY 4.0'
 name: Saytap
 rgb_cams: 0
 robot: PAMY2
 robot_morphology: Quadrupedal Robot
 scene_type: Indoor, on a flat floor
-short_introduction: Saytap is a Franka robot dataset with 2,000 episodes for language-guided
-  manipulation. It includes visual and language data. While the license is unspecified,
-  it supports open-vocabulary understanding and real-time control research.
+short_introduction: SayTap enables natural language control of quadruped robots by translating commands into foot contact patterns, allowing real-time adaptation to diverse terrains and tasks with 87% real-world success.
 task_description: A Unitree Go1 robot follows human command in natural language (e.g.,
   "trot forward slowly")
 url: https://saytap.github.io/

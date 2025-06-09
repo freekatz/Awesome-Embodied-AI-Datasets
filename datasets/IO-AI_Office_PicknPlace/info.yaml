@@ -21,7 +21,7 @@ has_camera_calibration: true
 has_proprioception: true
 has_suboptimal: false
 language_annotations: Templated
-license: 'null'
+license: 'CC BY-NC 4.0'
 name: IO-AI Office PicknPlace
 rgb_cams: 4
 robot: 'null'
