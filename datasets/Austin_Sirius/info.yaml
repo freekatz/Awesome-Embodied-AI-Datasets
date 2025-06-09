@@ -1,15 +1,18 @@
 action_space: EEF velocity
 control_frequency: 20
 custom_fields:
-  introduction: Sirius enables collaborative manipulation tasks between humans and robots through shared autonomy. In this framework, robots execute actions autonomously while humans monitor performance and intervene via teleoperation to provide corrective guidance. Our core algorithm leverages deployment data to iteratively refine robot policies across successive rounds of policy learning, enhancing autonomy while minimizing human intervention. This closed-loop system bridges adaptive control and continuous improvement, advancing human-robot teamwork in complex real-world scenarios.
+  introduction: |
+    Sirius enables collaborative manipulation tasks between humans and robots through shared autonomy. 
+    In this framework, robots execute actions autonomously while humans monitor performance and intervene via teleoperation to provide corrective guidance. 
+    Our core algorithm leverages deployment data to iteratively refine robot policies across successive rounds of policy learning, 
+    enhancing autonomy while minimizing human intervention. This closed-loop system bridges adaptive control and continuous improvement, 
+    advancing human-robot teamwork in complex real-world scenarios.
+    
+    Key technical highlights:
+    - Shared Control: Seamlessly integrates human oversight with robot autonomy.
+    - Intervention-Driven Learning: Corrections via teleoperation directly inform policy updates.
+    - Iterative Policy Refinement: Data from each deployment cycle optimizes future autonomy.
 
-Key technical highlights:
-
-Shared Control: Seamlessly integrates human oversight with robot autonomy.
-
-Intervention-Driven Learning: Corrections via teleoperation directly inform policy updates.
-
-Iterative Policy Refinement: Data from each deployment cycle optimizes future autonomy.
 data_collect_method: Human Spacemouse
 depth_cams: 0
 episodes: 2460
