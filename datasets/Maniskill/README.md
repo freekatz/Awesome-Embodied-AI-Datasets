@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Maniskill is a large-scale dataset developed by Haoshuai Group for robotic manipulation research. It contains over 100,000 episodes of simulated and real-world manipulation tasks, including pick-and-place, stacking, and tool use, with RGB images, depth data, and robot joint states. The dataset supports research in reinforcement learning, imitation learning, and cross-domain generalization, emphasizing the integration of vision and proprioception. It is released under the Apache 2.0 license, allowing free use and modification for research and development. Maniskill is accompanied by a detailed simulation environment and evaluation framework, making it a valuable resource for advancing robot learning in complex, dynamic environments.
+ManiSkill2 is a unified benchmark for learning generalizable robotic manipulation skills, powered by SAPIEN, designed to address the limitations of existing benchmarks, such as the lack of object-level topological and geometric variations, fully dynamic simulation, and native support for multiple manipulation tasks. ManiSkill2 includes 20 manipulation task families, over 2000 object models, and more than 4 million demonstration frames, covering stationary/mobile-base, single/dual-arm, and rigid/soft-body manipulation tasks with 2D/3D input data simulated by fully dynamic engines. The benchmark supports a wide range of algorithms, including classic sense-plan-act, reinforcement learning, imitation learning, etc., and supports various visual observations (point cloud, RGBD) and controllers (e.g., action type and parameterization). ManiSkill2 also empowers fast visual input learning, allowing a CNN-based policy to collect samples at about 2000 FPS with 1 GPU and 16 processes on a regular workstation. The codes for the simulator, environments, and baselines are open-source, and an online challenge is hosted for interdisciplinary researchers.
 
 
 ## Homepage
@@ -30,6 +30,7 @@ The robot interacts with different objects placed on the plane (ground). The tas
 | Has Proprioception                     | True           |
 | Has Suboptimal                     | True           |
 | Language Annotations                     | Templated           |
+| License                     | Apache 2.0           |
 | Rgb Cams                     | 2           |
 | Robot                     | Sawyer           |
 | Robot Morphology                     | Single Arm           |

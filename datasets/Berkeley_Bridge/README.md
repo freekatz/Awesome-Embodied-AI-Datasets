@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Berkeley Bridge is a large-scale dataset for robot learning, developed by UC Berkeley's RAIL Lab. It contains 60,096 trajectories across 24 environments, focusing on tasks like pick-and-place, pushing, and folding. The dataset includes natural language instructions, multiple camera views, and depth data, supporting open-vocabulary and multi-task learning methods. It is designed to facilitate research on scalable robot learning by providing extensive task and environment variability, enabling models to generalize across domains. Berkeley Bridge is released under the MIT license, allowing free use, modification, and distribution. The dataset is accompanied by pre-trained models and evaluation scripts, making it a valuable resource for accelerating research in imitation learning and offline reinforcement learning.
+BridgeData V2 is a large-scale diverse dataset for robotic manipulation with 60,096 trajectories across 24 environments using a low-cost robot platform, integrating open-vocabulary task conditioning via natural language or goal images to enable generalizable policy training for multi-task imitation and offline RL, featuring cross-environment generalization to novel objects/environments/institutions, structural diversity covering 100+ objects and manipulation skills like pick-and-place, compatibility with 6+ SOTA algorithms achieving 45.8% higher success rates under visual noise/dynamic disturbances, and cost-effective collection with 50,365 human/9,731 autonomous trajectories at ~$4,000 hardware cost to serve as a foundational resource for robust generalizable robotic agent training.
 
 
 ## Homepage
@@ -30,6 +30,7 @@ The robot interacts with household environments including kitchens, sinks, and t
 | Has Proprioception                     | True           |
 | Has Suboptimal                     | True           |
 | Language Annotations                     | Natural           |
+| License                     | MIT           |
 | Rgb Cams                     | 4           |
 | Robot                     | xArm           |
 | Robot Morphology                     | Single Arm           |

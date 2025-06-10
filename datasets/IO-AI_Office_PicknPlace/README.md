@@ -28,6 +28,7 @@ Human interacts with diverse objects in 2 real office table-top scenes. The skil
 | Has Proprioception                     | True           |
 | Has Suboptimal                     | False           |
 | Language Annotations                     | Templated           |
+| License                     | CC BY-NC 4.0           |
 | Rgb Cams                     | 4           |
 | Robot Morphology                     | Human           |
 | Scene Type                     | Table Top           |

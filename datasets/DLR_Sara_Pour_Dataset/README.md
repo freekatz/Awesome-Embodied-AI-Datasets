@@ -3,7 +3,7 @@
 
 ## Introduction
 
-DLR Sara Pour Dataset is a robotics dataset developed by the German Aerospace Center (DLR) for pouring and fluid manipulation tasks. It contains 1,000 episodes of a Franka Emika Panda robot interacting with liquid containers, including RGB images, depth data, and robot joint states. The dataset supports research in real-time adaptation and human-in-the-loop learning, with a focus on integrating human feedback during robot operation. While the dataset's license is not explicitly stated, it is primarily intended for academic use. DLR Sara Pour Dataset is accompanied by evaluation scripts and pre-trained models, enabling comparisons across different pouring and fluid manipulation approaches.
+The DLR Sara Pour Dataset (hosted on TensorFlow Datasets) offers real-world robotic pouring trajectories to advance safe reinforcement learning, capturing 65 episodes (∼16 minutes) of autonomous pouring on a physical robot with multimodal sensor streams (RGB-D images, proprioceptive states, torque measurements), safety-critical annotations (real-time constraint violations like spill thresholds and tilt limits), and sparse reward signals (task-completion indicators for policy optimization); concurrently, the research "Real-World Robot Learning with Safety Constraints" demonstrates using this dataset to train constraint-aware policies that achieve zero safety violations during pouring despite sparse rewards, learn directly on physical robots in <17 minutes without simulation, and maintain 85% success with unseen container geometries via real-time torque monitoring to prevent spills and geometric path certificates for collision-free motions, pioneering simulation-free RL for liquid manipulation validated in industrial-relevant scenarios.
 
 
 ## Homepage
@@ -28,6 +28,7 @@ The robot learns to pour ping-pong balls from a cup held in the end-effector int
 | Has Camera Calibration                     | False           |
 | Has Proprioception                     | True           |
 | Has Suboptimal                     | True           |
+| License                     | CC BY-NC 4.0           |
 | Rgb Cams                     | 1           |
 | Robot                     | Google Robot           |
 | Robot Morphology                     | Single Arm           |

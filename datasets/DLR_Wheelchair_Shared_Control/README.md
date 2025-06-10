@@ -3,7 +3,7 @@
 
 ## Introduction
 
-DLR Wheelchair Shared Control is a dataset developed by the German Aerospace Center (DLR) for human-robot shared control in wheelchair navigation. The dataset contains 570 episodes of a wheelchair robot navigating complex environments, including RGB images, depth data, and human input commands. It supports research in human-intervention guided policy learning and real-time adaptation to dynamic environments. The dataset emphasizes the integration of human feedback during robot operation, making it a valuable resource for advancing interactive and adaptive robotics research. While the dataset's license is not explicitly stated, it is primarily intended for academic use and is accompanied by evaluation scripts and pre-trained models for wheelchair navigation tasks.
+This work tackles the challenge of training robotic policies on physical systems with minimal interaction time and robust safety guarantees, addressing traditional reinforcement learning’s (RL) reliance on extensive simulation or risky real-world trials that pose hardware damage risks; by combining safety-aware exploration and sparse reward designs, it enables efficient learning of complex manipulation tasks within minutes, featuring key innovations such as task-centric safety constraints (real-time torque monitoring to enforce tilt/spillage limits in pouring tasks and geometric path certificates to avoid collisions in fixture placement), sample efficiency achieving task proficiency in 65 episodes (∼16 minutes) for pouring and 75 episodes (∼17 minutes) for fixture placement—10× faster than model-free RL baselines—and sim-to-real elimination that bypasses simulators entirely to avoid dynamics mismatch issues.
 
 
 ## Homepage

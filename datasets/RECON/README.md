@@ -3,7 +3,26 @@
 
 ## Introduction
 
-RECON is a dataset developed by the University of Tokyo for robot-object interaction research. It contains 1,000 episodes of a PR2 robot interacting with household objects, including RGB images, depth data, and robot joint states. The dataset supports research in vision-based imitation learning and multi-object manipulation, with a focus on learning from human demonstrations. It is accompanied by evaluation scripts and pre-trained models, enabling comparisons across different vision-based robot learning approaches for tabletop tasks. While the dataset's license is not explicitly stated, it is primarily intended for academic use and emphasizes the integration of vision and proprioception for object manipulation tasks.
+RECON is a novel open-world robotic navigation framework that enables rapid discovery and reliable navigation to user-specified visual goals in unseen environments. Its core innovation lies in integrating latent goal-conditioned models with topological memory graphs, allowing robots to generalize exploration strategies across diverse scenes without pre-built maps. The framework operates in three phases:
+
+Prior Experience Training:
+
+Trains a goal-conditioned distance and action prediction model using historical interaction data from previously visited environments.
+
+Employs step count as a distance proxy and hindsight relabeling to generate supervision signals, learning robust spatial relationships between observations and actions.
+
+New Environment Exploration:
+
+Combines frontier-based exploration (identifying unknown regions) with latent goal sampling (predicting high-reward targets via the learned model).
+
+Continuously fine-tunes the model with real-time interactions to adapt to environmental dynamics (e.g., lighting changes, movable obstacles).
+
+Navigating Explored Environments:
+
+Represents the environment as a sparse topological graph G, where nodes are key locations and edges encode traversability costs.
+
+Plans subgoal paths through G using the fine-tuned model, enabling efficient long-horizon navigation to user-defined targets (e.g., "find a red chair") with 92% success rate in cluttered indoor scenes.
+
 
 
 ## Homepage

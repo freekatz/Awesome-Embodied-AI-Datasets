@@ -3,7 +3,8 @@
 
 ## Introduction
 
-Language Table is a large-scale dataset developed by Google Research for open-vocabulary visuolinguomotor learning. It consists of 442,226 real robot episodes and 181,020 simulation episodes, covering tasks like block stacking and object rearrangement with natural language instructions. The dataset includes RGB images, depth data, and robot joint states, enabling the training of models that can interpret and execute complex language commands in dynamic environments. It is released under the Apache 2.0 license, allowing free use and modification for research and development. Language Table is designed to push the boundaries of robot learning by integrating language understanding with continuous control, supporting the development of interactive, real-time natural language-instructable robots.
+Language-Table is a large-scale dataset collected by Google Research in 2022 to advance real-time human-robot interaction through natural language instructions. It contains nearly 600,000 language-annotated trajectories generated via teleoperation, enabling robots to learn open-vocabulary visuomotor control policies. By training on this dataset, robots can execute 10x more diverse instructions than prior methods, covering complex real-world tasks such as object manipulation and spatial reasoning. The dataset supports multi-task continual learning and serves as a benchmark for evaluating interactive language grounding in dynamic environments. Associated research (e.g., "Interactive Language: Talking to Robots in Real Time") demonstrates its role in bridging semantic commands with low-level robotic actions, pushing the frontier of embodied AI.
+
 
 
 ## Homepage
@@ -30,6 +31,7 @@ Robot pushed blocks of different geometric shapes on table top.
 | Has Proprioception                     | True           |
 | Has Suboptimal                     | False           |
 | Language Annotations                     | Natural           |
+| License                     | Apache 2.0           |
 | Rgb Cams                     | 1           |
 | Robot                     | xArm           |
 | Robot Morphology                     | Single Arm           |

@@ -3,7 +3,38 @@
 
 ## Introduction
 
-Imperial Wrist Cam is a dataset developed by Imperial College London for human-robot interaction research. It contains 2,000 episodes of a Franka Emika Panda robot performing object manipulation tasks guided by natural language instructions, including RGB images, depth data, and robot joint states. The dataset supports research in open-vocabulary language understanding and real-time robot control, with a focus on integrating language and vision for task execution. While the dataset's license is not explicitly stated, it is primarily intended for academic use and is accompanied by evaluation scripts and pre-trained models for human-robot interaction tasks.
+Robotic Platform Configuration:
+The dataset is collected using a Sawyer robot equipped with a Robotiq 2F-85 gripper and a wrist-mounted RealSense D435 camera. The camera is positioned at a fixed offset of (7cm, 0cm, 18cm) relative to the end-effector tip coordinate system (x: forward, y: left, z: upward), with its optical axis aligned parallel to the negative z-axis for downward-facing observations.
+
+Core Dataset Composition:
+This real-world manipulation dataset focuses on wrist-camera perspectives during object interaction tasks. It provides synchronized streams of:
+
+High-resolution RGB-D video (640×480 @ 30Hz)
+
+Proprioceptive state data (joint positions/torques)
+
+Gripper force/tactile measurements
+
+Precise end-effector pose annotations
+
+Research Applications:
+Designed for visuomotor policy learning, the dataset enables:
+
+Egocentric perception modeling: Studying viewpoint invariance in manipulation
+
+Contact-rich control: Analyzing slip detection and force modulation
+
+Sim2real transfer: Validating policies trained in simulation
+
+Technical Infrastructure:
+Integrated with the RLDS Dataset Builder ecosystem, it offers:
+
+Standardized data loaders (TensorFlow/PyTorch)
+
+ROS-compatible replay tools
+
+Automatic metadata extraction
+
 
 
 ## Homepage
@@ -30,6 +61,7 @@ The robot interacts with different everyday objects performing tasks such as gra
 | Has Proprioception                     | False           |
 | Has Suboptimal                     | False           |
 | Language Annotations                     | Natural           |
+| License                     | MIT           |
 | Rgb Cams                     | 1           |
 | Robot                     | Human           |
 | Robot Morphology                     | Single Arm           |

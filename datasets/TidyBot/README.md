@@ -3,7 +3,22 @@
 
 ## Introduction
 
-TidyBot is a dataset developed by Princeton University for household cleaning tasks. It contains 570 episodes of a PR2 robot performing cleaning tasks like sweeping and mopping, including RGB images, depth data, and robot joint states. The dataset supports research in hierarchical imitation learning and multi-stage task planning, with natural language instructions and visual goals. It is accompanied by a detailed benchmark and evaluation framework, making it suitable for studying long-horizon manipulation and real-world industrial automation. While the dataset's license is not explicitly stated, it is primarily intended for academic use and emphasizes the integration of language and vision for task execution.
+TidyBot is a personalized robotic assistance framework developed by researchers from Princeton University, Stanford University, and Google, designed to enable household cleaning tasks (e.g., sorting laundry, tidying objects) through natural language instruction and user preference learning. Its core innovation leverages large language models (LLMs) like GPT-3 Davinci to infer generalized user preferences from minimal examples (e.g., "yellow shirts in drawers, dark purple shirts in closets"), achieving 91.2% accuracy on unseen objects in benchmark tests and 85% success rate in real-world deployments. Key components include:
+
+Few-shot Preference Summarization:
+
+LLMs convert user-provided object placement examples into generalized rules (e.g., "shirts → closet, socks → drawers"), bypassing costly data collection and model retraining.
+
+Multimodal Perception Integration:
+
+Combines CLIP for image classification and OWL-ViT for object detection to ground language instructions in visual scenes.
+
+Real-World Task Execution:
+
+Validated across 8 real-world scenarios (e.g., recycling cans, storing toys), each with 10 objects tested over 3 trials.
+
+This approach demonstrates that LLMs' summarization capabilities—trained on internet-scale text data—can directly enable robotic generalization without task-specific fine-tuning.
+
 
 
 ## Homepage

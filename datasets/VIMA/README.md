@@ -3,7 +3,26 @@
 
 ## Introduction
 
-VIMA is a dataset developed by VIMA Labs for vision and language navigation tasks. It contains 1,000 episodes of a mobile robot navigating complex environments, including RGB images, depth data, and natural language instructions. The dataset supports research in open-vocabulary language understanding and real-time robot control, with a focus on integrating language and vision for task execution. It is accompanied by evaluation scripts and pre-trained models, enabling comparisons across different human-robot interaction methods. While the dataset's license is not explicitly stated, it is primarily intended for academic use and emphasizes the integration of visual and language data for robot navigation tasks.
+VIMA-BENCH is a comprehensive benchmark designed to train and evaluate embodied AI agents capable of processing multimodal prompts (text, images, videos). Built on the Ravens robot simulator, it offers 17 task templates spanning six task specifications:
+
+Task Types: Simple object manipulation, visual goal reaching, novel concept grounding, one-shot video imitation, visual constraint satisfaction, and visual reasoning .
+
+Scale: Over 1,000 procedurally generated task instances and 650K expert demonstration trajectories .
+
+Evaluation: A rigorous 4-level protocol tests generalization across:
+
+Placement (randomized object positions)
+
+Combinatorial (novel object-attribute combinations)
+
+Novel Objects (unseen textures/3D models)
+
+Novel Tasks (entirely new prompt templates) .
+
+Data Modalities: RGB images (top-down/front views), object segmentation masks, bounding boxes, and high-level actions (e.g., "pick and place") .
+
+The benchmark enables scalable training of transformer-based agents like VIMA, which achieved 2.9× higher zero-shot success rates than prior methods under equivalent conditions .
+
 
 
 ## Homepage
@@ -28,6 +47,7 @@ The robot is conditioned on multimodal prompts (mixture of texts, images, and vi
 | Has Proprioception                     | False           |
 | Has Suboptimal                     | False           |
 | Language Annotations                     | Multimodal (image + language) templated instructions           |
+| License                     | Apache 2.0           |
 | Rgb Cams                     | 2           |
 | Robot Morphology                     | Single Arm           |
 | Scene Type                     | Table Top           |

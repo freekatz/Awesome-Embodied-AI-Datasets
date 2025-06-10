@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Berkeley MVP Data is a robotics dataset developed by the University of California, Berkeley, for vision-based manipulation tasks. It contains 480 episodes of a xArm robot performing six manipulation tasks, including RGB images, depth data, and robot joint states. The dataset supports research in real-world robot learning with masked visual pre-training, emphasizing the integration of vision and proprioception. It is released under the Creative Commons Attribution 4.0 International (CC BY 4.0) license, allowing free use and modification for academic and commercial purposes. Berkeley MVP Data is accompanied by evaluation scripts and pre-trained models, enabling comparisons across different vision-based robot learning approaches for complex manipulation tasks.
+This repository offers the official PyTorch implementation for two groundbreaking papers on masked visual pretraining in robot learning—"Masked Visual Pre-training for Motor Control" and "Real-World Robot Learning via Masked Visual Pre-training"—which tackle the critical challenge of obtaining generalizable visual representations from limited task-specific data in vision-based robotics; inspired by the success of masked autoencoders (MAEs) in computer vision, the proposed unified pretraining framework reconstructs masked robot observations (such as RGB images and proprioceptive states) to learn transferable spatiotemporal features that accelerate downstream policy learning for motor control tasks and decrease reliance on large-scale in-domain demonstrations, with core technical components including Masked Robot Modeling (MRM), a self-supervised objective for cross-modal representation learning by reconstructing randomly masked patches from robot camera streams and sensor readings; efficient policy adaptation using pretrained weights to initialize visuomotor policies (PPO/BC), reducing downstream training samples by over 50% while enhancing sim-to-real transfer robustness; and benchmark validation showing state-of-the-art performance on 7 real-world tasks like door opening and pick-and-place, achieving a 63% average success rate improvement over non-pretrained baselines, and the repository includes pretrained vision models (ResNet-18/50, ViT-Base) on robotics datasets such as BridgeData V2, modular PPO and BC training code for policy fine-tuning, and evaluation scripts for simulated and physical deployments.
 
 
 ## Homepage
@@ -30,6 +30,7 @@ Basic motor control tasks (reach, push, pick) on table top and toy environments 
 | Has Proprioception                     | True           |
 | Has Suboptimal                     | False           |
 | Language Annotations                     | Templated           |
+| License                     | CC BY-NC 4.0           |
 | Rgb Cams                     | 1           |
 | Robot                     | Franka           |
 | Robot Morphology                     | Single Arm           |

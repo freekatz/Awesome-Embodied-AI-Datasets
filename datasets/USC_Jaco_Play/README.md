@@ -3,7 +3,20 @@
 
 ## Introduction
 
-USC Jaco Play is a dataset developed by the CLVR Lab at USC, focusing on teleoperated manipulation tasks with a Jaco 2 robot. It contains 1,085 episodes of pick-and-place tasks in simulated environments, including RGB images, joint positions, and Cartesian coordinates. The dataset includes natural language instructions and object states, supporting research in language-conditioned robot learning and vision-based control. It is released under the Creative Commons Attribution 4.0 International (CC BY 4.0) license, requiring attribution to the original authors. The dataset is structured for easy integration with existing robotics frameworks, making it a valuable resource for training models to generalize across tasks and environments.
+The CLVR Jaco Play Dataset is a multimodal robotic interaction dataset curated by researchers at the University of Southern California (USC) and KAIST. It comprises 1,085 teleoperated trajectories collected via Kinova Jaco 2 manipulators in tabletop environments, covering tasks such as object grasping, stacking, and obstacle avoidance. Key features include:
+
+Multiview Vision: Synchronized RGB streams from third-person (front_cam_ob) and wrist-mounted (mount_cam_ob) cameras;
+
+Robot States: End-effector Cartesian poses (ee_cartesian_pos_ob), velocities (ee_cartesian_vel_ob), and joint positions (joint_pos_ob);
+
+Action Annotations: 3D displacement increments + gripper commands ({0: open, 1: hold, 2: close});
+
+Language Goals: Natural language task descriptions (e.g., "stack the red block on the blue block");
+
+Reward Signals: Binary success labels per trajectory .
+
+Sampled at 10Hz, this dataset enables training of language-conditioned policies and imitation learning algorithms for long-horizon manipulation tasks under open-vocabulary instructions.
+
 
 
 ## Homepage

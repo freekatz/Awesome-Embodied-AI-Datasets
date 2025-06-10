@@ -3,7 +3,7 @@
 
 ## Introduction
 
-CMU Food Manipulation is a dataset developed by Carnegie Mellon University for food preparation tasks. It contains 1,000 episodes of a Franka Emika Panda robot interacting with food items, including RGB images, depth data, and robot joint states. The dataset supports research in deformable object manipulation and dynamic interaction, with a focus on learning from expert demonstrations. It is accompanied by evaluation metrics and simulation environments, making it suitable for studying food handling in robotics. While the dataset's license is not explicitly stated, it is primarily intended for academic use and emphasizes the integration of vision and proprioception for food manipulation tasks.
+Playing with Food tackles the core challenge of modeling the diverse material properties of deformable foods in robotic food manipulation by proposing a multimodal sensory approach where robots interact with and "play" with food items like slicing and squeezing to learn discriminative representations of their physical characteristics, integrating a robotic arm with synchronized vision, audio, and proprioceptive sensors under the ROS framework to collect a rich dataset of 21 unique food types with varied textures and deformability, using which a cross-modal embedding network is trained to fuse visual, proprioceptive, and audio inputs and encode material similarities via a triplet loss formulation, with evaluations showing these embeddings significantly improve material classification (e.g., distinguishing tofu from cheese), shape robustness (e.g., recognizing sliced vs. whole vegetables), and generalization to unseen foods while enabling material-aware parameter tuning for downstream tasks like adaptive slicing force, and to accelerate food robotics innovation, the study open-sources the Food-Play Dataset—the first to combine multisensory interaction data with deformable food properties.
 
 
 ## Homepage
@@ -30,6 +30,7 @@ Robot interacting with different food items.
 | Has Proprioception                     | True           |
 | Has Suboptimal                     | False           |
 | Language Annotations                     | Templated           |
+| License                     | CC BY-NC 4.0           |
 | Rgb Cams                     | 3           |
 | Robot                     | Franka           |
 | Robot Morphology                     | Single Arm           |

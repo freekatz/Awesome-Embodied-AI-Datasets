@@ -3,7 +3,22 @@
 
 ## Introduction
 
-Stanford Robocook is a dataset developed by Stanford University for cooking and meal preparation tasks. It contains 1,000 episodes of a Sawyer robot performing complex cooking tasks like chopping, mixing, and serving, including RGB images, depth data, and robot joint states. The dataset supports research in hierarchical imitation learning and multi-stage task planning, with natural language instructions and visual goals. It is accompanied by a detailed benchmark and evaluation framework, making it suitable for studying long-horizon manipulation and real-world industrial automation. While the dataset's license is not explicitly stated, it is primarily intended for academic use and emphasizes the integration of language and vision for task execution.
+RoboCook is a novel framework for long-horizon elastic object manipulation using diverse tools, developed by researchers at the University of California, Berkeley. It addresses the challenge of deformable object control (e.g., dough, cloth) by integrating point cloud scene representation with graph neural networks (GNNs) to model complex tool-object interactions. Key innovations include:
+
+Unified Tool-Object Interaction Modeling:
+
+Represents tools (e.g., rollers, cutters) and deformable objects as nodes in a dynamic graph, with GNNs predicting interaction forces and object state changes. This enables adaptive planning for tasks like dumpling wrapping and alphabet cookie cutting with 85% success rate.
+
+Self-Supervised Policy Learning:
+
+Trains manipulation policies via physical interaction simulation and real-world fine-tuning, requiring only 20 minutes of real-world data per tool to master complex tasks. This reduces data collection costs by 10× compared to imitation learning methods.
+
+Tool Classification & Affordance Learning:
+
+Jointly optimizes tool-type recognition and functional affordance estimation (e.g., "roller compresses dough"), allowing zero-shot generalization to unseen tools like novel-shaped cookie cutters.
+
+Validated on a Franka Emika robot, RoboCook achieves 92% task completion in multi-step deformable manipulation, outperforming prior methods (e.g., BC-Z, QT-Opt) by 30-40% in precision and robustness.
+
 
 
 ## Homepage

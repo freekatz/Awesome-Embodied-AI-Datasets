@@ -3,7 +3,16 @@
 
 ## Introduction
 
-Roboturk is a large-scale dataset for robotic manipulation, developed by Stanford University. It contains over 2144 demonstrations of real-world tasks like laundry layout, tower creation, and object search, collected through crowdsourced teleoperation. The dataset includes RGB and depth videos, joint states, and control commands, supporting research in long-horizon planning and vision-based prediction. It is released under the MIT license, allowing free use and modification. Roboturk's unique contribution lies in its emphasis on complex 3D motions and diverse user interactions, making it a valuable resource for training models to handle real-world variability. The dataset is accompanied by evaluation scripts and pre-trained models for video prediction tasks, enabling comparisons across different methods.
+RoboTurk Real Robot Dataset is a pioneering crowdsourced dataset for robotic imitation learning, curated by Stanford University's Visual Learning Lab led by Fei-Fei Li and Silvio Savarese. It comprises 2,144 real-world demonstrations collected from 54 remote operators via the RoboTurk platform, where users controlled physical Sawyer robot arms through smartphones or browsers to perform three manipulation tasks:
+
+Object Search & Categorization: Locating and sorting scattered household items into target bins .
+
+Block Stacking: Precise tower construction using colored cubes under varying spatial constraints .
+
+Laundry Folding: Manipulating deformable textiles (e.g., towels, shirts) into folded configurations .
+
+Each trajectory provides synchronized RGB video (640×480), joint states, gripper actions, and task success labels. With 111.25 hours of operation data, this dataset enables training robust visuomotor policies for complex tasks traditionally requiring expert demonstrations .
+
 
 
 ## Homepage
@@ -30,6 +39,7 @@ Sawyer robots flattens laundry, builds towers from bowls and searches objects.
 | Has Proprioception                     | True           |
 | Has Suboptimal                     | False           |
 | Language Annotations                     | Templated           |
+| License                     | MIT           |
 | Rgb Cams                     | 2           |
 | Robot                     | Google Robot           |
 | Robot Morphology                     | Single Arm           |

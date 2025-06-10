@@ -3,7 +3,7 @@
 
 ## Introduction
 
-DLR Sara Grid Clamp Dataset is a robotics dataset developed by the German Aerospace Center (DLR) for grid clamp manipulation tasks. The dataset contains real-world trajectories of a Franka Emika Panda robot interacting with grid clamps, including RGB images, depth data, and robot joint states. It supports research in dynamic object manipulation and real-time adaptation, with a focus on integrating human feedback during robot operation. The dataset emphasizes the study of fluid dynamics and pouring tasks in unstructured environments. While the dataset's license is not explicitly stated, it is primarily intended for academic use and is accompanied by evaluation scripts and pre-trained models for pouring and fluid manipulation research.
+Real-World Robot Learning with Safety Constraints addresses the challenge of training robotic policies on physical systems with minimal interaction time and strong safety guarantees, overcoming traditional RL’s need for extensive simulation or risky real-world trials by integrating safety-aware exploration and simple reward designs to enable efficient learning of complex manipulation tasks within minutes; core innovations include task-centric safety constraints (e.g., real-time force/torque monitoring for pouring to limit vessel tilt/spillage and geometric path certificates for collision-free grid fixture placement), sample efficiency achieving task proficiency in 65 episodes (∼16 minutes) for pouring and 75 episodes (∼17 minutes) for fixture placement—10× faster than model-free RL baselines, minimalist sparse reward design (e.g., successful pour volume, fixture alignment accuracy) to reduce engineering complexity, and sim-to-real elimination via direct real-world training to avoid dynamics mismatch; validated with zero collisions in 140+ executions on a 7-DoF arm, 85% success adapting to unseen container shapes/fixture layouts, and demonstrated in manufacturing tasks like precision assembly and liquid handling, the approach ensures hardware safety and accelerates industrial deployment.
 
 
 ## Homepage
@@ -28,6 +28,7 @@ The robot learns to place the grid clamp in the grids on the table.
 | Has Camera Calibration                     | False           |
 | Has Proprioception                     | True           |
 | Has Suboptimal                     | True           |
+| License                     | CC BY 4.0           |
 | Rgb Cams                     | 1           |
 | Robot                     | ViperX Bimanual           |
 | Robot Morphology                     | Single Arm           |

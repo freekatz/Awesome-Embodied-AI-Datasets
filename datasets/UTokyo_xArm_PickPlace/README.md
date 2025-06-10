@@ -3,7 +3,24 @@
 
 ## Introduction
 
-UTokyo xArm PickPlace is a robotics dataset developed by the University of Tokyo, focusing on vision-based pick-and-place tasks with a xArm robot. The dataset contains real-world and simulated trajectories of a xArm robot manipulating objects in cluttered environments, including RGB images, depth data, and robot joint states. It supports research in open-world model-based reinforcement learning and dynamic manipulation, with a focus on generalization to unseen objects and environments. The dataset is released under the Creative Commons Attribution 4.0 International (CC BY 4.0) license, allowing free use and modification for academic and commercial purposes. UTokyo xArm PickPlace is accompanied by evaluation scripts and pre-trained models, enabling comparisons across different vision-based robot learning approaches for pick-and-place tasks.
+The xArm Dual-Board Manipulation Dataset is an RLDS-formatted benchmark for single-arm cooperative manipulation of dual planar surfaces. It features:
+
+Constrained Task Design:
+
+Records robotic interactions with two 30×30cm boards (15cm apart), emulating bimanual tasks like inter-board object transfer and alignment calibration.
+
+Multimodal Trajectories:
+
+Synchronizes top-view RGB (640×480 @30Hz), end-effector poses (ee_cartesian_pos), joint states, and discrete gripper commands ({0:open, 1:hold, 2:close}).
+
+Phase Annotation:
+
+Labels 5 operational phases (approach→alignment→transfer→release→reset) for hierarchical policy learning.
+
+Research Utility:
+
+Enables precision control validation (±2mm accuracy) in spatially constrained scenarios (e.g., lab automation, electronics assembly).
+
 
 
 ## Homepage
@@ -29,6 +46,7 @@ The robot picks up a white plate, and then places it on the red plate.
 | Has Camera Calibration                     | False           |
 | Has Proprioception                     | True           |
 | Has Suboptimal                     | False           |
+| License                     | Apache 2.0           |
 | Rgb Cams                     | 4           |
 | Robot                     | Kinova Gen3           |
 | Robot Morphology                     | Single Arm           |

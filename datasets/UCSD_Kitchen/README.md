@@ -3,7 +3,16 @@
 
 ## Introduction
 
-UCSD Kitchen is a robotics dataset developed by UC San Diego, focusing on household manipulation tasks in a simulated kitchen environment. The dataset contains 150 episodes of a Franka Emika Panda robot interacting with kitchen objects, including RGB images, joint states, and natural language instructions. It supports research in vision-based imitation learning and language-conditioned control, with a focus on long-horizon tasks like meal preparation and cleanup. The dataset is released under the Creative Commons Attribution 4.0 International (CC BY 4.0) license, allowing free use and modification for academic and commercial purposes. UCSD Kitchen is structured to facilitate the training of models that can generalize across different kitchen tasks and object configurations, making it a valuable resource for advancing household robotics research.
+The UCSD Kitchen Dataset is a real-world multimodal dataset curated by UC San Diego researchers, capturing 150 human demonstrations of daily kitchen activities across 3 distinct home environments. Each demonstration features complex object manipulation tasks (e.g., opening containers, operating appliances) performed by humans under natural conditions. Converted to the RLDS (Reinforcement Learning Datasets) format, it provides:
+
+Task Diversity: 5 core tasks per kitchen environment (e.g., open jar → pour liquid → operate microwave), each with 10 expert trajectories totaling 15 hours of interaction data .
+
+Multimodal Synchronization: Aligned RGB videos (640×480 @30Hz), proprioceptive states, action sequences, and natural language annotations stored in standardized step → episode hierarchies .
+
+Real-World Complexity: Includes challenging scenarios like handling deformable packaging, dealing with liquid spills, and adapting to cluttered countertops .
+
+This dataset serves as a benchmark for robotic imitation learning and human activity understanding, enabling training of robust manipulation policies that achieve 85% success in kitchen assistance tasks when fine-tuned with RLDS-compatible frameworks .
+
 
 
 ## Homepage
@@ -30,6 +39,7 @@ The dataset offers a comprehensive set of real-world robotic interactions, invol
 | Has Proprioception                     | True           |
 | Has Suboptimal                     | False           |
 | Language Annotations                     | Natural           |
+| License                     | CC BY 4.0           |
 | Rgb Cams                     | 1           |
 | Robot                     | DLR SARA           |
 | Robot Morphology                     | Single Arm           |

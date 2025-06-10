@@ -3,7 +3,14 @@
 
 ## Introduction
 
-Plex RoboSuite is a dataset developed by Microsoft for robot learning in simulated environments. It contains over 10 million episodes of simulated robot-object interaction across 113 unique camera viewpoints, including RGB images, depth data, and robot joint states. The dataset supports research in reinforcement learning, imitation learning, and cross-domain generalization, with a focus on learning from diverse and unstructured data. It is accompanied by a detailed simulation environment and evaluation framework, making it a valuable resource for advancing robot learning in complex, dynamic environments. While the dataset's license is not explicitly stated, it is primarily intended for academic use and emphasizes the integration of simulation and real-world data for robot learning.
+PLEX is a groundbreaking integration framework developed by Microsoft, enabling native execution of Python code within Excel spreadsheets. By simply entering =PY in a cell, users can directly leverage Python's data analysis, machine learning, and visualization libraries (e.g., pandas, scikit-learn, Matplotlib) without local environment setup. Powered by cloud-based computation, PLEX executes code on Azure servers and returns results to Excel, combining Excel's accessibility with Python's scalability. Key innovations include:
+
+Seamless interoperability: Excel ranges convert to pandas DataFrames for Python processing, with outputs (tables/plots) rendered back as Excel-native objects.
+
+Anaconda ecosystem support: Pre-installed libraries (e.g., Seaborn, statsmodels) allow complex workflows like weather forecasting ML models directly in spreadsheets.
+
+Collaboration-friendly: Workbooks with Python code retain full functionality in Microsoft 365's co-editing mode, enabling team-based data science.
+
 
 
 ## Homepage

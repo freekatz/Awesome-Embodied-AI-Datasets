@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Berkeley Fanuc Manipulation is a dataset developed by the University of California, Berkeley, for vision-based manipulation tasks with a Fanuc Mate 200iD robot. It contains over 400 episodes of the robot performing complex household tasks like cooking and cleaning, including RGB images, depth data, and robot joint states. The dataset supports research in vision-based imitation learning and language-conditioned control, with a focus on learning from human demonstrations. It is released under the MIT license, allowing free use and modification for academic and commercial purposes. Berkeley Fanuc Manipulation is accompanied by evaluation scripts and pre-trained models, enabling comparisons across different vision-based robot learning approaches for complex manipulation tasks.
+The FANUC Manipulation Dataset is a comprehensive vision-based robotic learning resource collected via a FANUC Mate 200iD robot, integrating multi-view visual data (third-person fixed and egocentric wrist-mounted 224×224 RGB videos), robot trajectory data (joint positions, gripper states, velocities, and Cartesian-space actions), and language task instructions (natural language commands for conditioning manipulation tasks), designed to advance imitation learning and vision-motor policy training by enabling visuomotor policy development (training closed-loop control models from visual inputs to actions), visual representation fine-tuning (adapting pre-trained models like ResNet and ViT to robotic domains), and instruction-conditioned generation (learning policies mapping language commands to robot behaviors), with a structured format supporting seamless integration with modern frameworks such as PyTorch and TensorFlow to facilitate cross-modal learning and sim-to-real transfer research.
 
 
 ## Homepage
@@ -30,6 +30,7 @@ A Fanuc robot performs various manipulation tasks. For example, it opens drawers
 | Has Proprioception                     | True           |
 | Has Suboptimal                     | True           |
 | Language Annotations                     | Natural           |
+| License                     | MIT           |
 | Rgb Cams                     | 2           |
 | Robot                     | Hello Stretch           |
 | Robot Morphology                     | Single Arm           |

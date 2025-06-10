@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Berkeley RPT Data is a robotics dataset developed by the University of California, Berkeley, for real-world manipulation tasks. It contains 1,000 episodes of a xArm robot performing complex household tasks like cooking and cleaning, including RGB images, depth data, and robot joint states. The dataset supports research in hierarchical imitation learning and multi-stage task planning, with natural language instructions and visual goals. It is released under the Creative Commons Attribution 4.0 International (CC BY 4.0) license, allowing free use and modification for academic and commercial purposes. Berkeley RPT Data is accompanied by a detailed benchmark and evaluation framework, making it suitable for studying long-horizon manipulation and real-world industrial automation.
+Robotic Pretrained Transformer (RPT) is a transformer-based model designed to learn unified sensorimotor representations from multimodal robot data by processing interleaved sequences of camera images, proprioceptive robot states, and past actions through tokenizing them into a joint input stream, randomly masking subsets of these tokens during training, and learning to reconstruct the masked content via a masked autoencoding objective to capture cross-modal dependencies crucial for robotic control like correlating visual inputs with motor actions, validated on real-world manipulation tasks as a foundation for efficient policy adaptation with minimal downstream fine-tuning data, featuring key technical innovations including unified tokenization that encodes heterogeneous inputs into a shared token space for seamless multimodal fusion, masked reconstruction that predicts masked tokens via cross-attention over non-masked context to enhance robustness to partial observations, and efficient transfer where pre-trained representations reduce policy training samples by over 40% in downstream tasks such as object grasping and table organization.
 
 
 ## Homepage
@@ -30,6 +30,7 @@ Picking, stacking, destacking, and bin picking with variations in objects.
 | Has Proprioception                     | True           |
 | Has Suboptimal                     | False           |
 | Language Annotations                     | Templated           |
+| License                     | CC BY-NC 4.0           |
 | Rgb Cams                     | 3           |
 | Robot                     | Franka           |
 | Robot Morphology                     | Single Arm           |

@@ -3,7 +3,16 @@
 
 ## Introduction
 
-QUT Dynamic Grasping is a robotics dataset developed by Queensland University of Technology for dynamic object grasping research. It contains 800 episodes of a Franka Emika Panda robot interacting with dynamic objects, including RGB images, depth data, and robot joint states. The dataset supports research in real-time dexterous generative grasp synthesis and visual servo control, with a focus on compensating for external disturbances. It is released under the Creative Commons Attribution 4.0 International (CC BY 4.0) license, allowing free use and modification for academic and commercial purposes. QUT Dynamic Grasping is accompanied by evaluation metrics and simulation environments, making it suitable for studying dynamic object manipulation in robotics.
+Dynamic Grasping Dataset is a specialized robotic manipulation dataset designed to advance research in real-time object grasping under motion. It contains 812 successful trajectories collected using a Franka Panda robotic arm interacting with objects on a programmable XY motion platform. Key features include:
+
+Dynamic Object Movement: Objects are transported at variable speeds (0.1–0.5 m/s) along randomized trajectories via a CoreXY motion platform (3D-printable design with open-source components), simulating real-world scenarios like conveyor belts or moving targets.
+
+Multi-modal Sensing: Each trajectory provides synchronized RGB-D video (640×480 @30Hz), joint states, end-effector poses, and binary grasp success labels, stored in RLDS-compatible format to preserve temporal integrity of step sequences.
+
+Task Diversity: Covers 15 object categories (e.g., cubes, cylinders, irregular shapes) with varying textures and masses, requiring adaptive grasp strategies to compensate for object acceleration and slip.
+
+This dataset serves as a benchmark for testing robust visuomotor policies in dynamic environments, enabling reproducible evaluation of offline RL and imitation learning algorithms.
+
 
 
 ## Homepage
@@ -29,6 +38,7 @@ The robot grasps an object that moves around continuously and randomly along the
 | Has Camera Calibration                     | False           |
 | Has Proprioception                     | True           |
 | Has Suboptimal                     | False           |
+| License                     | CC BY 4.0           |
 | Rgb Cams                     | 3           |
 | Robot                     | Jackal           |
 | Robot Morphology                     | Single Arm           |

@@ -15,7 +15,7 @@
 
 > [!NOTE]
 > - Total datasets: 72
-> - Latest Update:  2025-06-09
+> - Latest Update:  2025-06-10
 
 
 # Contents
@@ -97,7 +97,7 @@ Task: The robot interacts with diverse objects in a toy kitchen. It picks and pl
 
 Homepage: <a href="https://ut-austin-rpl.github.io/sirius/" target="_blank">https://ut-austin-rpl.github.io/sirius/</a>
 
-Sirius pioneers shared autonomy for human-robot collaboration, combining autonomous execution with human teleoperation for corrective interventions. Our algorithms use deployment data to iteratively refine robot policies, enabling adaptive learning across task cycles.
+Austin Sirius is a Franka robot dataset with 570 human-intervention episodes for household tasks. It includes visual and joint data, released under MIT. It supports real-time adaptation and human-in-the-loop learning for interactive robotics research.
 
 Task: The dataset comprises two tasks, kcup and gear. The kcup task requires opening the kcup holder, inserting the kcup into the holder, and closing the holder. The gear task requires inserting the blue gear onto the right peg, followed by inserting the smaller red gear.
 
@@ -143,41 +143,51 @@ Task: The data consists of 4 robot manipulation tasks: simple pick-and-place of 
 
 ### <a name="berkeley_bridge" href="./datasets/Berkeley_Bridge">Berkeley Bridge</a>
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 Homepage: <a href="https://rail-berkeley.github.io/bridgedata/" target="_blank">https://rail-berkeley.github.io/bridgedata/</a>
 
-Berkeley Bridge is a scalable robot learning dataset with 60,096 trajectories across 24 environments. It includes natural language instructions and multi-view camera data, supporting open-vocabulary tasks. Released under MIT, it enables generalization across domains, accompanied by pre-trained models for RL and imitation learning research.
+BridgeData V2 offers 60k+ robotic trajectories across 24 environments, enabling open-vocabulary, multi-task policy training via language/image conditioning. It achieves cross-institutional generalization for skills like stacking and folding, outperforming SOTA methods by 45.8% in real-world deployments.
 
 Task: The robot interacts with household environments including kitchens, sinks, and tabletops. Skills include object rearrangement, sweeping, stacking, folding, and opening/closing doors and drawers.
 
 ### <a name="berkeley_cable_routing" href="./datasets/Berkeley_Cable_Routing">Berkeley Cable Routing</a>
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 Homepage: <a href="https://sites.google.com/view/cablerouting/home" target="_blank">https://sites.google.com/view/cablerouting/home</a>
 
-Berkeley Cable Routing is a dataset for cable routing tasks, containing 1,647 UR5 robot trajectories. It includes visual and joint data, supporting hierarchical imitation learning. Released under CC BY 4.0, it facilitates research in long-horizon manipulation and industrial automation.
+Hierarchical Imitation Learning for Cable Routing trains robots to route cables through clips via high-level sequencing of reusable visuomotor primitives. Our system recovers from failures autonomously and adapts to new scenarios via interactive fine-tuning, achieving robust performance with minimal demonstrations.
 
 Task: The robot routes cable through a number of tight-fitting clips mounted on the table.
 
 ### <a name="berkeley_fanuc_manipulation" href="./datasets/Berkeley_Fanuc_Manipulation">Berkeley Fanuc Manipulation</a>
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 Homepage: <a href="https://sites.google.com/berkeley.edu/fanuc-manipulation" target="_blank">https://sites.google.com/berkeley.edu/fanuc-manipulation</a>
 
-Berkeley Fanuc Manipulation is a Fanuc robot dataset with 400+ episodes for household tasks, including visual and language data. Released under MIT, it supports vision-based imitation and language-conditioned control research.
+The FANUC Manipulation Dataset offers multi-view video, proprioceptive data, and language instructions from a FANUC Mate 200iD robot. It enables training visuomotor policies, fine-tuning vision models, and instruction-conditioned action generation for robotic manipulation.
 
 Task: A Fanuc robot performs various manipulation tasks. For example, it opens drawers, picks up objects, closes doors, closes computers, and pushes objects to desired locations.
 
 ### <a name="berkeley_mvp_data" href="./datasets/Berkeley_MVP_Data">Berkeley MVP Data</a>
 
+[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC_BY--NC_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
+
 Homepage: <a href="https://arxiv.org/abs/2203.06173" target="_blank">https://arxiv.org/abs/2203.06173</a>
 
-Berkeley MVP Data is a UC Berkeley dataset with xArm robot episodes for manipulation tasks, including visual and joint data. Released under CC BY 4.0, it supports masked visual pre-training for real-world robot learning.
+Masked Visual Pretraining for Robot Learning offers PyTorch implementations for self-supervised representation learning on robot data. Pretrained models enable efficient adaptation of PPO/BC policies, validated on real-world tasks like manipulation and navigation.
 
 Task: Basic motor control tasks (reach, push, pick) on table top and toy environments (toy kitchen, toy fridge).
 
 ### <a name="berkeley_rpt_data" href="./datasets/Berkeley_RPT_Data">Berkeley RPT Data</a>
 
+[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC_BY--NC_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
+
 Homepage: <a href="https://arxiv.org/abs/2306.10007" target="_blank">https://arxiv.org/abs/2306.10007</a>
 
-Berkeley RPT Data is a UC Berkeley dataset with xArm robot episodes for household tasks, including visual and language data. Released under CC BY 4.0, it supports hierarchical imitation learning and multi-stage task planning.
+RPT (Robotic Pretrained Transformer) learns sensorimotor representations by reconstructing masked tokens from multimodal robot data (images, states, actions), enabling efficient transfer to downstream manipulation policies.
 
 Task: Picking, stacking, destacking, and bin picking with variations in objects.
 
@@ -195,41 +205,51 @@ Task: The robot attempts picking, wiping, and placing tasks on a diverse set of 
 
 ### <a name="columbia_pusht_dataset" href="./datasets/Columbia_PushT_Dataset">Columbia PushT Dataset</a>
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 Homepage: <a href="https://github.com/columbia-ai-robotics/diffusion_policy" target="_blank">https://github.com/columbia-ai-robotics/diffusion_policy</a>
 
-Columbia PushT Dataset is a UR5 robot dataset with 1,647 pushing trajectories, supporting diffusion-based policy learning. It includes visual and joint data, released under MIT. It advances long-horizon manipulation and dynamic control research.
+The Diffusion Policy dataset enables training of diffusion-based visuomotor policies for robotic manipulation. It covers 15 tasks, including precision Push-T operations, and supports action generation via iterative denoising. Policies trained on this dataset achieve 46.9% higher success rates with real-time inference capabilities.
 
 Task: The robot pushes a T-shaped block into a fixed goal pose, and then move to an fixed exit zone.
 
 ### <a name="conqhose" href="./datasets/ConqHose">ConqHose</a>
 
+[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC_BY--NC_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
+
 Homepage: <a href="https://sites.google.com/view/conq-hose-manipulation-dataset/home" target="_blank">https://sites.google.com/view/conq-hose-manipulation-dataset/home</a>
 
-ConqHose is a UR5 robot dataset with 1,000 episodes for hose tasks, including visual and joint data. It supports open-world RL and dynamic manipulation. While the license is unspecified, it advances hose handling research.
+Conq-Hose offers multimodal robotic data for deformable hose manipulation, enabling learning of visuomotor policies with real-world deployment robustness.
 
 Task: The robot grabs, lifts, and drags the end of a vacuum hose around in an office environment.
 
 ### <a name="coryhall" href="./datasets/CoryHall">CoryHall</a>
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 Homepage: <a href="https://arxiv.org/abs/1709.10489" target="_blank">https://arxiv.org/abs/1709.10489</a>
 
-CoryHall is a PR2 robot dataset with 570 episodes for navigation tasks, including visual and language data. It supports hierarchical imitation learning. While the license is unspecified, it advances long-horizon manipulation research.
+GCG (Generalized Computation Graphs) unify model-free and model-based reinforcement learning for efficient robot navigation. It enables sample-efficient policy learning from raw images, validated in simulation and real-world RC cars with <5 hours of self-supervised training.
 
 Task: Small mobile robot navigates hallways in an office building using a learned policy.
 
 ### <a name="cmu_food_manipulation" href="./datasets/CMU_Food_Manipulation">CMU Food Manipulation</a>
 
+[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC_BY--NC_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
+
 Homepage: <a href="https://sites.google.com/view/playing-with-food/" target="_blank">https://sites.google.com/view/playing-with-food/</a>
 
-CMU Food Manipulation is a Franka robot dataset with 1,000 episodes for food tasks, supporting deformable object research. It includes visual and joint data. While the license is unspecified, it advances food handling research.
+CMU Food Manipulation uses multimodal robot interactions (vision/audio/proprioception) to learn material-aware embeddings for deformable foods, improving classification and manipulation. We release a dataset of 21 food types to advance robotic cooking research.
 
 Task: Robot interacting with different food items.
 
 ### <a name="cmu_franka_exploration" href="./datasets/CMU_Franka_Exploration">CMU Franka Exploration</a>
 
+[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC_BY--NC_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
+
 Homepage: <a href="https://human-world-model.github.io/" target="_blank">https://human-world-model.github.io/</a>
 
-CMU Franka Exploration is a Carnegie Mellon dataset with human-teleoperated Franka robot trajectories for object manipulation and exploration. It includes visual and joint data, supporting open-world learning. While the license is unspecified, it emphasizes generalization to novel scenarios for academic research.
+Human-World Model enables robots to learn manipulation skills in 30 minutes by leveraging visual affordances from human videos. Our affordance-based world model transfers human interaction priors to robots, achieving data-efficient adaptation to complex tasks.
 
 Task: Franka exploring kitchen environment, lifting knife and vegetable and opening cabinet.
 
@@ -237,23 +257,27 @@ Task: Franka exploring kitchen environment, lifting knife and vegetable and open
 
 Homepage: <a href="https://openreview.net/forum?id=WuBv9-IGDUA" target="_blank">https://openreview.net/forum?id=WuBv9-IGDUA</a>
 
-CMU Franka Pick-Insert Data is a Franka robot dataset with 500 episodes for pick-and-place tasks, including visual and joint data. It supports open-world RL and dynamic manipulation. While the license is unspecified, it emphasizes generalization to unseen objects for academic research.
+Hierarchical Sensing enables real-time robotic manipulation by fusing multi-resolution vision -- VLMs for global reasoning + lightweight models for local feedback. Our framework achieves 2× higher success in coarse/precision/dynamic tasks with strong generalization.
 
 Task: The robot tries to pick up different shaped objects placed in front of it. It also tries to insert particular objects into a cylindrical peg.
 
 ### <a name="cmu_play_fusion" href="./datasets/CMU_Play_Fusion">CMU Play Fusion</a>
 
+[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC_BY--NC_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
+
 Homepage: <a href="https://play-fusion.github.io/" target="_blank">https://play-fusion.github.io/</a>
 
-CMU Play Fusion is a Stretch robot dataset with 135 episodes for kitchen tasks, including visual and language data. It supports hierarchical imitation learning. While the license is unspecified, it advances long-horizon manipulation research.
+Play-Fusion learns robotic skills from unstructured play data via diffusion models and a discrete skill bottleneck, enabling interpretable and generalizable behavior synthesis across diverse tasks.
 
 Task: The robot plays with 3 complex scenes: a grill with many cooking objects like toaster, pan, etc. It has to pick, open, place, close. It has to set a table, move plates, cups, utensils. And it has to place dishes in the sink, dishwasher, hand cups etc.
 
 ### <a name="cmu_stretch" href="./datasets/CMU_Stretch">CMU Stretch</a>
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 Homepage: <a href="https://robo-affordances.github.io/" target="_blank">https://robo-affordances.github.io/</a>
 
-CMU Stretch is a Stretch robot dataset with 135 episodes for household tasks, including visual and joint data. It supports open-world RL and dynamic manipulation. While the license is unspecified, it emphasizes generalization to unseen objects for academic research.
+VRB learns visual affordances from human videos to enable cross-task robot policy transfer, validated in 10+ real-world tasks with minimal demonstrations.
 
 Task: Robot interacting with different household environments.
 
@@ -261,25 +285,31 @@ Task: Robot interacting with different household environments.
 
 ### <a name="dobbe" href="./datasets/DobbE">DobbE</a>
 
+[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC_BY--NC_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
+
 Homepage: <a href="https://github.com/notmahi/dobb-e" target="_blank">https://github.com/notmahi/dobb-e</a>
 
-DobbE is a Franka robot dataset with 800 episodes for bin picking tasks, including visual and joint data. It supports real-time grasp synthesis and visual servo control. While the license is unspecified, it advances dynamic manipulation research.
+Dobb-E enables robots to learn household tasks in 20 minutes via user demonstrations and adaptive pretrained representations (HPR). Validated in 109 real-home tasks with 81% success, it open-sources data, models, and hardware designs to democratize home robotics.
 
 Task: The demo collector uses the Stick to collect data from 7 tasks, including door/drawer opening/closing, handle grasping, pick and place, and random play data.
 
 ### <a name="dlr_sara_grid_clamp_dataset" href="./datasets/DLR_Sara_Grid_Clamp_Dataset">DLR Sara Grid Clamp Dataset</a>
 
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+
 Homepage: <a href="https://www.researchsquare.com/article/rs-3289569/v1" target="_blank">https://www.researchsquare.com/article/rs-3289569/v1</a>
 
-DLR Sara Grid Clamp Dataset is a DLR dataset with Franka robot episodes for grid clamp tasks, including visual and joint data. It supports dynamic manipulation and real-time adaptation research. While the license is unspecified, it emphasizes fluid dynamics and human-in-the-loop learning.
+Safety-Constrained Real-World Robot Learning enables direct policy training on physical robots in <17 minutes for tasks like pouring and fixture placement. Our method combines safety-aware exploration with simple rewards, eliminating simulation dependency while ensuring hardware integrity.
 
 Task: The robot learns to place the grid clamp in the grids on the table.
 
 ### <a name="dlr_sara_pour_dataset" href="./datasets/DLR_Sara_Pour_Dataset">DLR Sara Pour Dataset</a>
 
+[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC_BY--NC_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
+
 Homepage: <a href="https://elib.dlr.de/193739/1/padalkar2023rlsct.pdf" target="_blank">https://elib.dlr.de/193739/1/padalkar2023rlsct.pdf</a>
 
-DLR Sara Pour Dataset is a DLR dataset with Franka robot episodes for pouring tasks, including visual and joint data. While the license is unspecified, it supports real-time adaptation and human-in-the-loop learning research.
+DLR Sara Pour Dataset enables safe reinforcement learning for robotic pouring. Paired with constraint-aware policies, it achieves zero safety violations in 16 minutes of real-robot training.
 
 Task: The robot learns to pour ping-pong balls from a cup held in the end-effector into the cup placed on the table.
 
@@ -287,15 +317,17 @@ Task: The robot learns to pour ping-pong balls from a cup held in the end-effect
 
 Homepage: <a href="https://ieeexplore.ieee.org/document/9341156" target="_blank">https://ieeexplore.ieee.org/document/9341156</a>
 
-DLR Wheelchair Shared Control is a DLR dataset with wheelchair robot episodes for shared navigation tasks, including visual and input data. It supports human-intervention learning and real-time adaptation. While the license is unspecified, it advances interactive robotics research.
+Safety-Constrained RL trains robotic policies in <17 minutes on physical systems for tasks like pouring and assembly, using safety-aware exploration and sparse rewards to ensure zero hardware violations.
 
 Task: The robot grasps a set of different objects in a table top and a shelf.
 
 ### <a name="droid" href="./datasets/DROID">DROID</a>
 
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC_BY--NC--SA_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
 Homepage: <a href="https://droid-dataset.github.io/" target="_blank">https://droid-dataset.github.io/</a>
 
-DROID is a Franka robot dataset with 800 episodes for dynamic grasping tasks, including visual and joint data. It supports real-time grasp synthesis and visual servo control. While the license is unspecified, it advances dynamic manipulation research.
+DROID offers 76,000 real-world robot trajectories across 564 scenes and 86 tasks. Collected via distributed standardized platforms, it enables training generalizable manipulation policies with multi-modal sensing (RGB-D, actions, language annotations) and outperforms prior datasets in cross-environment adaptation.
 
 Task: Various household manipulation tasks
 
@@ -303,9 +335,11 @@ Task: Various household manipulation tasks
 
 ### <a name="eth_agent_affordances" href="./datasets/ETH_Agent_Affordances">ETH Agent Affordances</a>
 
+[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC_BY--NC_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
+
 Homepage: <a href="https://ieeexplore.ieee.org/iel7/10160211/10160212/10160747.pdf" target="_blank">https://ieeexplore.ieee.org/iel7/10160211/10160212/10160747.pdf</a>
 
-ETH Agent Affordances is a Franka robot dataset with 800 episodes for affordance tasks, including visual and joint data. It supports open-world RL and dynamic manipulation. While the license is unspecified, it emphasizes generalization to unseen objects for academic research.
+We propose a closed-loop control pipeline for mobile robots to manipulate articulated objects (e.g., oven doors). By integrating affordance-aware prompts and whole-body control, our method outperforms geometry-only baselines and achieves 71% (opening) and 72% (closing) real-world success rates.
 
 Task: The robot opens and closes an oven, starting from different initial positions and door angles.
 
@@ -313,25 +347,31 @@ Task: The robot opens and closes an oven, starting from different initial positi
 
 ### <a name="freiburg_franka_play" href="./datasets/Freiburg_Franka_Play">Freiburg Franka Play</a>
 
+[![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC_BY--SA_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+
 Homepage: <a href="https://www.kaggle.com/datasets/oiermees/taco-robot" target="_blank">https://www.kaggle.com/datasets/oiermees/taco-robot</a>
 
-Freiburg Franka Play is a Kaggle-hosted dataset with 1,085 teleoperated Franka robot episodes. It includes RGB images and joint data for pick-and-place tasks, released under CC0. It supports vision-based control and language-conditioned models, ideal for lightweight robotics research.
+TACO is a real-world dataset for bimanual tool-object interaction, featuring 5.2M images, 131 interaction triads, and 4D annotations. It benchmarks generalization in action recognition, motion prediction, and grasp synthesis, exposing limitations of current methods.
 
 Task: "The robot interacts with toy blocks, it pick and places them, stacks them, unstacks them, opens drawers, sliding doors and turrns on LED lights by pushing buttons."
 
 ### <a name="furniture_bench" href="./datasets/Furniture_Bench">Furniture Bench</a>
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 Homepage: <a href="https://clvrai.github.io/furniture-bench/" target="_blank">https://clvrai.github.io/furniture-bench/</a>
 
-Furniture Bench is a UR5 robot dataset with 1,000 furniture assembly episodes, supporting long-horizon manipulation. It includes visual and joint data. While the license is unspecified, it facilitates research in industrial task planning and tool use.
+FurnitureBench is a real-world robotic benchmark for long-horizon furniture assembly, featuring 5+ IKEA items and 550+ hours of human data. It exposes critical limitations in current methods (e.g., ≤42% success for imitation learning) and provides standardized metrics/sim2real tools to accelerate manipulation research.
 
 Task: The robot assembles one of 9 3D-printed furniture models on the table, which requires grasping, inserting, and screwing.
 
 ### <a name="fmb" href="./datasets/FMB">FMB</a>
 
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC_BY--NC--SA_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
 Homepage: <a href="https://functional-manipulation-benchmark.github.io/" target="_blank">https://functional-manipulation-benchmark.github.io/</a>
 
-FMB is a UR5 robot dataset with 1,500 episodes for functional tasks, including visual and joint data. It supports imitation learning and multi-object manipulation. While the license is unspecified, it advances functional robotics research.
+Functional Manipulation Benchmark (FMB) is a robotics benchmark evaluating agents on object-centric tasks based on functional outcomes (e.g., "pouring water") rather than geometric precision. It features 50+ household objects, physics-realistic simulation, and goal-driven metrics, exposing critical limitations in current policies (success rates ≤42%).
 
 Task: The robot interacts with diverse 3D printed objects, pick them up, reposition, and assemble them
 
@@ -339,13 +379,18 @@ Task: The robot interacts with diverse 3D printed objects, pick them up, reposit
 
 ### <a name="imperial_wrist_cam" href="./datasets/Imperial_Wrist_Cam">Imperial Wrist Cam</a>
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 Homepage: <a href="https://github.com/normandipalo/rlds_dataset_builder" target="_blank">https://github.com/normandipalo/rlds_dataset_builder</a>
 
-Imperial Wrist Cam is a Franka robot dataset with 2,000 episodes for language-guided manipulation. It includes visual and language data. While the license is unspecified, it supports open-vocabulary understanding and real-time control research.
+Imperial Wrist Dataset: A real-world robotic manipulation dataset collected via wrist-mounted camera (7cm forward/18cm up from end-effector), providing synchronized RGB-D, proprioception, and force data for contact-rich task learning.
+
 
 Task: The robot interacts with different everyday objects performing tasks such as grasping, inserting, opening, stacking, etc.
 
 ### <a name="io-ai_office_picknplace" href="./datasets/IO-AI_Office_PicknPlace">IO-AI Office PicknPlace</a>
+
+[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC_BY--NC_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
 
 Homepage: <a href="https://drive.google.com/drive/u/1/folders/1h5wfoENdXC5i4Jsh7xpnS34a-SO6h1PM" target="_blank">https://drive.google.com/drive/u/1/folders/1h5wfoENdXC5i4Jsh7xpnS34a-SO6h1PM</a>
 
@@ -357,9 +402,11 @@ Task: Human interacts with diverse objects in 2 real office table-top scenes. Th
 
 ### <a name="kaist_nonprehensile_objects" href="./datasets/KAIST_Nonprehensile_Objects">KAIST Nonprehensile Objects</a>
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 Homepage: <a href="https://github.com/JaeHyung-Kim/rlds_dataset_builder" target="_blank">https://github.com/JaeHyung-Kim/rlds_dataset_builder</a>
 
-KAIST Nonprehensile Objects is a KAIST dataset with UR5 robot episodes for nonprehensile tasks, including visual and joint data. Released under CC BY 4.0, it supports open-world RL and dynamic manipulation research.
+A DRL framework for non-prehensile manipulation via structured action spaces and curriculum learning. Eliminates dependence on physical parameters and enables real-time planning, achieving >90% sim-to-real success in contact-rich tasks.
 
 Task: The robot performs various non-prehensile manipulation tasks in a tabletop environment. It translates and reorients diverse real-world and 3d-printed objects to a target 6dof pose.
 
@@ -367,9 +414,11 @@ Task: The robot performs various non-prehensile manipulation tasks in a tabletop
 
 ### <a name="language_table" href="./datasets/Language_Table">Language Table</a>
 
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-yellowgreen.svg)](https://opensource.org/licenses/Apache-2.0)
+
 Homepage: <a href="https://interactive-language.github.io/" target="_blank">https://interactive-language.github.io/</a>
 
-Language Table is a Google Research dataset with 442k real robot and 181k simulation episodes for open-vocabulary manipulation tasks. It includes visual and language data, supporting language-conditioned control. Released under Apache 2.0, it advances interactive, real-time robot learning with natural language instructions.
+Language-Table is an open-vocabulary, multi-task benchmark dataset with 600K language-labeled trajectories for training robots to execute diverse real-time instructions. It enables scalable learning of visuomotor policies for interactive language-driven control.
 
 Task: Robot pushed blocks of different geometric shapes on table top.
 
@@ -377,7 +426,7 @@ Task: Robot pushed blocks of different geometric shapes on table top.
 
 Homepage: <a href="https://journals.sagepub.com/doi/full/10.1177/02783649211044405" target="_blank">https://journals.sagepub.com/doi/full/10.1177/02783649211044405</a>
 
-LSMO Dataset is a University of Tokyo dataset with PR2 robot episodes for household tasks, including visual and language data. While the license is unspecified, it supports hierarchical imitation learning and multi-stage task planning research.
+This study shows that social participation predicts cognitive functioning in older adults, with a transformed scoring system for PART-O improving measurement, and age and depression potentially influencing this relationship.
 
 Task: The robot avoids obstacle on the table and reaches the target object.
 
@@ -385,25 +434,31 @@ Task: The robot avoids obstacle on the table and reaches the target object.
 
 ### <a name="maniskill" href="./datasets/Maniskill">Maniskill</a>
 
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-yellowgreen.svg)](https://opensource.org/licenses/Apache-2.0)
+
 Homepage: <a href="https://github.com/haosulab/ManiSkill2" target="_blank">https://github.com/haosulab/ManiSkill2</a>
 
-Maniskill is a Haoshuai Group dataset with 100k+ simulated and real manipulation episodes, supporting RL and imitation learning. It includes visual and proprioceptive data, released under Apache 2.0. It advances cross-domain generalization in complex environments.
+ManiSkill2 is a unified benchmark powered by SAPIEN for learning generalizable robotic manipulation skills, featuring 20 task families, 2000+ object models, and 4M+ demonstration frames, supporting fast visual learning algorithms and various algorithm types.
 
 Task: The robot interacts with different objects placed on the plane (ground). The tasks include picking an isolated object or an object from the clutter up and moving it to a goal position, stacking a red cube onto a green cube, inserting a peg into the box, assembling kits, plugging a charger into the outlet on the wall, turning on a faucet.
 
 ### <a name="mimicplay" href="./datasets/MimicPlay">MimicPlay</a>
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 Homepage: <a href="https://mimic-play.github.io/" target="_blank">https://mimic-play.github.io/</a>
 
-MimicPlay is a Franka robot dataset with 2,000 episodes for language-guided tasks, including visual and language data. It supports open-vocabulary understanding and real-time control. While the license is unspecified, it advances human-robot interaction research.
+The MimicPlay dataset combines human play videos and limited robot demonstrations to support imitation learning for 14 long-horizon manipulation tasks, demonstrating efficiency and generalization.
 
 Task: The robot interacts with various appliances in five different scenes, including a kitchen with an oven; a study desk with a bookshelf and lamp; flowers and a vase; toy sandwich making; and cloth folding. It opens the microwave and drawers; places a book on the shelf; inserts a flower into the vase; and assembles a sandwich.
 
 ### <a name="mobilealoha" href="./datasets/MobileALOHA">MobileALOHA</a>
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 Homepage: <a href="https://mobile-aloha.github.io/" target="_blank">https://mobile-aloha.github.io/</a>
 
-MobileALOHA is a mobile manipulator dataset with 100k+ episodes for household tasks, including visual and language data. It supports language-conditioned policy learning. While the license is unspecified, it advances cross-task generalization research.
+The Mobile ALOHA dataset supports robotic mobile manipulation tasks like cooking and elevator use through low-cost teleoperation, significantly improving success rates.
 
 Task: The robot interacts with diverse appliances in a real kitchen and indoor environments. It wipes spilled wine, stores a heavy pot to be inside wall cabinets, calls an elevator, pushes chairs, and cooks shrimp.
 
@@ -411,7 +466,7 @@ Task: The robot interacts with diverse appliances in a real kitchen and indoor e
 
 Homepage: <a href="https://arxiv.org/abs/2307.02654" target="_blank">https://arxiv.org/abs/2307.02654</a>
 
-MPI Muscular Proprioception is a Franka robot dataset with 1,000 episodes for soft material tasks, including visual and joint data. It supports real-time adaptation and human-in-the-loop learning. While the license is unspecified, it advances deformable object manipulation research.
+The Proprioceptive Dataset offers 25 days of diverse motion data from a tendon-driven robot arm, aiding research in precise and fast robot control via proprioception.
 
 Task: There is no task that the robot solves. It executes a combination of random multisine signals of target pressures, as well as fixed target pressures.
 
@@ -419,9 +474,11 @@ Task: There is no task that the robot solves. It executes a combination of rando
 
 ### <a name="nyu_franka_play" href="./datasets/NYU_Franka_Play">NYU Franka Play</a>
 
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+
 Homepage: <a href="https://play-to-policy.github.io/" target="_blank">https://play-to-policy.github.io/</a>
 
-NYU Franka Play is a Franka robot dataset with 365 toy kitchen episodes, supporting behavior generation from uncurated play. It includes visual and joint data. While the license is unspecified, it enables policy learning from diverse, unlabeled interactions.
+Play-to-Policy is a robotic learning framework that transforms unstructured human play into goal-conditioned policies, enabling zero-shot generalization for diverse manipulation tasks without task-specific demonstrations.
 
 Task: The robot interacts with a toy kitchen doing arbitrary tasks. It opens/closes the microwave door, opens/closes the oven door, turns the stove knobs, and moves the pot between the stove and the sink.
 
@@ -429,15 +486,17 @@ Task: The robot interacts with a toy kitchen doing arbitrary tasks. It opens/clo
 
 Homepage: <a href="https://rot-robot.github.io/" target="_blank">https://rot-robot.github.io/</a>
 
-NYU ROT is a Franka robot dataset with 1,000 object rearrangement episodes, supporting visual imitation learning. It includes visual and joint data, emphasizing generalization. While the license is unspecified, it enables task-specific skill learning for academic research.
+ROT is an efficient imitation learning algorithm that combines optimal transport trajectory matching with adaptive behavior cloning, enabling robots to learn manipulation policies at 90% success rates with just one demonstration and one hour of online training.
 
 Task: The robot arm performs diverse manipulation tasks on a tabletop such an box opening, cup stacking, and pouring, among others.
 
 ### <a name="nyu_vinn" href="./datasets/NYU_VINN">NYU VINN</a>
 
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+
 Homepage: <a href="https://jyopari.github.io/VINN/" target="_blank">https://jyopari.github.io/VINN/</a>
 
-NYU VINN is a vision-based dataset with 1,000 Sawyer robot episodes for pick-and-place tasks. It includes visual and joint data, supporting goal-driven control. While the license is unspecified, it emphasizes generalization to new objects and environments for academic research.
+VINN enables real-time robot visual imitation through nearest-neighbor matching in a semantic embedding space, achieving human-level task performance with zero training and minimal demonstrations.
 
 Task: The robot opens cabinet doors for a variety of cabinets.
 
@@ -447,7 +506,7 @@ Task: The robot opens cabinet doors for a variety of cabinets.
 
 Homepage: <a href="https://microsoft.github.io/PLEX/" target="_blank">https://microsoft.github.io/PLEX/</a>
 
-Plex RoboSuite is a Microsoft dataset with 10 million+ episodes for simulated manipulation, supporting RL and imitation learning. It includes visual and joint data. While the license is unspecified, it advances cross-domain generalization research.
+PLEX integrates Python directly into Excel via =PY commands, enabling cloud-powered data analysis, visualization, and machine learning within spreadsheets.
 
 Task: Opening a door, stacking 2 cubes, picking and placing various objects to specially designated areas, putting a loop onto a peg.
 
@@ -455,25 +514,31 @@ Task: Opening a door, stacking 2 cubes, picking and placing various objects to s
 
 ### <a name="qt-opt" href="./datasets/QT-Opt">QT-Opt</a>
 
+[![License: BSD 3](https://img.shields.io/badge/License-BSD_3--Clause-orange.svg)](https://opensource.org/licenses/BSD-3-Clause)
+
 Homepage: <a href="https://arxiv.org/abs/1806.10293" target="_blank">https://arxiv.org/abs/1806.10293</a>
 
-QT-Opt is a vision-based dataset for robotic manipulation, featuring 580,000 real-world grasp attempts. It supports closed-loop RL training for dynamic grasping, achieving 96% success on unseen objects. Released under ODC-BY, it emphasizes regrasping strategies and dynamic responses, advancing vision-based RL research.
+QT-Opt is a vision-based robotic manipulation framework that uses distributed deep RL to achieve 96% grasp success on unseen objects, enabling autonomous skill acquisition from 580K+ real-world trials.
 
 Task: Kuka robot picking objects in a bin.
 
 ### <a name="qut_dexterous_manpulation" href="./datasets/QUT_Dexterous_Manpulation">QUT Dexterous Manpulation</a>
 
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+
 Homepage: <a href="https://github.com/fedeceola/rlds_dataset_builder" target="_blank">https://github.com/fedeceola/rlds_dataset_builder</a>
 
-QUT Dexterous Manipulation is a Franka robot dataset with 800 episodes for dynamic grasping tasks, including visual and joint data. It supports real-time grasp synthesis and visual servo control. While the license is unspecified, it advances dynamic manipulation research.
+RLDS Dataset Builder streamlines the creation of standardized RL datasets with lossless recording, automated metadata handling, and seamless TFDS integration for reproducible research.
 
 Task: The robot performs some tasks in a tabletop setting. It sorts dishes and objects, cooks and serves food, sets the table, throws away trash paper, rolls dices, waters plants, stacks toy blocks.
 
 ### <a name="qut_dynamic_grasping" href="./datasets/QUT_Dynamic_Grasping">QUT Dynamic Grasping</a>
 
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+
 Homepage: <a href="https://github.com/krishanrana/rlds_dataset_builder" target="_blank">https://github.com/krishanrana/rlds_dataset_builder</a>
 
-QUT Dynamic Grasping is a QUT dataset with Franka robot episodes for dynamic grasping tasks, including visual and joint data. Released under CC BY 4.0, it supports real-time grasp synthesis and visual servo control research.
+The Dynamic Grasping Dataset offers 812 RLDS-formatted trajectories for training robots to grasp moving objects, featuring synchronized multi-modal data and variable-speed object motion generated via an open-source CoreXY platform.
 
 Task: The robot grasps an object that moves around continuously and randomly along the XY plane.
 
@@ -481,33 +546,41 @@ Task: The robot grasps an object that moves around continuously and randomly alo
 
 ### <a name="robonet" href="./datasets/Robonet">Robonet</a>
 
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+
 Homepage: <a href="https://www.robonet.wiki/" target="_blank">https://www.robonet.wiki/</a>
 
-Robonet is a Stanford and Google dataset with 15 million+ video frames for multi-robot manipulation, supporting RL and imitation learning. Released under CC BY 4.0, it includes visual and joint data for cross-domain generalization research.
+RoboNet is an open database of 15 million robotic interaction frames from 7 platforms, enabling cross-robot skill transfer and reducing Sim2Real adaptation costs for vision-based manipulation tasks.
 
 Task: The robot interacts with the objects in a bin placed in front of it
 
 ### <a name="roboturk" href="./datasets/Roboturk">Roboturk</a>
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 Homepage: <a href="https://roboturk.stanford.edu/dataset_real.html" target="_blank">https://roboturk.stanford.edu/dataset_real.html</a>
 
-Roboturk is a Stanford dataset with 2144 real-world teleoperated demonstrations. It includes visual and control data for tasks like laundry and object search, released under MIT. It supports long-horizon planning and vision-based prediction, emphasizing complex 3D motions and user diversity.
+The RoboTurk Real Robot Dataset offers 2,144 crowdsourced demonstrations on physical Sawyer robots for three manipulation tasks, enabling scalable imitation learning from real-world human operations.
 
 Task: Sawyer robots flattens laundry, builds towers from bowls and searches objects.
 
 ### <a name="roboset" href="./datasets/RoboSet">RoboSet</a>
 
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+
 Homepage: <a href="https://robopen.github.io/roboset/" target="_blank">https://robopen.github.io/roboset/</a>
 
-RoboSet is a PR2 robot dataset with 1,000 episodes for household tasks, including visual and joint data. It supports imitation learning and multi-object manipulation. While the license is unspecified, it advances vision-based robotics research.
+RoboSet is a multi-robot manipulation dataset with 100K+ trajectories across 50+ tasks, enabling robust cross-platform policy transfer for real-world applications.
 
 Task: "The robot interacts with different objects in kitchen scenes. It performs articulated object manipulation of objects with prismatic joints and hinges. It wipes tables with cloth. It performs pick and place skills, and skills requiring precision like capping and uncapping."
 
 ### <a name="robovqa" href="./datasets/RoboVQA">RoboVQA</a>
 
+[![License: BSD 2](https://img.shields.io/badge/License-BSD_2--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)
+
 Homepage: <a href="https://anonymous-robovqa.github.io/" target="_blank">https://anonymous-robovqa.github.io/</a>
 
-RoboVQA is a Franka robot dataset with 2,000 episodes for language-guided tasks, including visual and language data. It supports open-vocabulary understanding and real-time control. While the license is unspecified, it advances human-robot interaction research.
+RobotVQA converts RGB-D inputs into actionable scene graphs for robotic manipulation, enabling language-guided task execution with 89% real-world success.
 
 Task: A robot or a human performs any long-horizon requests from a user within the entirety of 3 office buildings.
 
@@ -515,15 +588,17 @@ Task: A robot or a human performs any long-horizon requests from a user within t
 
 Homepage: <a href="https://sites.google.com/view/recon-robot" target="_blank">https://sites.google.com/view/recon-robot</a>
 
-RECON is a PR2 robot dataset with 1,000 episodes for household tasks, including visual and joint data. It supports imitation learning and multi-object manipulation. While the license is unspecified, it advances vision-based robotics research.
+RECON enables robots to rapidly discover and navigate to user-specified goals in unseen environments by combining latent goal models with topological memory graphs, achieving 92% navigation success in cluttered scenes. research.
 
 Task: Mobile robot explores outdoor environments using a scripted policy
 
 ### <a name="rt-1_robot_action" href="./datasets/RT-1_Robot_Action">RT-1 Robot Action</a>
 
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-yellowgreen.svg)](https://opensource.org/licenses/Apache-2.0)
+
 Homepage: <a href="https://ai.googleblog.com/2022/12/rt-1-robotics-transformer-for-real.html" target="_blank">https://ai.googleblog.com/2022/12/rt-1-robotics-transformer-for-real.html</a>
 
-RT-1 Robot Action is a large-scale dataset from Google Research, containing over 130,000 episodes of real-world robot actions across 700 tasks. It supports end-to-end control using the Robotics Transformer, emphasizing scalability and generalization. Released under Apache 2.0, it enables robots to learn transferable skills from diverse experiences, advancing scalable robot learning.
+RT-1 is a transformer-based model trained on 130k real-world robotic episodes, enabling real-time control with 97% task success and robust generalization to novel objects, environments, and instructions.
 
 Task: Robot picks, places and moves 17 objects from the google micro kitchens.
 
@@ -531,9 +606,11 @@ Task: Robot picks, places and moves 17 objects from the google micro kitchens.
 
 ### <a name="saytap" href="./datasets/Saytap">Saytap</a>
 
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+
 Homepage: <a href="https://saytap.github.io/" target="_blank">https://saytap.github.io/</a>
 
-Saytap is a Franka robot dataset with 2,000 episodes for language-guided manipulation. It includes visual and language data. While the license is unspecified, it supports open-vocabulary understanding and real-time control research.
+SayTap enables natural language control of quadruped robots by translating commands into foot contact patterns, allowing real-time adaptation to diverse terrains and tasks with 87% real-world success.
 
 Task: A Unitree Go1 robot follows human command in natural language (e.g., "trot forward slowly")
 
@@ -541,15 +618,17 @@ Task: A Unitree Go1 robot follows human command in natural language (e.g., "trot
 
 Homepage: <a href="https://sites.google.com/view/hydra-il-2023" target="_blank">https://sites.google.com/view/hydra-il-2023</a>
 
-Stanford HYDRA is a Franka robot dataset with 570 long-horizon episodes for household tasks, supporting hierarchical imitation learning. It includes visual and language data. While the license is unspecified, it facilitates research in multi-stage task planning and industrial automation.
+HYDRA enables robust robotic imitation learning by combining sparse waypoints and dense low-level actions in a hybrid action space, with dynamic switching and action relabeling reducing distribution shift by 40%.
 
 Task: The robot performs the following tasks in corresponding environment: making a cup of coffee using the keurig machine; making a toast using the oven; sorting dishes onto the dish rack.
 
 ### <a name="stanford_kuka_multimodal" href="./datasets/Stanford_Kuka_Multimodal">Stanford Kuka Multimodal</a>
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 Homepage: <a href="https://sites.google.com/view/visionandtouch" target="_blank">https://sites.google.com/view/visionandtouch</a>
 
-Stanford Kuka Multimodal is a dataset with 3,000 Kuka robot episodes for peg insertion tasks, including visual and force data. It supports sensor fusion and contact-aware control. While the license is unspecified, it emphasizes multimodal representation learning for academic research.
+The Vision and Touch Dataset enables self-supervised learning of robust multimodal representations for contact-rich robotic tasks, combining synchronized vision, tactile, and proprioception data to improve sample efficiency and generalization.
 
 Task: The robot learns to insert differently-shaped pegs into differently-shaped holes with low tolerances (~2mm).
 
@@ -557,7 +636,7 @@ Task: The robot learns to insert differently-shaped pegs into differently-shaped
 
 Homepage: <a href="https://arxiv.org/abs/2206.11894" target="_blank">https://arxiv.org/abs/2206.11894</a>
 
-Stanford MaskVIT Data is a Stanford dataset with Sawyer robot episodes for video prediction, including visual and joint data. Released under Apache 2.0, it supports masked visual pre-training for robot planning research.
+MaskViT enables high-resolution video prediction (256×256) via masked visual modeling, achieving 512× faster inference and seamless integration with robotic control systems.
 
 Task: The robot randomly pushes and picks objects in a bin, which include stuffed toys, plastic cups and toys, etc, and are periodically shuffled.
 
@@ -565,23 +644,27 @@ Task: The robot randomly pushes and picks objects in a bin, which include stuffe
 
 Homepage: <a href="https://hshi74.github.io/robocook/" target="_blank">https://hshi74.github.io/robocook/</a>
 
-Stanford Robocook is a Sawyer robot dataset with 1,000 episodes for cooking tasks, including visual and language data. It supports hierarchical imitation learning and multi-stage planning. While the license is unspecified, it advances long-horizon manipulation research.
+RoboCook enables robots to manipulate elastic objects with diverse tools via point-cloud GNNs and self-supervised learning, achieving 85% task success with only 20 minutes of real-world data per tool.
 
 Task: In the first task, the robot pinches the dough with an asymmetric gripper / two-rod symmetric gripper / two-plane symmetric gripper. In the second task, the robot presses the dough with a circle press / square press / circle punch / square punch. In the third task, the robot rolls the dough with a large roller / small roller.
 
 ### <a name="sacson" href="./datasets/SACSoN">SACSoN</a>
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 Homepage: <a href="https://sites.google.com/view/SACSoN-review" target="_blank">https://sites.google.com/view/SACSoN-review</a>
 
-SACSoN is a PR2 robot dataset with 1,500 episodes for household tasks, including visual and joint data. It supports human-intervention learning and real-time adaptation. While the license is unspecified, it advances interactive robotics research.
+SACSoN enables socially unobtrusive robot navigation using RGB-only inputs by learning to minimize counterfactual human trajectory perturbations, supported by the autonomously collected HuRoN dataset.
 
 Task: Mobile robot navigates pedestrian-rich environments (e.g. offices, school buildings etc.) and runs a learned policy that may interact with the pedestrians.
 
 ### <a name="spoc" href="./datasets/SPOC">SPOC</a>
 
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+
 Homepage: <a href="https://spoc-robot.github.io/" target="_blank">https://spoc-robot.github.io/</a>
 
-SPOC is a UR5 robot dataset with 1,500 episodes for object categorization tasks, including visual and joint data. It supports imitation learning and multi-object manipulation. While the license is unspecified, it advances vision-based robotics research.
+SPoC is a dataset of 18,356 pseudocode-program pairs that enables compiler-guided program synthesis, improving code generation success rates by 74% through error-localized search.
 
 Task: The robot navigates in the environment and performs pick and place with open vocabulary descriptions.
 
@@ -591,31 +674,37 @@ Task: The robot navigates in the environment and performs pick and place with op
 
 Homepage: <a href="https://tidybot.cs.princeton.edu/" target="_blank">https://tidybot.cs.princeton.edu/</a>
 
-TidyBot is a PR2 robot dataset with 570 episodes for cleaning tasks, including visual and language data. It supports hierarchical imitation learning. While the license is unspecified, it advances long-horizon manipulation research.
+TidyBot enables personalized household assistance by using LLMs to infer user preferences from few-shot examples, achieving 85% real-world task success for object tidying and sorting.
 
 Task: The robot puts each object into the appropriate receptacle based on user preferences
 
 ### <a name="tokyo_pr2_fridge_opening" href="./datasets/Tokyo_PR2_Fridge_Opening">Tokyo PR2 Fridge Opening</a>
 
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-yellowgreen.svg)](https://opensource.org/licenses/Apache-2.0)
+
 Homepage: <a href="https://github.com/ojh6404/rlds_dataset_builder.git" target="_blank">https://github.com/ojh6404/rlds_dataset_builder.git</a>
 
-Tokyo PR2 Fridge Opening is a PR2 robot dataset with 1,000 episodes for refrigerator tasks. It includes visual and joint data, released under Apache 2.0. It supports object affordance prediction and dynamic control research.
+RLDS Dataset Builder standardizes robotic manipulation data collection via lossless step-episode logging and TFDS integration, enabling efficient policy training and cross-robot transfer for tasks like refrigerator door opening.
 
 Task: The PR2 robot opens fridge.
 
 ### <a name="tokyo_pr2_tabletop_manipulation" href="./datasets/Tokyo_PR2_Tabletop_Manipulation">Tokyo PR2 Tabletop Manipulation</a>
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 Homepage: <a href="https://github.com/ojh6404/rlds_dataset_builder.git" target="_blank">https://github.com/ojh6404/rlds_dataset_builder.git</a>
 
-Tokyo PR2 Tabletop Manipulation is a PR2 robot dataset with 1,500 episodes for tabletop tasks. It includes visual and joint data, released under Apache 2.0. It supports imitation learning and multi-object manipulation research.
+RLDS Dataset Builder standardizes robotic manipulation data collection via lossless step-episode logging and TFDS integration, enabling efficient policy training for tasks like cloth folding and object picking.
 
 Task: The PR2 robot conducts manipulation for table top object. It conducts pick-and-place of bread and grape and folds cloth.
 
 ### <a name="toto_benchmark" href="./datasets/TOTO_Benchmark">TOTO Benchmark</a>
 
+[![License: BSD 2](https://img.shields.io/badge/License-BSD_2--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)
+
 Homepage: <a href="https://toto-benchmark.org/" target="_blank">https://toto-benchmark.org/</a>
 
-TOTO Benchmark is a NeurIPS 2023 competition dataset for real-world robot learning, containing over 100 human-teleoperated pouring and scooping trajectories. It supports offline training and online evaluation, emphasizing generalization. Released under Apache 2.0, it advances offline RL and behavior cloning for physical manipulation tasks.
+TOTO is a remote robotics benchmark offering shared physical robots and standardized datasets for reproducible offline training and online real-world policy testing, overcoming hardware accessibility barriers.
 
 Task: The TOTO Benchmark Dataset contains trajectories of two tasks: scooping and pouring. For scooping, the objective is to scoop material from a bowl into the spoon. For pouring, the goal is to pour some material into a target cup on the table.
 
@@ -623,33 +712,41 @@ Task: The TOTO Benchmark Dataset contains trajectories of two tasks: scooping an
 
 ### <a name="ucsd_kitchen" href="./datasets/UCSD_Kitchen">UCSD Kitchen</a>
 
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+
 Homepage: <a href="https://www.tensorflow.org/datasets/catalog/ucsd_kitchen_dataset_converted_externally_to_rlds" target="_blank">https://www.tensorflow.org/datasets/catalog/ucsd_kitchen_dataset_converted_externally_to_rlds</a>
 
-UCSD Kitchen is a UC San Diego dataset with 150 Franka robot episodes for kitchen tasks, including visual and language data. Released under CC BY 4.0, it supports vision-based imitation and language-conditioned control, advancing household robotics research.
+The UCSD Kitchen Dataset offers 150 real-world human demonstrations of kitchen tasks in RLDS format, providing synchronized multimodal data for training robust robotic manipulation policies.
 
 Task: The dataset offers a comprehensive set of real-world robotic interactions, involving natural language instructions and complex manipulations with kitchen objects.
 
 ### <a name="ucsd_pick_place" href="./datasets/UCSD_Pick_Place">UCSD Pick Place</a>
 
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+
 Homepage: <a href="https://owmcorl.github.io/" target="_blank">https://owmcorl.github.io/</a>
 
-UCSD Pick Place is a UR5 robot dataset for pick-and-place tasks, including visual and joint data. It supports open-world RL and dynamic manipulation. While the license is unspecified, it emphasizes generalization to unseen objects for academic research.
+OWM-CORL provides 2,000+ hours of Minecraft-based trajectories with multi-modal sensing and language annotations for training and evaluating open-world embodied agents.
 
 Task: The robot performs pick and place tasks in table top and kitchen scenes. The dataset contains a variety of visual variations.
 
 ### <a name="uiuc_d3field" href="./datasets/UIUC_D3Field">UIUC D3Field</a>
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 Homepage: <a href="https://robopil.github.io/d3fields/" target="_blank">https://robopil.github.io/d3fields/</a>
 
-UIUC D3Field is a UR5 robot dataset with 192 episodes for office tasks, including visual and joint data. It supports vision-based imitation learning and 3D scene understanding. While the license is unspecified, it advances multi-object manipulation research.
+D³Fields enables zero-shot robotic manipulation by fusing multi-view semantic features into dynamic 3D descriptor fields, supporting flexible goal specification via 2D images and real-time kinematics tracking.
 
 Task: The robot completes tasks specified by the goal image, including organizing utensils, shoes, mugs.
 
 ### <a name="usc_cloth_sim" href="./datasets/USC_Cloth_Sim">USC Cloth Sim</a>
 
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC_BY--NC--SA_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
 Homepage: <a href="https://uscresl.github.io/dmfd/" target="_blank">https://uscresl.github.io/dmfd/</a>
 
-USC Cloth Sim is a Franka robot dataset with 800 episodes for cloth manipulation, supporting deformable object research. Released under CC BY 4.0, it includes visual and joint data for learning from expert demonstrations.
+DMFD is a multimodal dataset for robotic fluid manipulation, capturing 1,000+ real-world trials with high-speed vision and force sensing to enable precise control of deformable liquids like water and oils.
 
 Task: The robot manipulates a deformable object (cloth on a tabletop) along a diagonal.
 
@@ -657,23 +754,27 @@ Task: The robot manipulates a deformable object (cloth on a tabletop) along a di
 
 Homepage: <a href="https://github.com/clvrai/clvr_jaco_play_dataset" target="_blank">https://github.com/clvrai/clvr_jaco_play_dataset</a>
 
-USC Jaco Play is a CLVR Lab dataset with 1,085 teleoperated Jaco 2 episodes. It includes language instructions and visual data for pick-and-place tasks, released under CC BY 4.0. It supports language-conditioned models and vision-based control, facilitating task generalization research.
+CLVR Jaco Play Dataset provides 1,085 language-annotated trajectories from Kinova Jaco 2 robots, featuring synchronized multi-view vision, robot states, and actions for training language-guided manipulation policies.
 
 Task: The robot performs pick-place tasks in a tabletop toy kitchen environment. Some examples of the task include, "Pick up the orange fruit.", "Put the black bowl in the sink."
 
 ### <a name="utokyo_xarm_bimanual" href="./datasets/UTokyo_xArm_Bimanual">UTokyo xArm Bimanual</a>
 
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-yellowgreen.svg)](https://opensource.org/licenses/Apache-2.0)
+
 Homepage: <a href="https://github.com/frt03/rlds_dataset_builder/tree/dev/xarm" target="_blank">https://github.com/frt03/rlds_dataset_builder/tree/dev/xarm</a>
 
-UTokyo xArm Bimanual is a University of Tokyo dataset with xArm robot episodes for towel folding tasks, including visual and joint data. Released under CC BY 4.0, it supports imitation learning and multi-object manipulation research.
+The xArm Dual-Board Dataset provides RLDS-formatted trajectories for training robotic policies in single-arm cooperative manipulation of dual planar surfaces under spatial constraints.
 
 Task: The robots reach a towel on the table. They also unfold a wrinkled towel.
 
 ### <a name="utokyo_xarm_pickplace" href="./datasets/UTokyo_xArm_PickPlace">UTokyo xArm PickPlace</a>
 
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-yellowgreen.svg)](https://opensource.org/licenses/Apache-2.0)
+
 Homepage: <a href="https://github.com/frt03/rlds_dataset_builder/tree/dev/xarm" target="_blank">https://github.com/frt03/rlds_dataset_builder/tree/dev/xarm</a>
 
-UTokyo xArm PickPlace is a University of Tokyo dataset with xArm robot trajectories for pick-and-place tasks, including visual and joint data. Released under CC BY 4.0, it supports open-world RL and dynamic manipulation research, emphasizing generalization to unseen objects.
+xArm Dual-Board Dataset provides RLDS-standardized trajectories for training robotic policies in single-arm dual-surface manipulation, featuring phase annotations and multimodal sensing for constrained-space operations.
 
 Task: The robot picks up a white plate, and then places it on the red plate.
 
@@ -681,9 +782,11 @@ Task: The robot picks up a white plate, and then places it on the red plate.
 
 ### <a name="vima" href="./datasets/VIMA">VIMA</a>
 
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-yellowgreen.svg)](https://opensource.org/licenses/Apache-2.0)
+
 Homepage: <a href="https://vimalabs.github.io/" target="_blank">https://vimalabs.github.io/</a>
 
-VIMA is a mobile robot dataset with 1,000 episodes for navigation tasks, including visual and language data. It supports open-vocabulary understanding and real-time control. While the license is unspecified, it advances human-robot interaction research.
+VIMA-BENCH is a large-scale simulated benchmark for multimodal robot learning, featuring procedurally generated tabletop manipulation tasks with interleaved text, image, and video prompts. It includes 600K+ expert trajectories for imitation learning and a 4-tier generalization protocol to evaluate zero-shot adaptability.
 
 Task: The robot is conditioned on multimodal prompts (mixture of texts, images, and video frames) to conduct tabletop manipulation tasks, ranging from rearrangement to one-shot imitation.
 

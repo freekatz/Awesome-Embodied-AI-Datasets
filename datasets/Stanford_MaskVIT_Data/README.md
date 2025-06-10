@@ -3,7 +3,20 @@
 
 ## Introduction
 
-Stanford MaskVIT Data is a robotics dataset developed by Stanford University for video prediction and robot planning. It contains 1,000 episodes of a Sawyer robot performing object manipulation tasks, including RGB images, depth data, and robot joint states. The dataset supports research in masked visual pre-training for video prediction, with a focus on learning from unstructured, real-world interactions. It is released under the Apache 2.0 license, allowing free use and modification for academic and commercial purposes. Stanford MaskVIT Data is accompanied by evaluation scripts and pre-trained models, enabling comparisons across different video prediction and robot planning approaches.
+MaskViT is a novel video prediction framework that leverages masked visual modeling to achieve high-fidelity, long-horizon video generation with minimal domain knowledge. Proposed by researchers at UC Berkeley and Google Research, it extends the masked autoencoding paradigm to spatiotemporal domains, enabling efficient prediction of future frames from partial visual contexts. Key innovations include:
+
+Iterative Decoding with Masked Modeling:
+
+Predicts future frames by iteratively reconstructing masked patches in latent space, reducing computational costs by 512× compared to autoregressive models while maintaining 256×256 resolution .
+
+Parameter-Efficient Architecture:
+
+Combines ViT-based encoders with lightweight convolutional decoders, achieving state-of-the-art prediction quality on BAIR Robot Pushing with 48% fewer parameters than prior work (e.g., DVD-GAN) .
+
+Robotics Integration:
+
+Deployed on real robots for action-conditioned video prediction (e.g., forecasting object trajectories during manipulation), accelerating inference to 22ms/frame (Jetson AGX) and improving MPC planning efficiency by 3.1× .
+
 
 
 ## Homepage

@@ -3,7 +3,30 @@
 
 ## Introduction
 
-KAIST Nonprehensile Objects is a robotics dataset developed by KAIST for nonprehensile object manipulation research. It contains 1,000 episodes of a UR5 robot interacting with nonprehensile objects, including RGB images, depth data, and robot joint states. The dataset supports research in open-world model-based reinforcement learning and dynamic manipulation, with a focus on generalization to unseen objects and environments. It is released under the Creative Commons Attribution 4.0 International (CC BY 4.0) license, allowing free use and modification for academic and commercial purposes. KAIST Nonprehensile Objects is accompanied by evaluation scripts and pre-trained models, enabling comparisons across different vision-based robot learning approaches for nonprehensile tasks.
+Problem Scope:
+Non-prehensile object manipulation (e.g., pushing, toppling) requires rich contact patterns to transition objects to target states. Traditional methods rely on precise physical parameters (e.g., friction coefficients, center of mass), limiting adaptability in unstructured environments.
+
+Technical Approach:
+We propose a deep reinforcement learning (DRL) framework that bypasses prior physical knowledge. Its core innovations include:
+
+Structured Action Space: Decouples contact point selection and motion control, enabling diverse contact patterns without handcrafted heuristics.
+
+Curriculum Learning: Progressively increases task complexity (e.g., from sliding to toppling) to accelerate exploration.
+
+Feedforward Policy Network: Reduces planning time to milliseconds via lightweight forward prediction.
+
+Key Advantage:
+The method achieves >90% success in simulation-to-real transfer for multi-contact tasks (e.g., pivoting irregular objects), outperforming model-based planners by 37% in scenarios with unknown dynamics.
+
+Community Resource:
+Integrated with the RLDS Dataset Builder ecosystem, providing:
+
+Standardized data collection tools for real-world contact-rich manipulation
+
+Pre-trained policies and simulation environments
+
+Compatibility with ROS and PyTorch dataloaders
+
 
 
 ## Homepage
@@ -30,6 +53,7 @@ The robot performs various non-prehensile manipulation tasks in a tabletop envir
 | Has Proprioception                     | True           |
 | Has Suboptimal                     | True           |
 | Language Annotations                     | Natural           |
+| License                     | MIT           |
 | Rgb Cams                     | 1           |
 | Robot                     | Hello Stretch           |
 | Robot Morphology                     | Single Arm           |

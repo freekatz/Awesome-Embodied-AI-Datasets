@@ -3,7 +3,7 @@
 
 ## Introduction
 
-ETH Agent Affordances is a dataset developed by ETH Zurich for agent-object affordance prediction. It contains 800 episodes of a Franka Emika Panda robot interacting with objects, including RGB images, depth data, and robot joint states. The dataset supports research in open-world model-based reinforcement learning and dynamic manipulation, with a focus on generalization to unseen objects and environments. It is accompanied by evaluation scripts and pre-trained models, enabling comparisons across different vision-based robot learning approaches for affordance prediction tasks. While the dataset's license is not explicitly stated, it is primarily intended for academic use and emphasizes the integration of visual and proprioceptive data.
+For mobile robots, interacting with articulated objects remains a challenging yet critical task. To address this challenge, we propose a novel closed-loop control pipeline that integrates manipulation priors from affordance estimation with sampling-based whole-body control. We introduce the concept of affordance-aware prompts, which holistically capture an agent’s capabilities and embodiment. Our method demonstrates superior performance over state-of-the-art approaches conditioned solely on end-effector geometry. Furthermore, closed-loop affordance reasoning enables the agent to segment tasks into discontinuous motions and recover from failures or unexpected states. Finally, this pipeline achieves high success rates in real-world long-horizon mobile manipulation tasks—specifically, opening (71%) and closing (72%) oven doors.
 
 
 ## Homepage
@@ -29,6 +29,7 @@ The robot opens and closes an oven, starting from different initial positions an
 | Has Proprioception                     | True           |
 | Has Suboptimal                     | True           |
 | Language Annotations                     | Templated           |
+| License                     | CC BY-NC 4.0           |
 | Rgb Cams                     | 0           |
 | Robot                     | Franka           |
 | Robot Morphology                     | Mobile Manipulator           |

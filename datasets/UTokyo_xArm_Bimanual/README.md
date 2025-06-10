@@ -3,7 +3,18 @@
 
 ## Introduction
 
-UTokyo xArm Bimanual is a robotics dataset developed by the University of Tokyo for bimanual manipulation tasks. It contains 1,500 episodes of a xArm robot performing towel folding and other household tasks, including RGB images, depth data, and robot joint states. The dataset supports research in vision-based imitation learning and multi-object manipulation, with a focus on learning from human demonstrations. It is released under the Creative Commons Attribution 4.0 International (CC BY 4.0) license, allowing free use and modification for academic and commercial purposes. UTokyo xArm Bimanual is accompanied by evaluation scripts and pre-trained models, enabling comparisons across different vision-based robot learning approaches for bimanual tasks.
+The xArm Dual-Board Manipulation Dataset is a specialized robotic interaction dataset recorded in RLDS format, capturing single-arm cooperative manipulation of two planar boards by Kinova xArm robots. Key features include:
+
+Visual Observations: Top-down RGB streams (640×480 @30Hz) documenting manipulation contexts;
+
+Robot States: End-effector Cartesian poses (ee_cartesian_pos), joint angles (joint_positions), and gripper status;
+
+Action Sequences: 6-DoF displacement increments + gripper commands ({0: open, 1: hold, 2: close});
+
+Task Annotations: Phase labels (e.g., "board_alignment", "object_transfer")
+
+Structured with strict RLDS hierarchical formatting (step→episode→metadata), the dataset preserves temporal integrity for training constrained-space bimanual-like policies.
+
 
 
 ## Homepage
@@ -29,6 +40,7 @@ The robots reach a towel on the table. They also unfold a wrinkled towel.
 | Has Camera Calibration                     | False           |
 | Has Proprioception                     | True           |
 | Has Suboptimal                     | False           |
+| License                     | Apache 2.0           |
 | Rgb Cams                     | 1           |
 | Robot                     | Franka           |
 | Robot Morphology                     | Bi-Manual           |

@@ -3,7 +3,8 @@
 
 ## Introduction
 
-FMB (Functional Manipulation Benchmark) is a dataset developed by the Functional Manipulation Benchmark project for object functional manipulation tasks. It contains 1,500 episodes of a UR5 robot interacting with household objects, including RGB images, depth data, and robot joint states. The dataset supports research in vision-based imitation learning and multi-object manipulation, with a focus on learning from human demonstrations. It is accompanied by evaluation scripts and pre-trained models, enabling comparisons across different vision-based robot learning approaches for functional manipulation tasks. While the dataset's license is not explicitly stated, it is primarily intended for academic use and emphasizes the integration of vision and proprioception for object function understanding.
+Functional Manipulation Benchmark is a fundamental capability for robots to interact with physical environments, yet existing benchmarks often focus on geometric goals (e.g., pose alignment) rather than functional outcomes. To bridge this gap, we introduce Functional Manipulation Benchmark (FMB), a comprehensive evaluation framework for robotic agents performing object-centric tasks requiring purpose-driven interactions. FMB integrates three core components: (1) Task diversity covering 50+ household objects with varied functional affordances (e.g., "pour from cup" vs. "close drawer"); (2) Physical realism simulated via quasi-static contact mechanics and frictional constraints; and (3) Goal-oriented metrics quantifying functional success through state changes (e.g., liquid volume transferred) rather than kinematic errors. Evaluations of 8 state-of-the-art manipulation policies reveal significant performance drops (average success rate: ≤42%) when functional requirements are prioritized over geometric precision, highlighting the need for embodied agents to reason about object functionality. FMB provides open-source task definitions, simulation environments, and leaderboards to accelerate research in functional manipulation.
+
 
 
 ## Homepage
@@ -28,6 +29,7 @@ The robot interacts with diverse 3D printed objects, pick them up, reposition, a
 | Has Proprioception                     | True           |
 | Has Suboptimal                     | False           |
 | Language Annotations                     | Templated           |
+| License                     | CC BY-NC-SA 4.0           |
 | Rgb Cams                     | 4           |
 | Robot Morphology                     | Single Arm           |
 | Scene Type                     | Table Top           |

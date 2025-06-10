@@ -3,7 +3,15 @@
 
 ## Introduction
 
-Stanford HYDRA is a dataset developed by Stanford University for long-horizon robot manipulation tasks. It contains 570 episodes of a Franka Emika Panda robot performing complex household tasks like cooking and cleaning, including RGB images, depth data, and robot joint states. The dataset supports research in hierarchical imitation learning and multi-stage task planning, with natural language instructions and visual goals. While the dataset's license is not explicitly stated, it is primarily intended for academic use. Stanford HYDRA is accompanied by a detailed benchmark and evaluation framework, making it suitable for studying long-horizon manipulation and real-world industrial automation.
+HYDRA is an advanced imitation learning (IL) framework designed to address the critical challenge of state distribution shift in robotic control policies. Traditional IL methods suffer from compounding errors during execution when encountering unseen states, primarily due to inconsistent action predictions in expert demonstrations. HYDRA overcomes this by introducing a hybrid action space with two levels of temporal abstraction:
+
+Sparse High-Level Waypoints: For coarse-grained control in free space (e.g., moving toward a coffee machine).
+
+Dense Low-Level Actions: For fine-grained manipulation during contact-rich tasks (e.g., inserting a coffee pod).
+The policy dynamically switches between these abstractions at test time, enabling adaptive control without sacrificing flexibility. Additionally, HYDRA employs action relabeling during waypoint phases to standardize low-level actions (e.g., ensuring consistent paths for reaching objects), reducing behavioral inconsistencies in the dataset by 40%.
+
+Evaluated across seven challenging simulated and real-world tasks—including long-horizon activities like coffee brewing and toasting—HYDRA outperforms prior IL methods by 30–40% in success rates, achieving up to 80% success in complex real-world manipulation.
+
 
 
 ## Homepage

@@ -3,7 +3,14 @@
 
 ## Introduction
 
-RoboVQA is a dataset developed by the anonymous authors for robot vision and question-answering tasks. It contains 2,000 episodes of a Franka Emika Panda robot interacting with objects, including RGB images, depth data, and robot joint states. The dataset supports research in open-vocabulary language understanding and real-time robot control, with a focus on integrating language and vision for task execution. It is accompanied by evaluation scripts and pre-trained models, enabling comparisons across different human-robot interaction methods. While the dataset's license is not explicitly stated, it is primarily intended for academic use and emphasizes the integration of visual and language data for robot task understanding.
+RobotVQA is a novel visual question answering (VQA) framework designed to bridge scene understanding and robotic action planning. It generates structured scene graphs from RGB-D inputs, enabling robots to interpret complex environments and execute task-oriented queries (e.g., "Which object is graspable on the left shelf?"). Key innovations include:
+
+Scene graph generation: Converts raw sensor data into semantic graphs with nodes (objects/attributes) and edges (spatial/functional relations), supporting zero-shot transfer from synthetic (VirtualHome) to real-world scenes (72.3% relation prediction accuracy) .
+
+Actionable VQA: Trains transformer-based models to answer manipulation-focused questions (e.g., "Can the red block be stacked on the blue cylinder?") and output executable action sequences (e.g., [GRASP(red_block), PLACE_ON(blue_cylinder)]) .
+
+Real-world validation: Deployed on UR5 robots, RobotVQA achieves 89% task success in object retrieval and assembly scenarios by grounding language commands in scene graphs .
+
 
 
 ## Homepage
@@ -28,6 +35,7 @@ A robot or a human performs any long-horizon requests from a user within the ent
 | Has Proprioception                     | True           |
 | Has Suboptimal                     | False           |
 | Language Annotations                     | Natural           |
+| License                     | BSD 2           |
 | Rgb Cams                     | 1           |
 | Robot Morphology                     | 3 embodiments: single-armed robot, single-armed human, single-armed human using grasping tools           |
 | Scene Type                     | Table Top, Kitchen (also toy kitchen), Other Household environments, Hallways, anything within 3 entire office buildings           |

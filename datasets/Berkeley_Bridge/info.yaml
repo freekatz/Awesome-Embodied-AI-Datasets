@@ -1,8 +1,7 @@
 action_space: EEF Position
 control_frequency: 5
 custom_fields:
-  introduction: BridgeData V2 is a large-scale diverse dataset for robotic manipulation with 60,096 trajectories
-  across 24 environments using a low-cost robot platform, integrating open-vocabulary task conditioning via natural language or goal images to enable generalizable policy training for multi-task imitation and offline RL, featuring cross-environment generalization to novel objects/environments/institutions, structural diversity covering 100+ objects and manipulation skills like pick-and-place, compatibility with 6+ SOTA algorithms achieving 45.8% higher success rates under visual noise/dynamic disturbances, and cost-effective collection with 50,365 human/9,731 autonomous trajectories at ~$4,000 hardware cost to serve as a foundational resource for robust generalizable robotic agent training.
+  introduction: BridgeData V2 is a large-scale diverse dataset for robotic manipulation with 60,096 trajectories across 24 environments using a low-cost robot platform, integrating open-vocabulary task conditioning via natural language or goal images to enable generalizable policy training for multi-task imitation and offline RL, featuring cross-environment generalization to novel objects/environments/institutions, structural diversity covering 100+ objects and manipulation skills like pick-and-place, compatibility with 6+ SOTA algorithms achieving 45.8% higher success rates under visual noise/dynamic disturbances, and cost-effective collection with 50,365 human/9,731 autonomous trajectories at ~$4,000 hardware cost to serve as a foundational resource for robust generalizable robotic agent training.
 data_collect_method: Human VR
 depth_cams: 1
 episodes: 150

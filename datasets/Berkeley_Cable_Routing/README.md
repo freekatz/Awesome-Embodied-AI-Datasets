@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Berkeley Cable Routing is a dataset for robotic manipulation research, focusing on cable routing tasks in industrial settings. It contains 1,647 trajectories of a UR5 robot routing cables into clamps, including RGB images, depth data, and robot joint states. The dataset is designed to support hierarchical imitation learning and multi-stage task planning, with natural language instructions and visual goals. It is released under the Creative Commons Attribution 4.0 International (CC BY 4.0) license, allowing modification and redistribution with attribution. The dataset is accompanied by a detailed benchmark and evaluation framework, making it suitable for studying long-horizon manipulation and real-world industrial automation.
+Multistage Cable Routing through Hierarchical Imitation Learning tackles the challenge of enabling robots to perform complex multi-stage manipulation tasks like routing cables through a series of clips, which require handling deformable objects, closing visual perception loops, and executing extended sequential behaviors; traditional methods face cumulative failure rates in such tasks due to exponential diminishment of success probability with each primitive's error, so the proposed hierarchical imitation learning system includes high-level policies that select primitives from a low-level library to enable failure recovery via retries or controller switching, low-level visuomotor primitives trained from 1,442 demonstration trajectories for precise motor control, and interactive fine-tuning for rapid adaptation to novel scenarios like unseen clip placements through human interventions, with key innovation in compensatory primitive design that ensures robustness by having primitives compensate for each other’s imperfections rather than relying on individual performance, and evaluations demonstrating exceptional generalization to challenging clip variations, enabling failure recovery via autonomous retries and corrective actions, scalable data efficiency with training using only 257 end-to-end demonstrations by reusing low-level primitives, and real-world deployability validated on physical cable routing tasks requiring long-horizon planning.
 
 
 ## Homepage
@@ -29,6 +29,7 @@ The robot routes cable through a number of tight-fitting clips mounted on the ta
 | Has Camera Calibration                     | False           |
 | Has Proprioception                     | True           |
 | Has Suboptimal                     | False           |
+| License                     | MIT           |
 | Rgb Cams                     | 3           |
 | Robot                     | Franka           |
 | Robot Morphology                     | Single Arm           |

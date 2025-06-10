@@ -3,7 +3,8 @@
 
 ## Introduction
 
-MimicPlay is a dataset developed by the MimicPlay project for human-robot imitation learning. It contains 2,000 episodes of a Franka Emika Panda robot performing object manipulation tasks guided by natural language instructions, including RGB images, depth data, and robot joint states. The dataset supports research in open-vocabulary language understanding and real-time robot control, with a focus on integrating language and vision for task execution. It is accompanied by evaluation scripts and pre-trained models, enabling comparisons across different human-robot interaction methods. While the dataset's license is not explicitly stated, it is primarily intended for academic use and emphasizes the integration of visual and language data for robot task understanding.
+The MimicPlay dataset is designed to support research in long-horizon robotic manipulation through imitation learning. It comprises two primary components: human play data, consisting of video sequences of individuals freely interacting with their environment using their hands, used to train a goal-conditioned trajectory generation model for creating a latent plan space; and teleoperated robot demonstration data, typically around 20 demonstrations per task, used to train a low-level robot controller conditioned on latent plans. The dataset supports 14 long-horizon manipulation tasks, facilitating the development of efficient imitation learning algorithms with superior performance, robustness, and generalization to new tasks compared to existing methods.
+
 
 
 ## Homepage
@@ -28,6 +29,7 @@ The robot interacts with various appliances in five different scenes, including 
 | Has Proprioception                     | True           |
 | Has Suboptimal                     | True           |
 | Language Annotations                     | Dataset does not contain language instruction annotation           |
+| License                     | MIT           |
 | Rgb Cams                     | 3           |
 | Robot Morphology                     | Single Arm           |
 | Scene Type                     | Table Top           |
