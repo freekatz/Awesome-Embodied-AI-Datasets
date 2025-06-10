@@ -1,15 +1,8 @@
 action_space: EEF Position
 control_frequency: 10
 custom_fields:
-  introduction: CMU Food Manipulation is a dataset developed by Carnegie Mellon University
-    for food preparation tasks. It contains 1,000 episodes of a Franka Emika Panda
-    robot interacting with food items, including RGB images, depth data, and robot
-    joint states. The dataset supports research in deformable object manipulation
-    and dynamic interaction, with a focus on learning from expert demonstrations.
-    It is accompanied by evaluation metrics and simulation environments, making it
-    suitable for studying food handling in robotics. While the dataset's license is
-    not explicitly stated, it is primarily intended for academic use and emphasizes
-    the integration of vision and proprioception for food manipulation tasks.
+  introduction:
+Playing with Food tackles the core challenge of modeling the diverse material properties of deformable foods in robotic food manipulation by proposing a multimodal sensory approach where robots interact with and "play" with food items like slicing and squeezing to learn discriminative representations of their physical characteristics, integrating a robotic arm with synchronized vision, audio, and proprioceptive sensors under the ROS framework to collect a rich dataset of 21 unique food types with varied textures and deformability, using which a cross-modal embedding network is trained to fuse visual, proprioceptive, and audio inputs and encode material similarities via a triplet loss formulation, with evaluations showing these embeddings significantly improve material classification (e.g., distinguishing tofu from cheese), shape robustness (e.g., recognizing sliced vs. whole vegetables), and generalization to unseen foods while enabling material-aware parameter tuning for downstream tasks like adaptive slicing force, and to accelerate food robotics innovation, the study open-sources the Food-Play Dataset—the first to combine multisensory interaction data with deformable food properties.
 data_collect_method: Scripted
 depth_cams: 0
 episodes: 450
@@ -19,15 +12,14 @@ has_camera_calibration: false
 has_proprioception: true
 has_suboptimal: false
 language_annotations: Templated
-license: 'null'
+license: 'CC BY-NC 4.0'
 name: CMU Food Manipulation
 rgb_cams: 3
 robot: Franka
 robot_morphology: Single Arm
 scene_type: Table Top
-short_introduction: CMU Food Manipulation is a Franka robot dataset with 1,000 episodes
-  for food tasks, supporting deformable object research. It includes visual and joint
-  data. While the license is unspecified, it advances food handling research.
+short_introduction: CMU Food Manipulation uses multimodal robot interactions (vision/audio/proprioception) to learn 
+  material-aware embeddings for deformable foods, improving classification and manipulation. We release a dataset of 21 food types to advance robotic cooking research.
 task_description: Robot interacting with different food items.
 url: https://sites.google.com/view/playing-with-food/
 wrist_cams: 2

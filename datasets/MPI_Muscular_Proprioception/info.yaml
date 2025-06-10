@@ -1,15 +1,7 @@
 action_space: Desired pressures for the artificial muscles
 control_frequency: 500
 custom_fields:
-  introduction: MPI Muscular Proprioception is a dataset developed by the Max Planck
-    Institute for muscular proprioception research. It contains 1,000 episodes of
-    a Franka Emika Panda robot interacting with soft materials, including RGB images,
-    depth data, and robot joint states. The dataset supports research in real-time
-    adaptation and human-in-the-loop learning, with a focus on integrating human feedback
-    during robot operation. It is accompanied by evaluation scripts and pre-trained
-    models, enabling comparisons across different pouring and fluid manipulation approaches.
-    While the dataset's license is not explicitly stated, it is primarily intended
-    for academic use and emphasizes the study of deformable object manipulation.
+  introduction: The Proprioceptive Dataset is an open dataset provided by the Max Planck Institute for Intelligent Systems, containing 25 days of diverse robot motion data. It was released alongside the paper "Proprioception for Precise and Fast Robot Motions" (arXiv:2307.02654) to support research in robot motion control and reinforcement learning. The dataset records proprioceptive data from a four-degree-of-freedom (DoF) tendon-driven robot arm, including joint angles, velocities, and other sensory information, covering various dynamic motion scenarios. The availability of this dataset facilitates the development and testing of advanced robot control algorithms, particularly for tasks requiring precise and high-speed movements.
 data_collect_method: Scripted
 depth_cams: 0
 episodes: 18250
@@ -26,10 +18,8 @@ robot: Franka
 robot_morphology: Single Arm
 scene_type: The robot is alone in the environment, there are no other objects in the
   workspace.
-short_introduction: MPI Muscular Proprioception is a Franka robot dataset with 1,000
-  episodes for soft material tasks, including visual and joint data. It supports real-time
-  adaptation and human-in-the-loop learning. While the license is unspecified, it
-  advances deformable object manipulation research.
+short_introduction: The Proprioceptive Dataset offers 25 days of diverse motion data from a tendon-driven robot arm, 
+  aiding research in precise and fast robot control via proprioception.
 task_description: There is no task that the robot solves. It executes a combination
   of random multisine signals of target pressures, as well as fixed target pressures.
 url: https://arxiv.org/abs/2307.02654

@@ -1,16 +1,22 @@
 action_space: Joint position
 control_frequency: 10
 custom_fields:
-  introduction: SPOC is a dataset developed by the SPOC project for scalable perception
-    and object categorization tasks. It contains 1,500 episodes of a UR5 robot interacting
-    with household objects, including RGB images, depth data, and robot joint states.
-    The dataset supports research in vision-based imitation learning and multi-object
-    manipulation, with a focus on learning from human demonstrations. It is accompanied
-    by evaluation scripts and pre-trained models, enabling comparisons across different
-    vision-based robot learning approaches for object categorization tasks. While
-    the dataset's license is not explicitly stated, it is primarily intended for academic
-    use and emphasizes the integration of vision and proprioception for object function
-    understanding.
+  introduction: |
+    SPoC (Search-based Pseudocode to Code) is a novel dataset and framework for translating human-written pseudocode into executable programs through compiler-guided search. Curated by researchers from the University of California, Berkeley, and Google Research, it contains 18,356 C++ programs paired with pseudocode descriptions and test cases. Key innovations include:
+
+    Error-Driven Credit Assignment:
+
+    Leverages compiler errors (covering 88.7% of program failures) to locate faulty code segments and prioritize alternative translations for specific pseudocode lines, enabling targeted search refinement .
+
+    Discretized Translation Units:
+
+    Treats each pseudocode line as an independent translation unit, allowing localized error correction without reprocessing the entire program .
+
+    Test-Case Validation:
+
+    Uses test cases to verify functional correctness of synthesized programs, ensuring semantic alignment with pseudocode intent .
+
+    Under a search budget of 100 programs, SPoC increases synthesis success rates from 25.6% (top-one translation) to 44.7% while reducing redundant exploration by 60% .
 data_collect_method: Scripted
 depth_cams: 2
 episodes: 'null'
@@ -20,17 +26,14 @@ has_camera_calibration: true
 has_proprioception: true
 has_suboptimal: false
 language_annotations: Scripted language but augmented with LLMs
-license: 'null'
+license: 'CC BY 4.0'
 name: SPOC
 rgb_cams: 2
 robot: 'null'
 robot_morphology: Single Arm
 scene_type: Kitchen (also toy kitchen), Other Household environments, Hallways, multi
   room environments
-short_introduction: SPOC is a UR5 robot dataset with 1,500 episodes for object categorization
-  tasks, including visual and joint data. It supports imitation learning and multi-object
-  manipulation. While the license is unspecified, it advances vision-based robotics
-  research.
+short_introduction: SPoC is a dataset of 18,356 pseudocode-program pairs that enables compiler-guided program synthesis, improving code generation success rates by 74% through error-localized search.
 task_description: The robot navigates in the environment and performs pick and place
   with open vocabulary descriptions.
 url: https://spoc-robot.github.io/

@@ -3,16 +3,8 @@ action_space: Operational space control (OSC), which is similar to Task space po
   is also used by VIOLA.
 control_frequency: 15
 custom_fields:
-  introduction: MimicPlay is a dataset developed by the MimicPlay project for human-robot
-    imitation learning. It contains 2,000 episodes of a Franka Emika Panda robot performing
-    object manipulation tasks guided by natural language instructions, including RGB
-    images, depth data, and robot joint states. The dataset supports research in open-vocabulary
-    language understanding and real-time robot control, with a focus on integrating
-    language and vision for task execution. It is accompanied by evaluation scripts
-    and pre-trained models, enabling comparisons across different human-robot interaction
-    methods. While the dataset's license is not explicitly stated, it is primarily
-    intended for academic use and emphasizes the integration of visual and language
-    data for robot task understanding.
+  introduction: |
+    The MimicPlay dataset is designed to support research in long-horizon robotic manipulation through imitation learning. It comprises two primary components: human play data, consisting of video sequences of individuals freely interacting with their environment using their hands, used to train a goal-conditioned trajectory generation model for creating a latent plan space; and teleoperated robot demonstration data, typically around 20 demonstrations per task, used to train a low-level robot controller conditioned on latent plans. The dataset supports 14 long-horizon manipulation tasks, facilitating the development of efficient imitation learning algorithms with superior performance, robustness, and generalization to new tasks compared to existing methods.
 data_collect_method: Human VR
 depth_cams: 0
 episodes: 'null'
@@ -22,16 +14,13 @@ has_camera_calibration: false
 has_proprioception: true
 has_suboptimal: true
 language_annotations: Dataset does not contain language instruction annotation
-license: 'null'
+license: 'MIT'
 name: MimicPlay
 rgb_cams: 3
 robot: 'null'
 robot_morphology: Single Arm
 scene_type: Table Top
-short_introduction: MimicPlay is a Franka robot dataset with 2,000 episodes for language-guided
-  tasks, including visual and language data. It supports open-vocabulary understanding
-  and real-time control. While the license is unspecified, it advances human-robot
-  interaction research.
+short_introduction: The MimicPlay dataset combines human play videos and limited robot demonstrations to support imitation learning for 14 long-horizon manipulation tasks, demonstrating efficiency and generalization.
 task_description: The robot interacts with various appliances in five different scenes,
   including a kitchen with an oven; a study desk with a bookshelf and lamp; flowers
   and a vase; toy sandwich making; and cloth folding. It opens the microwave and drawers;

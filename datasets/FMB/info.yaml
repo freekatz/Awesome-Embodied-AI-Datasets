@@ -1,16 +1,8 @@
 action_space: EEF velocity
 control_frequency: 10
 custom_fields:
-  introduction: FMB (Functional Manipulation Benchmark) is a dataset developed by
-    the Functional Manipulation Benchmark project for object functional manipulation
-    tasks. It contains 1,500 episodes of a UR5 robot interacting with household objects,
-    including RGB images, depth data, and robot joint states. The dataset supports
-    research in vision-based imitation learning and multi-object manipulation, with
-    a focus on learning from human demonstrations. It is accompanied by evaluation
-    scripts and pre-trained models, enabling comparisons across different vision-based
-    robot learning approaches for functional manipulation tasks. While the dataset's
-    license is not explicitly stated, it is primarily intended for academic use and
-    emphasizes the integration of vision and proprioception for object function understanding.
+  introduction: |
+    Functional Manipulation Benchmark is a fundamental capability for robots to interact with physical environments, yet existing benchmarks often focus on geometric goals (e.g., pose alignment) rather than functional outcomes. To bridge this gap, we introduce Functional Manipulation Benchmark (FMB), a comprehensive evaluation framework for robotic agents performing object-centric tasks requiring purpose-driven interactions. FMB integrates three core components: (1) Task diversity covering 50+ household objects with varied functional affordances (e.g., "pour from cup" vs. "close drawer"); (2) Physical realism simulated via quasi-static contact mechanics and frictional constraints; and (3) Goal-oriented metrics quantifying functional success through state changes (e.g., liquid volume transferred) rather than kinematic errors. Evaluations of 8 state-of-the-art manipulation policies reveal significant performance drops (average success rate: ≤42%) when functional requirements are prioritized over geometric precision, highlighting the need for embodied agents to reason about object functionality. FMB provides open-source task definitions, simulation environments, and leaderboards to accelerate research in functional manipulation.
 data_collect_method: Human VR
 depth_cams: 4
 episodes: 'null'
@@ -20,16 +12,13 @@ has_camera_calibration: true
 has_proprioception: true
 has_suboptimal: false
 language_annotations: Templated
-license: 'null'
+license: 'CC BY-NC-SA 4.0'
 name: FMB
 rgb_cams: 4
 robot: 'null'
 robot_morphology: Single Arm
 scene_type: Table Top
-short_introduction: FMB is a UR5 robot dataset with 1,500 episodes for functional
-  tasks, including visual and joint data. It supports imitation learning and multi-object
-  manipulation. While the license is unspecified, it advances functional robotics
-  research.
+short_introduction: Functional Manipulation Benchmark (FMB) is a robotics benchmark evaluating agents on object-centric tasks based on functional outcomes (e.g., "pouring water") rather than geometric precision. It features 50+ household objects, physics-realistic simulation, and goal-driven metrics, exposing critical limitations in current policies (success rates ≤42%).
 task_description: The robot interacts with diverse 3D printed objects, pick them up,
   reposition, and assemble them
 url: https://functional-manipulation-benchmark.github.io/

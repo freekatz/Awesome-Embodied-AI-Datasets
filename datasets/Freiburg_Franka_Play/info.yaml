@@ -1,17 +1,8 @@
 action_space: EEF Position
 control_frequency: 15
 custom_fields:
-  introduction: Freiburg Franka Play is a robotic manipulation dataset hosted on Kaggle,
-    focusing on teleoperated interactions with a Franka Emika Panda robot. The dataset
-    contains 1,085 episodes of pick-and-place tasks in simulated environments, including
-    RGB images, joint positions, and Cartesian coordinates. It is designed to support
-    research in robot learning, particularly in vision-based control and task generalization.
-    The dataset is released under the CC0 1.0 Universal license, dedicating it to
-    the public domain. It includes annotations for natural language instructions and
-    object states, making it suitable for training models conditioned on language
-    or visual goals. The Freiburg Franka Play dataset is a lightweight resource for
-    academic research, enabling quick prototyping and experimentation in robotic manipulation
-    tasks.
+  introduction: |
+    TACO (Tool-Object Interaction with Dual-Hand Cooperation) is a large-scale real-world dataset capturing bimanual manipulation of tools and objects in daily activities. It provides 5.2 million RGB images from 12 third-person views and 1 egocentric view, covering 2,500 interaction sequences, 196 object meshes, and 131 distinct <tool, action, target object> triads (e.g., <spatula, stir, pot>). The dataset includes precise 4D annotations: hand-object mesh sequences, 2D segmentation masks, and marker-free images generated via an automated pipeline combining motion capture optimization and inpainting models. Designed for generalizable manipulation research, TACO introduces three benchmarks—Action Recognition, Motion Prediction, and Collaborative Grasp Synthesis—with specialized splits (S1-S4) to evaluate cross-category, geometric, and triad-compositional generalization. Experiments reveal significant gaps in state-of-the-art methods; for example, action recognition accuracy drops by 25% on unseen triads (S3 split), highlighting critical challenges in real-world deployment.
 data_collect_method: Human VR
 depth_cams: 2
 episodes: 1355
@@ -21,16 +12,14 @@ has_camera_calibration: true
 has_proprioception: true
 has_suboptimal: false
 language_annotations: Templated
-license: 'null'
+license: 'CC BY-SA 4.0'
 name: Freiburg Franka Play
 rgb_cams: 2
 robot: xArm
 robot_morphology: Single Arm
 scene_type: Table Top
-short_introduction: Freiburg Franka Play is a Kaggle-hosted dataset with 1,085 teleoperated
-  Franka robot episodes. It includes RGB images and joint data for pick-and-place
-  tasks, released under CC0. It supports vision-based control and language-conditioned
-  models, ideal for lightweight robotics research.
+short_introduction: TACO is a real-world dataset for bimanual tool-object interaction, featuring 5.2M images, 131 
+  interaction triads, and 4D annotations. It benchmarks generalization in action recognition, motion prediction, and grasp synthesis, exposing limitations of current methods.
 task_description: '"The robot interacts with toy blocks, it pick and places them,
   stacks them, unstacks them, opens drawers, sliding doors and turrns on LED lights
   by pushing buttons."'
