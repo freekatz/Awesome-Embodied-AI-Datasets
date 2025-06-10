@@ -3,7 +3,17 @@
 
 ## Introduction
 
-Austin Sirius is a dataset developed by the University of Texas at Austin's RPL Lab for human-in-the-loop robot learning. It contains 570 episodes of a Franka Emika Panda robot performing complex household tasks like cooking and cleaning, including RGB images, depth data, and robot joint states. The dataset supports research in human-intervention guided policy learning and real-time adaptation to dynamic environments. It is released under the MIT license, allowing free use and modification for academic and commercial purposes. Austin Sirius emphasizes the integration of human feedback during robot operation, making it a valuable resource for advancing interactive and adaptive robotics research.
+Sirius enables collaborative manipulation tasks between humans and robots through shared autonomy. 
+In this framework, robots execute actions autonomously while humans monitor performance and intervene via teleoperation to provide corrective guidance. 
+Our core algorithm leverages deployment data to iteratively refine robot policies across successive rounds of policy learning, 
+enhancing autonomy while minimizing human intervention. This closed-loop system bridges adaptive control and continuous improvement, 
+advancing human-robot teamwork in complex real-world scenarios.
+
+Key technical highlights:
+- Shared Control: Seamlessly integrates human oversight with robot autonomy.
+- Intervention-Driven Learning: Corrections via teleoperation directly inform policy updates.
+- Iterative Policy Refinement: Data from each deployment cycle optimizes future autonomy.
+
 
 
 ## Homepage
@@ -29,6 +39,7 @@ The dataset comprises two tasks, kcup and gear. The kcup task requires opening t
 | Has Camera Calibration                     | False           |
 | Has Proprioception                     | True           |
 | Has Suboptimal                     | False           |
+| License                     | MIT           |
 | Rgb Cams                     | 2           |
 | Robot                     | Franka           |
 | Robot Morphology                     | Single Arm           |

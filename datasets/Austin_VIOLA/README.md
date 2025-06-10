@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Austin VIOLA is a dataset for vision-based object manipulation, developed by the UT Austin RPL Lab. It contains 5,000 episodes of a UR5 robot interacting with household objects, including RGB images, depth data, and robot joint states. The dataset supports research in visual imitation learning and object affordance prediction, with a focus on generalization to new objects and environments. While the dataset's license is not explicitly stated, it is primarily intended for academic use. Austin VIOLA includes annotations for object categories and manipulation goals, making it suitable for training models to learn task-specific skills from visual input. The dataset is accompanied by evaluation scripts and pre-trained models, facilitating comparisons across different vision-based robot learning methods.
+VIOLA is an innovative object - centric imitation learning approach designed to learn closed - loop visuomotor strategies for robotic manipulation. This method builds object - centric representations based on general object proposals from pre - trained visual models. It employs a Transformer - based policy to reason about these representations and focuses on task - relevant visual factors for manipulation prediction. This object - based structural prior significantly enhances the robustness of deep imitation learning algorithms against object variations and environmental disturbances. Quantitatively evaluated on both simulated and real robots, VIOLA achieves a success rate 45.8% higher than the state - of - the - art imitation learning methods. It has also been successfully deployed on physical robots to tackle challenging long - horizon tasks, such as table setting and coffee making.
 
 
 ## Homepage
@@ -30,6 +30,7 @@ The robot performs various household-like tasks, such as setting up the table, o
 | Has Proprioception                     | True           |
 | Has Suboptimal                     | False           |
 | Language Annotations                     | Templated           |
+| License                     | MIT           |
 | Rgb Cams                     | 2           |
 | Robot                     | PR2           |
 | Robot Morphology                     | Single Arm           |

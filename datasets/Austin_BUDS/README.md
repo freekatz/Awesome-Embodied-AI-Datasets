@@ -29,6 +29,7 @@ The robot is trying to solve a long-horizon kitchen task by picking up pot, plac
 | Has Camera Calibration                     | False           |
 | Has Proprioception                     | True           |
 | Has Suboptimal                     | False           |
+| License                     | MIT           |
 | Rgb Cams                     | 2           |
 | Robot                     | Franka           |
 | Robot Morphology                     | Single Arm           |

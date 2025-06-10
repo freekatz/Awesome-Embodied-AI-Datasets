@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Berkeley Autolab UR5 is a dataset for robot learning, developed by UC Berkeley's Autolab. It contains 10,000 episodes of a UR5 robot performing pick-and-place tasks in a simulated environment, including RGB images, depth data, and robot joint states. The dataset supports research in visual servoing and dynamic control, with a focus on real-time adaptation to environmental changes. While the dataset's license is not explicitly stated, it is primarily intended for academic use. Berkeley Autolab UR5 includes annotations for object poses and task goals, making it suitable for training models to learn closed-loop control policies. The dataset is accompanied by a detailed simulation environment and evaluation framework, enabling systematic testing of robot learning algorithms.
+The Berkeley-UR5 Project is an integrated research initiative focused on advancing robotic manipulation capabilities using UR5 collaborative robots, with particular emphasis on deformable object handling, human-robot interaction, and imitation learning in unstructured environments. Developed at the University of California, Berkeley, this project leverages the UR5's lightweight design (5kg payload) and 6-DoF flexibility to execute complex tasks such as cloth folding, cable rearrangement, and precision handover operations. Its core innovation lies in a multi-modal learning framework combining imitation learning (e.g., Multi-level Kernelized Movement Primitives) and goal-conditioned visual policies (e.g., Transporter Networks), enabling the robot to generalize skills from limited demonstrations to novel scenarios—such as adapting fabric manipulation strategies to varying textile stiffness or scaling handover trajectories across workspace regions. The project further provides open-source simulation benchmarks (e.g., DeformableRavens) with 12 standardized tasks for training and evaluating deformable object manipulation, alongside real-world datasets capturing UR5 kinematic states and visual observations for reproducibility. By bridging sim-to-real gaps through modular hardware interfaces and reinforcement learning pipelines, Berkeley-UR5 serves as a foundational platform for research in adaptive industrial automation and domestic service robotics.
 
 
 ## Homepage
@@ -30,6 +30,7 @@ The data consists of 4 robot manipulation tasks: simple pick-and-place of a stuf
 | Has Proprioception                     | True           |
 | Has Suboptimal                     | False           |
 | Language Annotations                     | Templated           |
+| License                     | CC BY 4.0           |
 | Rgb Cams                     | 2           |
 | Robot                     | PR2           |
 | Robot Morphology                     | Single Arm           |

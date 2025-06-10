@@ -3,7 +3,7 @@
 
 ## Introduction
 
-BC-Z is a robotics dataset developed by Google for zero-shot task generalization in imitation learning. It contains over 100,000 episodes of a 7-DOF robotic arm performing manipulation tasks, including RGB images, proprioceptive states, and natural language instructions. The dataset supports research in language-conditioned policy learning and cross-task generalization, with a focus on training models to adapt to new tasks without additional demonstrations. While the dataset's license is not explicitly stated, it is primarily intended for academic use. BC-Z is accompanied by evaluation scripts and pre-trained models, enabling comparisons across different zero-shot imitation learning methods.
+The BC-Z dataset is a large-scale robotic imitation learning benchmark developed collaboratively by Google, Everyday Robots, UC Berkeley, and Stanford University. It addresses the fundamental challenge of enabling vision-based robotic manipulation systems to generalize to unseen tasks through scalable data-driven learning. Trained on 25,877 diverse manipulation scenarios spanning 100 distinct tasks, BC-Z captures 125 hours of expert demonstrations collected from 12 robots operated by 7 human teleoperators. Its core innovation lies in supporting zero-shot task generalization—robots can execute novel tasks conditioned solely on high-level task descriptors (e.g., natural language embeddings or human demonstration videos) without task-specific retraining. This capability is enabled by a flexible multi-task policy architecture that learns 7-DoF control strategies adaptable to heterogeneous task representations. By integrating real-world complexity (e.g., object interactions, environmental variations), BC-Z provides a critical foundation for advancing robust and generalizable robotic manipulation. The dataset is publicly available under the CC BY-NC 4.0 license for non-commercial research use.
 
 
 ## Homepage
@@ -30,6 +30,7 @@ The robot attempts picking, wiping, and placing tasks on a diverse set of object
 | Has Proprioception                     | True           |
 | Has Suboptimal                     | True           |
 | Language Annotations                     | Templated           |
+| License                     | CC BY 4.0           |
 | Rgb Cams                     | 1           |
 | Robot                     | Franka           |
 | Robot Morphology                     | Mobile Manipulator           |

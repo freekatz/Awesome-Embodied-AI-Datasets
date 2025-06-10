@@ -18,8 +18,8 @@ gripper: Default
 has_camera_calibration: false
 has_proprioception: true
 has_suboptimal: false
-language_annotations: 'MIT'
-license: 'null'
+language_annotations: 'null'
+license: 'MIT'
 name: Austin Sailor
 rgb_cams: 2
 robot: UR5
