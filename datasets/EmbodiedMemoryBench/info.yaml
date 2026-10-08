@@ -1,0 +1,24 @@
+name: EmbodiedMemory-Bench
+license: CC BY-NC 4.0
+url: https://zju-omniai.github.io/Embodied-Omni/EmbodiedMemoryBench/
+short_introduction: 2,554 simulated episodes for evaluating memory-dependent embodied actions.
+task_description: Build and update memory from observation and interaction histories, then execute later tasks testing visual recall, dynamic state tracking, interaction outcomes, and experience generalization.
+action_space: Discrete AI2-THOR navigation and object-interaction actions
+data_collect_method: Simulator-grounded episode construction with executable-transition checks
+episodes: 2554
+language_annotations: English task instructions
+robot: AI2-THOR simulated agent
+scene_type: Indoor household scenes
+custom_fields:
+  paper: https://arxiv.org/abs/2609.28236
+  code: https://github.com/ZJU-OmniAI/Embodied-Omni/tree/main/embodied_memory
+  dataset: https://huggingface.co/datasets/lzLiang/EmbodiedMemoryBench
+  simulator: AI2-THOR / ProcTHOR scenes
+  task_families: 4
+  introduction: '[EmbodiedMemory-Bench](https://arxiv.org/abs/2609.28236) evaluates whether agents retain and update information from earlier observations and interactions, then use it to perform later embodied actions. It contains 2,554 episodes across four families: passive observation, dynamic tracking, interaction failure, and experience generalization.
+
+
+    This is a simulated interactive evaluation dataset for AI2-THOR, with scene assets derived from AI2-THOR and ProcTHOR. It is not a real-robot teleoperation dataset. Public metadata and episode artifacts are available on [Hugging Face](https://huggingface.co/datasets/lzLiang/EmbodiedMemoryBench); preparation and evaluation instructions are in the [official code](https://github.com/ZJU-OmniAI/Embodied-Omni/tree/main/embodied_memory). The evaluator reports success rate and memory-augmented efficiency (MAE).
+
+
+    Dataset license: CC BY-NC 4.0, as declared in the dataset card. Code in the benchmark subdirectory uses Apache-2.0; simulator assets retain their own terms.'
