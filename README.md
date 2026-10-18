@@ -14,8 +14,8 @@
 
 
 > [!NOTE]
-> - Total datasets: 72
-> - Latest Update:  2025-06-10
+> - Total datasets: 74
+> - Latest Update:  2026-10-18
 
 
 # Contents
@@ -60,6 +60,16 @@
 
 
 ## <a name="a"></a>A
+
+### <a name="acttrace_ego-home" href="./datasets/ActTrace_Ego-Home">ActTrace Ego-Home</a>
+
+[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC_BY--NC_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
+
+Homepage: <a href="https://huggingface.co/datasets/ActTrace/acttrace-ego-home" target="_blank">https://huggingface.co/datasets/ActTrace/acttrace-ego-home</a>
+
+Egocentric household-manipulation dataset recorded with a head-mounted iPhone in real Chinese homes: metric LiDAR depth, 100 Hz IMU, metric 3D hand trajectories lifted through calibrated extrinsics, and 6-DoF head trajectories cross-validated against the IMU (shipping bar r >= 0.97; v0.2 ships 13/13 episodes at r = 0.971-0.995; failing trajectories are not released).
+
+Task: A human demonstrator wearing a head-mounted iPhone performs real household manipulation tasks in real homes: washing cups and dishes, folding laundry and T-shirts, cutting fruit, beating eggs, boiling and pouring water, unpacking parcels, changing trash bags, and clearing the table after a meal. Every episode ships with verbatim human narration plus a machine-generated imperative instruction (provenance disclosed) and human-confirmed action segments with handedness.
 
 ### <a name="austin_buds" href="./datasets/Austin_BUDS">Austin BUDS</a>
 
@@ -332,6 +342,16 @@ DROID offers 76,000 real-world robot trajectories across 564 scenes and 86 tasks
 Task: Various household manipulation tasks
 
 ## <a name="e"></a>E
+
+### <a name="embodiedmemorybench" href="./datasets/EmbodiedMemoryBench">EmbodiedMemoryBench</a>
+
+[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC_BY--NC_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
+
+Homepage: <a href="https://zju-omniai.github.io/Embodied-Omni/EmbodiedMemoryBench/" target="_blank">https://zju-omniai.github.io/Embodied-Omni/EmbodiedMemoryBench/</a>
+
+2,554 simulated episodes for evaluating memory-dependent embodied actions.
+
+Task: Build and update memory from observation and interaction histories, then execute later tasks testing visual recall, dynamic state tracking, interaction outcomes, and experience generalization.
 
 ### <a name="eth_agent_affordances" href="./datasets/ETH_Agent_Affordances">ETH Agent Affordances</a>
 
